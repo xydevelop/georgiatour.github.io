@@ -1,0 +1,9 @@
+$font : #2F2E2E; 
+$red  : #8D2959;
+$pink : #C694AC;
+$grey : #F7F7F7;
+$mainColor : #2F2E2E;
+
+body{ max-width: 1920px; margin: 0 auto; font-family: Roboto, sans-serif; font-weight: 400; font-size: 18px; color: $mainColor; line-height: normal; }
+footer #footer_bg{ background: url(images/footer.png) no-repeat cover center center; }
+

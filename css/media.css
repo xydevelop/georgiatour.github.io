@@ -1,0 +1,111 @@
+@media (min-width: 1200px){
+   .container { max-width: 1170px; }	
+}
+
+
+@media (max-width: 1199px){
+   #header .social{ width: 100%; } 
+   #header .menu{ justify-content: flex-end!important; margin-bottom: 5px!important; }
+   #list-events .foot-event-item .cost .price span{ font-size: 15px; }
+   #list-events .foot-event-item .cost .buy a{ font-size: 9px; }
+}
+
+@media (max-width: 1100px){
+    .modal-gallery{ max-width: 100%; }
+}
+
+
+@media (max-width: 992px){
+    #events #near_events .item .sub-item{ border: none;  }
+}
+
+@media (max-width: 768px){
+    body{ background-position: 0px 75%; background-size: 400%; }
+    h1{ font-size: 40px; }
+    h2{ text-align: center; }
+   .menu{ display: none!important; } 
+   .carousel-control-next, .carousel-control-prev{ width: 80px; height: 55px; }
+   .slider-image{ min-height: 515px!important; }
+    .slider-arrow{ width: 35px; }
+
+    #list-events .item:hover{ box-shadow: none; }
+
+    #list-events .foot-event-item .cost .buy a{ font-size: 13px; }
+    #list-events .foot-event-item .cost .price span{ font-size: 18px; }
+
+   #header #logo{ margin-left: 20px; } 
+   #header .social{ width: 100%!important; text-align: right }  
+   #header .top__header .social a:last-child i{ margin-right: 20px; }
+   #header .slide-item .content-wrapper{ width: 100%; }
+   #header .slide-item .content-wrapper .header__content{ padding-left: 0px; padding-top: 75px; }
+   #header .slide-item .content{ padding-left: 0; bottom: 50px; }
+   #header .slide-item .content .place{ margin-top: 15px; width: 100%; }
+   #header .slide-item .content b{ color: #fff; font-weight: 500;}
+   #header .slide-item .content .place .link{ position: relative; margin-top: 20px; display: block; right: 0; }
+   #header .slide-item .content .place .link i{ height: 45px; }
+   #header .slide-item .content .place .link button{ height: 45px; padding: 15px; font-size: 12px; }
+   
+   #events{ margin-top: 55px; }
+   #events #near_events .item .sub-item{ padding: 10px 0px; }
+   #events #near_events{ text-align: center; }
+   #events #near_events .item .sub-item .event-date{ font-size: 30px; }
+   #events .event-row .slider-nav{ position: relative; top: 15px; width: 100px;
+    height: 100px; text-align: center; margin: auto; }
+    #events .event-row .slider-nav .slider-arrow.next{ bottom: auto; left: auto; right: 15px;
+    top: 0px; }
+     #events .event-row .slider-nav .slider-arrow.prev{ right: auto; top: 10px;
+    left: 0 }
+
+    #list-events .item{ padding-right: 15px!important; max-height: none; }
+    #list-events .item img { max-height: none; }
+
+    #albums{ margin-top: 0; }
+    #albums .item{ padding: 0; margin-bottom: 1px; }
+    #albums .item .album-image div{ background-position: 62%!important; }
+    #albums .album-caption{ left: 20px; }
+    #albums .album-caption .title{ font-size: 21px; }
+
+    #partners{ margin-top: 55px; }
+    #partners .p-slider img{ max-width: 60%; }
+
+    #footer{ padding-bottom: 15px; }
+    #footer .footer__col .caption, #footer .footer__col .question{ font-size: 14px; }
+    #footer .footer__col .mail a{ font-size: 13px; }
+    #footer .footer__col .tel{ font-size: 15px; }
+    #footer .footer__col .person, #footer .footer__col .copy{ font-size: 13px; }
+    #footer .sc{ text-align: center; margin-top: 0!important; }
+    #footer .footer__second{ text-align: right!important; }
+
+    .modal-gallery .content .gallery-full .slick-item{ min-height: 210px; }
+    #modal-wrapper .modal-gallery .controls{ width: 55px; height: 55px; }
+}
+
+@media (max-width: 575px){
+  #list-events .foot-event-item .cost .buy a{ font-size: 11px; }
+}
+
+@media (max-width: 325px){
+  #list-events .foot-event-item .place{ font-size: 16px; }
+  #list-events .foot-event-item .cost .price span{ font-size: 15px; }
+  #list-events .foot-event-item .cost .buy a{ font-size: 8px; }
+  #footer .footer__col .mail a, #footer .footer__col .tel{ font-size: 12px; }
+  #albums .item.big{ min-height: 275px; }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) and (orientation:landscape) {
+  #footer .sc{ margin-top: 5rem!important; }
+}
+
+@media (max-width: 992px) and (orientation:landscape) {
+   #events #near_events .item .sub-item .event-date{ font-size: 30px; } 
+   #events #near_events .item .sub-item{ padding: 10px; }
+   #albums{ margin-top: 30px; }
+   #partners{ margin-top: 50px; }
+   #modal-wrapper .content .gallery-full img{ max-width: 80%; }
+   #modal-wrapper .modal-gallery .controls{ bottom: 20px; border: 1px solid grey; }
+   #modal-wrapper .modal-gallery .controls.gallery-modal-prev{ left: 5px; }
+   #modal-wrapper .modal-gallery .controls.gallery-modal-next{ right: 5px; }
+   #modal-wrapper .modal-gallery .modal-close{ top: 30px; z-index: 5; }
+   .modal-gallery .content .gallery-full .slick-item{ max-height: 400px; }
+}
+
