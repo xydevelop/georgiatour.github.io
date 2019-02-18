@@ -1,5 +1,11 @@
 body { max-width: 1920px; overflow-x: hidden; margin: 0 auto; font-family: Roboto, sans-serif; font-weight: 400; font-size: 18px; color: #2F2E2E; line-height: normal; }
 
+h1, h2 { text-transform: uppercase; text-align: center; }
+
+h1 { font-size: 80px; }
+
+h2 { font-size: 40px; }
+
 footer { background: #DDDDDF; }
 
 footer #footer_bg { background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; }
