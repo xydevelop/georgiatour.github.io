@@ -6,8 +6,10 @@ h1 { font-size: 80px; }
 
 h2 { font-size: 40px; text-align: center; color: #2F2E2E; }
 
-footer { background: #DDDDDF; }
+footer { background: #DDDDDF; padding: 15px 0; }
 
 footer #footer_bg { background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; }
 
-footer #footer_line { background: #8D2959; text-align: center; }
+footer #footer_line { background: #8D2959; text-align: center; color: #FFF; font-family: "Roboto", sans-serif; font-weight: 400; font-size: 12px; }
+
+footer #footer_line a { color: #FFF; }
