@@ -13,6 +13,7 @@ h1, h2{ font-family: $Roboto; text-transform: uppercase; }
 h1{ font-size: 80px; }
 h2{ font-size: 40px; text-align: center; color: $title; }
 footer{ background: $footer; 
-	#footer_bg{ background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; } }
+	#footer_bg{ background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; } 
+	#footer_line{ background: $red; text-align: center; } }
 
 

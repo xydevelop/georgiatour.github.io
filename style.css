@@ -9,3 +9,5 @@ h2 { font-size: 40px; text-align: center; color: #2F2E2E; }
 footer { background: #DDDDDF; }
 
 footer #footer_bg { background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; }
+
+footer #footer_line { background: #8D2959; text-align: center; }
