@@ -12,7 +12,7 @@
   <?php wp_head(); ?>
 </head>
 <body>
-	<header>
+	<header class="page">
 		<div id="fixhead">
 			<a class="logo-wrapper" href="/"><div id="logo"></div></a>
 			<div class="menu-wrapper">
@@ -29,15 +29,13 @@
 				<a href=""><span>insta</span></a>
 			</div>
 		</div>
-		<div id="slide"><img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/travel_georgia.png" alt="" />
+		<div id="slide"><img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/project.png" alt="" />
+			<div class="dark_bg"></div>
 			<div class="slide-text container">
-				<h1>Незабываемые</h1>
-				<h3>туры и экскурсии по грузии</h3>
-				<div class="text">
-					По Грузии туристы столкнутся с одной из<br> 
-					самых влиятельных и живых национальных<br>
-					культурных традиций
-				</div>
+				<h1><?php the_title(); ?></h1>
 			</div>
 		</div>
 	</header>
+	<section class="breadcrumbs">
+		<div class="container"><a href="">Главная</a>-><span><?php echo get_the_title(); ?></span></div>
+	</section>
