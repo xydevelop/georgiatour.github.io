@@ -3,7 +3,7 @@
     <div class="container"> 
      	<div class="row">
      		<div class="col-6">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/logo-didi.png" alt="Путешествия Грузия" />
+          <a href="/"><img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo-didi.png" alt="Путешествия Грузия" /></a>
            <ul class="footer-menu">
               <li><a href="/">Главная</a></li>
               <li><a href="/about/">О проекте</a></li>

@@ -44,6 +44,8 @@ header.page #slide .slide-text h1 { line-height: 1; margin: 0; padding-bottom: 7
 
 footer { background: #DDDDDF; position: relative; overflow: hidden; min-height: 400px; }
 
+footer .footer-logo { max-height: 65px; }
+
 footer #footer_bg { background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; position: absolute; right: 0; }
 
 footer #footer_line { background: #8D2959; padding: 15px 0; text-align: center; color: #FFF; font-family: "Roboto", sans-serif; font-weight: 400; font-size: 12px; position: absolute; bottom: 0; width: 100%; }
