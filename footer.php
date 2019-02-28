@@ -25,6 +25,12 @@
               <a href="mailto:info@diditravel.ru">info@diditravel.ru</a>
             </div>
           </div>
+          <h3>Еженедельные скидки<br/>
+            для наших подписчиков</h3>
+          <form class="subscribe-form d-flex" method="post">
+            <input type="text" name="subscribe" placeholder="Подпишитесть на рассылку акции и скидок" />
+           <button class="subscribe-btn"></button>
+          </form>
         </div>
      		<div id="footer_bg" class="col-6"></div>
      	</div>

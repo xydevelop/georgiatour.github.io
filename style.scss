@@ -105,6 +105,11 @@ footer{
   					a{ display: inline-block; margin-right: 10px; }
   			}
   	}
+  	form{ 
+  		font-size: 12px;
+  			input{ padding: 10px 20px; } 
+  			button{ padding: 20px; background: $red; border: none; width: 50px; cursor: pointer; }
+  	}
 		#footer_bg{ background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; 
     position: absolute; right: 0; } 
 		#footer_line{ background: $red; padding: 15px 0; text-align: center; color: #FFF; font-family: $Roboto; font-weight: 400; font-size: 12px; position: absolute; bottom: 0; width: 100%;

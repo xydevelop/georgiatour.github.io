@@ -60,6 +60,12 @@ footer .georgia-support .head-support { margin-right: 20px; }
 
 footer .georgia-support .info-support a { display: inline-block; margin-right: 10px; }
 
+footer form { font-size: 12px; }
+
+footer form input { padding: 10px 20px; }
+
+footer form button { padding: 20px; background: #8D2959; border: none; width: 50px; cursor: pointer; }
+
 footer #footer_bg { background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; position: absolute; right: 0; }
 
 footer #footer_line { background: #8D2959; padding: 15px 0; text-align: center; color: #FFF; font-family: "Roboto", sans-serif; font-weight: 400; font-size: 12px; position: absolute; bottom: 0; width: 100%; }
