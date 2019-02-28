@@ -34,6 +34,14 @@ header.page #slide .slide-text h1 { line-height: 1; margin: 0; padding-bottom: 7
 
 .dark_bg { background: rgba(0, 0, 0, 0.2); position: absolute; width: 100%; height: 100%; top: 0; }
 
+.filter-wrapper { display: block; width: 100%; margin-bottom: 10px; }
+
+.filter-wrapper .filter-item { cursor: pointer; display: inline-block; border: 1px solid #8D2959; padding: 10px; text-align: center; margin-right: 20px; }
+
+.city-page { padding-bottom: 60px; }
+
+.city-page h2 { padding-top: 0; }
+
 footer { background: #DDDDDF; position: relative; overflow: hidden; min-height: 400px; }
 
 footer #footer_bg { background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; position: absolute; right: 0; }
@@ -68,7 +76,7 @@ body section .tour-item .btn_tour { font-size: 16px; text-align: left; }
 
 #city p { margin-bottom: 40px; }
 
-.city { overflow: hidden; color: #FFF; margin-bottom: 15px; }
+.city { overflow: hidden; margin-bottom: 15px; }
 
 .city a { color: #333333; }
 
