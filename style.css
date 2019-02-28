@@ -46,6 +46,12 @@ footer { background: #DDDDDF; position: relative; overflow: hidden; min-height: 
 
 footer .footer-logo { max-height: 65px; }
 
+footer .footer-menu-wrapper { margin-top: 50px; }
+
+footer .footer-menu-wrapper .footer-menu { display: inline-block; margin-right: 20px; }
+
+footer .footer-menu-wrapper .social { display: inline-block; }
+
 footer #footer_bg { background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; position: absolute; right: 0; }
 
 footer #footer_line { background: #8D2959; padding: 15px 0; text-align: center; color: #FFF; font-family: "Roboto", sans-serif; font-weight: 400; font-size: 12px; position: absolute; bottom: 0; width: 100%; }

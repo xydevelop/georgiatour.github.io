@@ -4,12 +4,18 @@
      	<div class="row">
      		<div class="col-6">
           <a href="/"><img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo-didi.png" alt="Путешествия Грузия" /></a>
-           <ul class="footer-menu">
-              <li><a href="/">Главная</a></li>
-              <li><a href="/about/">О проекте</a></li>
-              <li><a href="/link/">Обратная связь</a></li>
-           </ul>
-        
+          <div class="footer-menu-wrapper">
+             <ul class="footer-menu">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/about/">О проекте</a></li>
+                <li><a href="/link/">Обратная связь</a></li>
+             </ul>
+             <div class="social">
+                <span>vk</span>
+                <span>fc</span>
+                <span>insta</span>
+             </div>
+          </div>
         </div>
      		<div id="footer_bg" class="col-6"></div>
      	</div>
