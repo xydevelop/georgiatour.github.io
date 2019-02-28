@@ -1,83 +1,39 @@
-<?php get_header(); ?>
+<?php get_header('page'); ?>
 
-<!-- Map -->
-  <section class="section" id="map">
-    <div class="container">
-      <img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/map.png" alt="" />
+<!-- PAge -->
+  <section class="page city-page">
+  	<div class="container">
+      <h2>Вид тура</h2>
+      <div class="row text-center">
+        <div class="filter-wrapper">
+          <div class="filter-item">Панорама</div>
+          <div class="filter-item">Винный тур</div>
+          <div class="filter-item">На автомобиле</div>
+          <div class="filter-item">Водопады</div>
+        </div>
+        <div class="filter-wrapper">
+          <div class="filter-item">Пеший</div>
+          <div class="filter-item">С проживанием</div>
+          <div class="filter-item">Четыре сезона</div>
+          <div class="filter-item">Крепости</div>
+          <div class="filter-item">Акции</div>
+        </div>
+        <div class="filter-wrapper">
+          <div class="filter-item">Панорама</div>
+          <div class="filter-item">На автомобиле</div>
+          <div class="filter-item">Водопады</div>
+          <div class="filter-item">Панорама</div>
+        </div>
+      </div>
     </div>
   </section>
-    <!-- Cities -->
-  <section class="section container" id="city">
-    <h2>Выберите город</h2>
-    <p class="text-center">По Грузии туристы столкнутся с одной из самых влиятельных и живых</br> 
-национальных культурных традиций</p>
-    <div class="row">
-        <div class="col-md-8 city pr-0">
-          <a href="/gorod">
-            <div class="city-wrapper">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/tbilisi.png" alt="" />
-              <div class="city-overlay">
-                <h5>Тбилиси</h5>
-                <p>Lorem ipsum dolor sit amet, 
-    maiores ornare ac quo ut lectus, etiam vestibulum </p>
-                <div class="btn_city"></div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 city pr-0">
-        <div class="city-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/batumi.png" alt="" />
-            <div class="city-overlay">
-              <h5>Батуми</h5>
-              <p>Lorem ipsum dolor sit amet, 
-  maiores ornare ac quo ut lectus, etiam vestibulum </p>
-              <div class="btn_city"></div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-3 city pr-0">
-        <div class="city-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/mestia.png" alt="" />
-            <div class="city-overlay">
-              <h5>Батуми</h5>
-              <p>Lorem ipsum dolor sit amet, 
-  maiores ornare ac quo ut lectus, etiam vestibulum </p>
-              <div class="btn_city"></div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-3 city pr-0">
-        <div class="city-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/mcheta.png" alt="" />
-            <div class="city-overlay">
-              <h5>Батуми</h5>
-              <p>Lorem ipsum dolor sit amet, 
-  maiores ornare ac quo ut lectus, etiam vestibulum </p>
-              <div class="btn_city"></div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-6 city pr-0">
-        <div class="city-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/kutaisi.png" alt="" />
-            <div class="city-overlay">
-              <h5>Кутаиси</h5>
-              <p>Lorem ipsum dolor sit amet, 
-  maiores ornare ac quo ut lectus, etiam vestibulum </p>
-              <div class="btn_city"></div>
-            </div>
-          </div>
-        </div>
-    </div>
-  </section>
-    <!-- Single Tour -->
+
+   <!-- Single Tour -->
   <section class="section" id="single_tour">
     <div class="container">
       <h2>Однодневные туры</h2>
       <div class="row">
          <div class="col-md-4 tour-item">
-          <a href="/tour/">
             <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             <div>
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
@@ -97,7 +53,6 @@
                 <div class="col-md-4 pl-0"><a class="btn_tour" href="">Забронировать</a></div>
               </div>
             </div>
-          </a>
           </div>
           <div class="col-md-4 tour-item">
             <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
@@ -347,5 +302,7 @@
         </div>
     </div>
   </section>
+
+  
 
 <?php get_footer(); ?>

@@ -123,6 +123,7 @@ footer{
 body section .tour-item{ 
 	overflow: hidden; 
 	margin-bottom: 30px;
+		> a{ color: $mainColor; text-decoration: none; }
 		.review-rating, .review{ display: inline-block; }
 		.review{ margin-left: 5px; }
 		.btn_tour{ font-size: 16px; text-align: left; }

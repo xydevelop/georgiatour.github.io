@@ -78,6 +78,8 @@ footer #footer_line a { color: #FFF; }
 
 body section .tour-item { overflow: hidden; margin-bottom: 30px; }
 
+body section .tour-item > a { color: #2F2E2E; text-decoration: none; }
+
 body section .tour-item .review-rating, body section .tour-item .review { display: inline-block; }
 
 body section .tour-item .review { margin-left: 5px; }
