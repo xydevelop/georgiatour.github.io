@@ -20,7 +20,7 @@ header #fixhead .menu-wrapper .menu { margin-bottom: 0; }
 
 header #fixhead .menu-wrapper .menu li { display: inline-block; margin-right: 5px; }
 
-header #slide { color: #FFF; }
+header #slide { color: #FFF; position: relative; }
 
 header #slide h1 { color: #FFF; }
 
@@ -32,7 +32,7 @@ header.page #slide .slide-text h1 { line-height: 1; margin: 0; padding-bottom: 7
 
 .breadcrumbs { padding: 35px 0 70px 0; }
 
-.dark_bg { background: rgba(0, 0, 0, 0.7); position: absolute; width: 100%; height: 100%; }
+.dark_bg { background: rgba(0, 0, 0, 0.7); position: absolute; width: 100%; height: 100%; top: 0; }
 
 footer { background: #DDDDDF; position: relative; overflow: hidden; min-height: 400px; }
 
