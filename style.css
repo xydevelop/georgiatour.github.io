@@ -48,9 +48,13 @@ footer .footer-logo { max-height: 65px; }
 
 footer .footer-menu-wrapper { margin-top: 50px; }
 
-footer .footer-menu-wrapper .footer-menu { display: inline-block; margin-right: 20px; }
+footer .footer-menu-wrapper .footer-menu { display: inline-block; margin-right: 20px; padding: 0; }
+
+footer .footer-menu-wrapper .footer-menu li { display: inline-block; }
 
 footer .footer-menu-wrapper .social { display: inline-block; }
+
+footer .georgia-support .head-support, footer .georgia-support .info-support { display: inline-block; }
 
 footer #footer_bg { background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; position: absolute; right: 0; }
 

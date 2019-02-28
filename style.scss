@@ -92,8 +92,14 @@ footer{
   	.footer-logo{ max-height: 65px; }
   	.footer-menu-wrapper{ 
   		margin-top: 50px; 
-  		.footer-menu{ display: inline-block; margin-right: 20px; }
+  		.footer-menu{ 
+  			display: inline-block; margin-right: 20px; padding: 0; 
+  				li{ display: inline-block; }
+  		}
   		.social{ display: inline-block; }
+  	}
+  	.georgia-support{
+  			.head-support,.info-support{ display: inline-block; }
   	}
 		#footer_bg{ background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; 
     position: absolute; right: 0; } 

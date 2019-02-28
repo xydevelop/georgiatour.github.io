@@ -16,6 +16,15 @@
                 <span>insta</span>
              </div>
           </div>
+          <div class="georgia-support">
+            <div class="head-support">
+              <h5>Служба поддержки</h5>
+            </div>
+            <div class="info-support">
+              <a href="tel:88000000000">8 (800) 000-00-00</p>
+              <a href="mailto:info@diditravel.ru">info@diditravel.ru</a>
+            </div>
+          </div>
         </div>
      		<div id="footer_bg" class="col-6"></div>
      	</div>
