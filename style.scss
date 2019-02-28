@@ -100,6 +100,10 @@ footer{
   	}
   	.georgia-support{
   			.head-support,.info-support{ display: inline-block; }
+  			.head-support{ margin-right: 20px; }
+  			.info-support{
+  					a{ display: inline-block; margin-right: 10px; }
+  			}
   	}
 		#footer_bg{ background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; 
     position: absolute; right: 0; } 
