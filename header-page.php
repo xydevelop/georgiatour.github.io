@@ -41,7 +41,7 @@
 			<div class="dark_bg"></div>
 			<div class="slide-text container">
 				<h1><?php the_title(); ?></h1>
-				<?php if( is_page('city') ){ ?>
+				<?php if( is_page('gorod') ){ ?>
 					<p>По Грузии туристы столкнутся с одной из самых влиятельных и<br/> живых национальных культурных традиций</p>
 				<?php } ?>
 			</div>
