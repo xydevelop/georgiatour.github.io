@@ -21,12 +21,48 @@
             <div>
               <div><h6>Продолжительность</h6><span>5 дней</span></div>
               <div><h6>Тип тура</h6><span></span>Панорама</div>
-              <div><h6>Транспорт</h6><span></span></div>
+              <div><h6>Транспорт</h6><span>На автобусе</span></div>
+            </div>
+            <div>
+              <ul>
+                <h6>В стоимость включено</h6>
+                  <li>- Транспортные услуги</li>
+                  <li>- Услуги гида</li>
+                  <li>- Размещение в гостинице (двух и трехместных номерах)</li>
+              </ul>
+              <ul>
+                <h6>В стоимость включено</h6>
+                  <li>- Транспортные услуги</li>
+                  <li>- Услуги гида</li>
+                  <li>- Размещение в гостинице (двух и трехместных номерах)</li>
+              </ul>
+              <div>
+                <div>5000 р.</div>
+                <span>* За человека</span>
+              </div>
+              <div class="btn-price">
+                
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-6 places">
           <h5>Места посещения</h5>
+          <p>Тбилиси, Мцхета, Казбеги, Сигнаги, Сванетия</p>
+          <div class="gallery-tour-wrapper row">
+            <div class="col-md-6">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
+            </div>
+            <div class="col-md-6">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
+            </div>
+            <div class="col-md-6">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
+            </div>
+            <div class="col-md-6">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
