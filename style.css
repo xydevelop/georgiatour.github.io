@@ -12,7 +12,7 @@ header #fixhead { position: absolute; z-index: 1; top: 0; width: 100%; backgroun
 
 header #fixhead .logo-wrapper { margin-right: 230px; }
 
-header #fixhead .logo-wrapper #logo { background: url(images/logo.png) no-repeat; background-size: contain; width: 582px; height: 52px; }
+header #fixhead .logo-wrapper #logo { background: url(images/logo.png) no-repeat; background-size: contain; width: 582px; height: 48px; }
 
 header #fixhead .menu-wrapper { display: flex; align-items: center; margin-right: 50px; }
 

@@ -34,6 +34,8 @@
 				<img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/ct-tbilisi.png" alt="" />
 			<?php }else if( is_page('about') ){ ?>
 				<img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/about.png" alt="" />
+			<?php }else if( is_page('tour') ){ ?>
+				<img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/tour.png" alt="" />
 			<?php }else{ ?>
 				<img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/condition.png" alt="" />
 			<?php } ?>
@@ -41,7 +43,7 @@
 			<div class="dark_bg"></div>
 			<div class="slide-text container">
 				<h1><?php the_title(); ?></h1>
-				<?php if( is_page('gorod') ){ ?>
+				<?php if( is_page('gorod') || is_page('tour') ){ ?>
 					<p>По Грузии туристы столкнутся с одной из самых влиятельных и<br/> живых национальных культурных традиций</p>
 				<?php } ?>
 			</div>
