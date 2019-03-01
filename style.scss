@@ -17,11 +17,13 @@ h2{ font-size: 40px; text-align: center; color: $title; padding: 90px 0 60px 0; 
 	display: flex;
 	align-items: center;
 	justify-content: center;
-		a{ color: #fff; width: 30px; height: 30px; border-radius: 50%;  }
-		.icon-instagram{ 
-			background: #ff0079; 
-				.fa{ display: flex; align-items: center; justify-content: center; width:100%; height: 100%; }
+		a{ 
+			color: #fff; width: 30px; height: 30px; border-radius: 50%;
+				.fa{ display: flex; align-items: center; justify-content: center; width:100%; height: 100%; }  
 		}
+		.icon-instagram{ background: #ff0079; }
+		.icon-facebook{ background: #4D76A1; }
+		.icon-vk{ background: #7CB8DD; }
 } 
 
 header{
