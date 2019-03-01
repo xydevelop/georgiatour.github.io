@@ -168,8 +168,27 @@ body section .tour-item{
 	margin-bottom: 30px;
 	position: relative;
 		.tour-wrapper{
-				h4{ font: 700 20px $PTSans; color: $title; text-transform: uppercase; }
-				p{ font: 400 14px $PTSans; color: rgba(104, 104, 104, 0.52); text-transform: lowercase; }
+			padding: 20px;
+			color: $title;
+				h4{ font: 700 20px $PTSans; text-transform: uppercase; }
+				p{ font: 400 14px $PTSans; color: rgba(104, 104, 104, 0.52); text-transform: lowercase; margin-bottom: 25px; }
+				.city-icon, .time-icon{ 
+					font: 400 16px $PTSans; 
+					margin-bottom: 5px;
+						.fa{ margin-right: 10px; }
+				}
+				.time-icon{ 
+					font-size: 14px;
+						.fa{ margin-right: 7px; }
+    		}
+    		.price-wrapper{
+    			text-align: right;
+    				.cost{
+    					display: inline-block;
+    						.price{ font: 700 40px $PTSans; text-align: right; color: $red; letter-spacing: 0; }
+    						span{ font: 400 14px $Roboto; color: #C4C4C4; display: block; text-align: left; }
+    				}
+    		}
 		}
 		.tour-action{ position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
 		> a{ color: $mainColor; text-decoration: none; }

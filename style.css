@@ -110,9 +110,27 @@ footer #footer_line a { color: #FFF; }
 
 body section .tour-item { margin-bottom: 30px; position: relative; }
 
-body section .tour-item .tour-wrapper h4 { font: 700 20px "PT Sans", sans-serif; color: #2F2E2E; text-transform: uppercase; }
+body section .tour-item .tour-wrapper { padding: 20px; color: #2F2E2E; }
 
-body section .tour-item .tour-wrapper p { font: 400 14px "PT Sans", sans-serif; color: rgba(104, 104, 104, 0.52); text-transform: lowercase; }
+body section .tour-item .tour-wrapper h4 { font: 700 20px "PT Sans", sans-serif; text-transform: uppercase; }
+
+body section .tour-item .tour-wrapper p { font: 400 14px "PT Sans", sans-serif; color: rgba(104, 104, 104, 0.52); text-transform: lowercase; margin-bottom: 25px; }
+
+body section .tour-item .tour-wrapper .city-icon, body section .tour-item .tour-wrapper .time-icon { font: 400 16px "PT Sans", sans-serif; margin-bottom: 5px; }
+
+body section .tour-item .tour-wrapper .city-icon .fa, body section .tour-item .tour-wrapper .time-icon .fa { margin-right: 10px; }
+
+body section .tour-item .tour-wrapper .time-icon { font-size: 14px; }
+
+body section .tour-item .tour-wrapper .time-icon .fa { margin-right: 7px; }
+
+body section .tour-item .tour-wrapper .price-wrapper { text-align: right; }
+
+body section .tour-item .tour-wrapper .price-wrapper .cost { display: inline-block; }
+
+body section .tour-item .tour-wrapper .price-wrapper .cost .price { font: 700 40px "PT Sans", sans-serif; text-align: right; color: #8D2959; letter-spacing: 0; }
+
+body section .tour-item .tour-wrapper .price-wrapper .cost span { font: 400 14px "Roboto", sans-serif; color: #C4C4C4; display: block; text-align: left; }
 
 body section .tour-item .tour-action { position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
 
