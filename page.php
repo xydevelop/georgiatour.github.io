@@ -177,7 +177,7 @@
     <div class="container">
       <h2>Однодневные туры</h2>
       <div class="row">
-        <div class="col-md-4 tour-item">
+        <div class="col-md-4 tour-item pr-0">
           <div class="shadow-wrapper">
             <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             <div class="tour-action"></div>
@@ -201,7 +201,8 @@
             </div>
           </div>
         </div>
-          <div class="col-md-4 tour-item">
+          <div class="col-md-4 tour-item pr-0">
+          <div class="shadow-wrapper">
             <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             <div>
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
@@ -222,7 +223,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 tour-item">
+          </div>
+          <div class="col-md-4 tour-item pr-0">
+          <div class="shadow-wrapper">
             <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             <div>
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
@@ -243,7 +246,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 tour-item">
+          </div>
+          <div class="col-md-4 tour-item pr-0">
+          <div class="shadow-wrapper">
             <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             <div>
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
@@ -264,7 +269,9 @@
               </div>
             </div>
           </div>
-         <div class="col-md-4 tour-item">
+          </div>
+         <div class="col-md-4 tour-item pr-0">
+          <div class="shadow-wrapper">
             <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             <div>
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
@@ -285,7 +292,9 @@
               </div>
             </div>
           </div>
-       <div class="col-md-4 tour-item">
+          </div>
+       <div class="col-md-4 tour-item pr-0">
+          <div class="shadow-wrapper">
             <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             <div>
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
@@ -305,6 +314,7 @@
                 <div class="col-md-4 pl-0"><a class="btn_tour"  href="">Забронировать</a></div>
               </div>
             </div>
+          </div>
           </div>
         </div>
         <div class="load-more-wrapper text-center">

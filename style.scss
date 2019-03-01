@@ -167,6 +167,10 @@ footer{
 body section .tour-item{  
 	margin-bottom: 30px;
 	position: relative;
+		.tour-wrapper{
+				h4{ font: 700 20px $PTSans; color: $title; text-transform: uppercase; }
+				p{ font: 400 14px $PTSans; color: rgba(104, 104, 104, 0.52); text-transform: lowercase; }
+		}
 		.tour-action{ position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
 		> a{ color: $mainColor; text-decoration: none; }
 		.review-rating, .review{ display: inline-block; }

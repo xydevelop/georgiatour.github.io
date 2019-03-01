@@ -110,6 +110,10 @@ footer #footer_line a { color: #FFF; }
 
 body section .tour-item { margin-bottom: 30px; position: relative; }
 
+body section .tour-item .tour-wrapper h4 { font: 700 20px "PT Sans", sans-serif; color: #2F2E2E; text-transform: uppercase; }
+
+body section .tour-item .tour-wrapper p { font: 400 14px "PT Sans", sans-serif; color: rgba(104, 104, 104, 0.52); text-transform: lowercase; }
+
 body section .tour-item .tour-action { position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
 
 body section .tour-item > a { color: #2F2E2E; text-decoration: none; }
