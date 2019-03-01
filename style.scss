@@ -11,7 +11,7 @@ $PTSans : 'PT Sans', sans-serif;
 body{ max-width: 1920px; overflow-x: hidden; margin: 0 auto; font-family: $Roboto; font-weight: 400; font-size: 18px; color: $mainColor; line-height: normal; }
 h1, h2{ font-family: $Roboto; text-transform: uppercase; }
 h1{ font-size: 80px; font-weight: 700; }
-h2{ font-size: 40px; text-align: center; color: $title; padding: 90px 0 60px 0; font-weight: 900; }
+h2{ font-size: 40px; text-align: center; color: $title; padding: 55px 0 80px 0; font-weight: 900; }
 
 .social{
 	display: flex;
@@ -161,12 +161,14 @@ footer{
 		} 
 }
 
-#single_tour{ background: #E5E5E5;  padding-bottom: 50px; }
+#single_tour{ background: #F6F6F7;  padding-bottom: 50px; }
 #mult_tour{ padding-bottom: 170px; }
 
 body section .tour-item{ 
 	overflow: hidden; 
 	margin-bottom: 30px;
+	position: relative;
+		.tour-action{ position: absolute; top: 20px; left: 0px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
 		> a{ color: $mainColor; text-decoration: none; }
 		.review-rating, .review{ display: inline-block; }
 		.review{ margin-left: 5px; }
@@ -199,6 +201,7 @@ body section .tour-item{
 }
 
 #city{
+	padding-bottom: 105px;
 		p{ margin-bottom: 40px; }
 		h2{ padding: 20px 0 40px 0; }
 		.city-text{ font: 400 18px $Roboto; }
@@ -217,8 +220,8 @@ body section .tour-item{
 			position: relative;
 			min-height: 320px; 
 				.city-overlay{ 
-					position: absolute; bottom: 0px; padding-left: 23px; padding-top: 13px; max-width: 235px; background: rgba(255,255,255,1);
-						h5{ font: 700 20px $PTSans; text-transform: uppercase; color: $title; margin-bottom: 10px; }
+					position: absolute; bottom: 0px; padding-left: 23px; padding-top: 13px; max-width: 235px; background: rgba(255,255,255,1); color: $title;
+						h5{ font: 700 20px $PTSans; text-transform: uppercase; margin-bottom: 10px; }
 						p{ font: 400 12px $Roboto; }
 				}
 		}

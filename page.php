@@ -180,6 +180,7 @@
         <div class="col-md-4 tour-item">
          
             <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
+            <div class="tour-action"></div>
             <div>
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
