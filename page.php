@@ -9,7 +9,7 @@
     <!-- Cities -->
   <section class="section container" id="city">
     <h2>Выберите город</h2>
-    <p class="text-center">По Грузии туристы столкнутся с одной из самых влиятельных и живых</br> 
+    <p class="text-center city-text">По Грузии туристы столкнутся с одной из самых влиятельных и живых</br> 
 национальных культурных традиций</p>
     <div class="row">
         <div class="col-md-8 city pr-0">

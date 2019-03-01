@@ -4,7 +4,7 @@ h1, h2 { font-family: "Roboto", sans-serif; text-transform: uppercase; }
 
 h1 { font-size: 80px; font-weight: 700; }
 
-h2 { font-size: 40px; text-align: center; color: #2F2E2E; padding: 90px 0 60px 0; }
+h2 { font-size: 40px; text-align: center; color: #2F2E2E; padding: 90px 0 60px 0; font-weight: 900; }
 
 .social { display: flex; align-items: center; justify-content: center; }
 
@@ -55,6 +55,8 @@ header #slide h1 { color: #FFF; }
 header #slide .slide-text { display: flex; justify-content: center; flex-direction: column; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
 
 header #slide .slide-text h3 { font: 700 40px "PT Sans", sans-serif; text-transform: uppercase; margin-bottom: 22px; }
+
+header #slide .slide-text .text { font: 400 25px "PT Sans", sans-serif; }
 
 header.page #slide .slide-text { justify-content: flex-end; }
 
@@ -134,14 +136,20 @@ body section .tour-item .btn_tour { font-size: 16px; text-align: left; }
 
 #city p { margin-bottom: 40px; }
 
+#city h2 { padding: 20px 0 40px 0; }
+
+#city .city-text { font: 400 18px "Roboto", sans-serif; }
+
 .city { overflow: hidden; margin-bottom: 15px; }
 
 .city a { color: #333333; }
 
-.city img { min-width: 100%; height: 100%; max-width: none; max-height: 295px; position: absolute; }
+.city img { min-width: 100%; height: 100%; max-width: none; max-height: 320px; position: absolute; -moz-transform: scale(1); -o-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
 
-.city .city-wrapper { position: relative; min-height: 295px; }
+.city .city-wrapper { overflow: hidden; position: relative; min-height: 320px; }
 
-.city .city-wrapper .city-overlay { position: absolute; bottom: 0px; padding-left: 30px; max-width: 350px; background: rgba(255, 255, 255, 0.9); }
+.city .city-wrapper .city-overlay { position: absolute; bottom: 0px; padding-left: 30px; max-width: 235px; background: white; }
+
+.city .city-wrapper:hover img { -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; -moz-transform: scale(1.1); -o-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1); }
 
 @media (min-width: 1200px) { .container { max-width: 1170px; } }

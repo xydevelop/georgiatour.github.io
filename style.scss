@@ -11,7 +11,7 @@ $PTSans : 'PT Sans', sans-serif;
 body{ max-width: 1920px; overflow-x: hidden; margin: 0 auto; font-family: $Roboto; font-weight: 400; font-size: 18px; color: $mainColor; line-height: normal; }
 h1, h2{ font-family: $Roboto; text-transform: uppercase; }
 h1{ font-size: 80px; font-weight: 700; }
-h2{ font-size: 40px; text-align: center; color: $title; padding: 90px 0 60px 0; }
+h2{ font-size: 40px; text-align: center; color: $title; padding: 90px 0 60px 0; font-weight: 900; }
 
 .social{
 	display: flex;
@@ -92,6 +92,9 @@ header{
 					right: 0;
 					margin: auto;
 						h3{ font: 700 40px $PTSans; text-transform: uppercase; margin-bottom: 22px; }
+						.text{
+							font: 400 25px $PTSans;
+						}
 				}
 		}
 }
@@ -197,17 +200,24 @@ body section .tour-item{
 
 #city{
 		p{ margin-bottom: 40px; }
+		h2{ padding: 20px 0 40px 0; }
+		.city-text{ font: 400 18px $Roboto; }
 }
 
 .city{
 	overflow: hidden;
 	margin-bottom: 15px;
 		a{ color: #333333; }
-		img{ min-width: 100%; height: 100%; max-width: none; max-height: 295px; position: absolute; }
+		img{ min-width: 100%; height: 100%; max-width: none; max-height: 320px; position: absolute; -moz-transform: scale(1); -o-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
 		.city-wrapper{ 
+			overflow: hidden;
 			position: relative;
-			min-height: 295px; 
-				.city-overlay{ position: absolute; bottom: 0px; padding-left: 30px; max-width: 350px; background: rgba(255,255,255,0.9); }
+			min-height: 320px; 
+				.city-overlay{ position: absolute; bottom: 0px; padding-left: 30px; max-width: 235px; background: rgba(255,255,255,1); }
+		}
+		.city-wrapper:hover img{ 
+			-webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s;
+			-moz-transform: scale(1.1); -o-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1);
 		}
 }
 
