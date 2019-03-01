@@ -167,6 +167,8 @@ footer{
 body section .tour-item{  
 	margin-bottom: 30px;
 	position: relative;
+		.tour-action{ position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
+		> a{ color: $mainColor; text-decoration: none; }
 		.tour-wrapper{
 			padding: 20px;
 			color: $title;
@@ -185,16 +187,18 @@ body section .tour-item{
     			text-align: right;
     				.cost{
     					display: inline-block;
-    						.price{ font: 700 40px $PTSans; text-align: right; color: $red; letter-spacing: 0; }
+    						.price{ font: 700 40px $PTSans; text-align: right; color: $red; letter-spacing: 0; line-height: 0.7; }
     						span{ font: 400 14px $Roboto; color: #C4C4C4; display: block; text-align: left; }
     				}
     		}
+    		.rev-wrap{
+    			margin-top: 25px;
+    				.rev-rating, .review{ display: inline-block; }
+    				.rev-rating{ color: #F3C329; font-size: 16px; }
+    				.review{ font: 400 16px $PTSans ; color: #C4C4C4; margin-left: 5px; }
+    		}
+    		.btn_tour{ font: 700 16px $PTSans; text-align: left; text-decoration-line: underline; color: $red; }
 		}
-		.tour-action{ position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
-		> a{ color: $mainColor; text-decoration: none; }
-		.review-rating, .review{ display: inline-block; }
-		.review{ margin-left: 5px; }
-		.btn_tour{ font-size: 16px; text-align: left; }
 }
 
 .tour-page{

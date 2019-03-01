@@ -110,6 +110,10 @@ footer #footer_line a { color: #FFF; }
 
 body section .tour-item { margin-bottom: 30px; position: relative; }
 
+body section .tour-item .tour-action { position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
+
+body section .tour-item > a { color: #2F2E2E; text-decoration: none; }
+
 body section .tour-item .tour-wrapper { padding: 20px; color: #2F2E2E; }
 
 body section .tour-item .tour-wrapper h4 { font: 700 20px "PT Sans", sans-serif; text-transform: uppercase; }
@@ -128,19 +132,19 @@ body section .tour-item .tour-wrapper .price-wrapper { text-align: right; }
 
 body section .tour-item .tour-wrapper .price-wrapper .cost { display: inline-block; }
 
-body section .tour-item .tour-wrapper .price-wrapper .cost .price { font: 700 40px "PT Sans", sans-serif; text-align: right; color: #8D2959; letter-spacing: 0; }
+body section .tour-item .tour-wrapper .price-wrapper .cost .price { font: 700 40px "PT Sans", sans-serif; text-align: right; color: #8D2959; letter-spacing: 0; line-height: 0.7; }
 
 body section .tour-item .tour-wrapper .price-wrapper .cost span { font: 400 14px "Roboto", sans-serif; color: #C4C4C4; display: block; text-align: left; }
 
-body section .tour-item .tour-action { position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
+body section .tour-item .tour-wrapper .rev-wrap { margin-top: 25px; }
 
-body section .tour-item > a { color: #2F2E2E; text-decoration: none; }
+body section .tour-item .tour-wrapper .rev-wrap .rev-rating, body section .tour-item .tour-wrapper .rev-wrap .review { display: inline-block; }
 
-body section .tour-item .review-rating, body section .tour-item .review { display: inline-block; }
+body section .tour-item .tour-wrapper .rev-wrap .rev-rating { color: #F3C329; font-size: 16px; }
 
-body section .tour-item .review { margin-left: 5px; }
+body section .tour-item .tour-wrapper .rev-wrap .review { font: 400 16px "PT Sans", sans-serif; color: #C4C4C4; margin-left: 5px; }
 
-body section .tour-item .btn_tour { font-size: 16px; text-align: left; }
+body section .tour-item .tour-wrapper .btn_tour { font: 700 16px "PT Sans", sans-serif; text-align: left; text-decoration-line: underline; color: #8D2959; }
 
 .tour-page { padding-bottom: 70px; }
 
