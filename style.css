@@ -34,7 +34,7 @@ header #fixhead .menu-wrapper .phone .phone-icon { display: inline-block; margin
 
 header #fixhead .menu-wrapper .phone .phone-icon .fa { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
 
-header #fixhead .menu-wrapper .phone .phone-icon a { font: 400 Roboto 16px; color: #000000; }
+header #fixhead .menu-wrapper .phone a { font: 400 Roboto 16px; color: #000000; }
 
 header #fixhead .menu-wrapper .menu { margin-bottom: 0; }
 
