@@ -25,9 +25,9 @@
 				</ul>
 			</div>
 			<div class="social">
-				<a href=""><span class="span-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
-				<a href=""><span class="span-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-				<a href=""><span class="span-vkontakte"><i class="fa fa-vk" aria-hidden="true"></i></span></a>
+				<a class="span-instagram" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a class="span-facebook" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a class="span-vkontakte" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
 			</div>
 		</div>
 		<div id="slide"><img style="max-height: 650px;" src="<?php echo get_template_directory_uri() ?>/images/travel_georgia.png" alt="" />

@@ -6,9 +6,11 @@ h1 { font-size: 80px; }
 
 h2 { font-size: 40px; text-align: center; color: #2F2E2E; padding: 90px 0 60px 0; }
 
-.social span { width: 30px; height: 30px; }
+.social { display: flex; align-items: center; justify-content: center; }
 
-.social .span-instagram { background: #ff0079; color: #ff0079; }
+.social a { color: #fff; width: 30px; height: 30px; border-radius: 50%; }
+
+.social .span-instagram { background: #ff0079; }
 
 header { position: relative; }
 
