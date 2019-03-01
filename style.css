@@ -74,7 +74,7 @@ header.page #slide .slide-text h1 { line-height: 1; margin: 0; padding-bottom: 7
 
 .city-page h2 { padding-top: 0; }
 
-footer { background: #DDDDDF; position: relative; overflow: hidden; padding-bottom: 50px; }
+footer { background: #F6F6F7; position: relative; overflow: hidden; padding-bottom: 50px; }
 
 footer h3 { font: 700 40px "Roboto", sans-serif; text-transform: uppercase; color: #686868; margin-top: 30px; }
 
@@ -158,7 +158,7 @@ body section .tour-item .tour-wrapper .btn_tour { font: 700 16px "PT Sans", sans
 
 #mult_tour .load-more-wrapper { margin-top: 60px; }
 
-.load-more { font: 700 18px "Roboto", sans-serif; color: #686868; text-transform: uppercase; }
+.load-more { font: 700 18px "Roboto", sans-serif; color: #686868; text-transform: uppercase; text-decoration: underline; }
 
 .about-work { padding-top: 35px; padding-bottom: 110px; }
 
@@ -193,5 +193,13 @@ body section .tour-item .tour-wrapper .btn_tour { font: 700 16px "PT Sans", sans
 .city .city-wrapper .city-overlay p { font: 400 12px "Roboto", sans-serif; }
 
 .city .city-wrapper:hover img { -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; -moz-transform: scale(1.1); -o-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+.tour-guide { position: relative; }
+
+.tour-guide h4 { position: absolute; font: 700 250px "Roboto", sans-serif; color: #E5E5E5; z-index: 1; text-align: center; left: 0; line-height: 0.9; right: 0; margin: auto; top: 0; }
+
+.tour-guide .guide-wrap img { max-width: 100%; }
+
+.tour-guide .guide-wrap .guide-info { position: relative; z-index: 1; padding: 70px 0; }
 
 @media (min-width: 1200px) { .container { max-width: 1170px; } }

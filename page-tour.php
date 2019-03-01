@@ -68,5 +68,19 @@
     </div>
   </section>
 
+  <section style="background: #F6F6F7;" class="tour-guide">
+      <div class="container">
+        <h4>Ваш гид</h4>
+        <div class="guide-wrap">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/guide.png" alt="" />
+          <div class="guide-info">
+            <h3>Я люблю эту страну и расскажу Вам о ней</h3>
+            <p>И покажу Вам самые интересные места в нашем туреLorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque. Ne eget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in i</p>
+            <span>Георгий Данелия, Тбилиси</span>
+          </div>
+        </div>
+      </div>
+  </section>
+
    
 <?php get_footer(); ?>

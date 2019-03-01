@@ -3,7 +3,7 @@ $red  : #8D2959;
 $pink : #C694AC;
 $grey : #F7F7F7;
 $title : #2F2E2E;
-$footer : #DDDDDF;
+$footer : #F6F6F7;
 $mainColor : #2F2E2E;
 $Roboto : 'Roboto', sans-serif;
 $PTSans : 'PT Sans', sans-serif;
@@ -227,7 +227,7 @@ body section .tour-item{
 #single_tour .load-more-wrapper{ margin-top: 50px; }
 #mult_tour .load-more-wrapper{ margin-top: 60px; }
 
-.load-more{ font: 700 18px $Roboto; color: #686868; text-transform: uppercase; }
+.load-more{ font: 700 18px $Roboto; color: #686868; text-transform: uppercase; text-decoration: underline; }
 
 .about-work{
 	padding-top: 35px;
@@ -270,6 +270,20 @@ body section .tour-item{
 		.city-wrapper:hover img{ 
 			-webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s;
 			-moz-transform: scale(1.1); -o-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1);
+		}
+}
+
+.tour-guide{
+	position: relative;
+		h4{ position: absolute; font: 700 250px $Roboto; color: #E5E5E5; z-index: 1; text-align: center; left: 0; line-height: 0.9;
+ 		right: 0; margin: auto; top: 0; }
+		.guide-wrap{
+			img{ max-width: 100%; }
+			.guide-info{
+				position: relative;
+    		z-index: 1;
+    		padding: 70px 0;
+			}
 		}
 }
 

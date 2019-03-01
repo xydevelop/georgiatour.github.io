@@ -1,7 +1,7 @@
 <?php get_header('page'); ?>
 
 <!-- PAge -->
-  <section class="page text-center" id="project-page" style="background: #DDDDDF; padding-bottom: 70px;">
+  <section class="page text-center" id="project-page" style="background: #F6F6F7; padding-bottom: 70px;">
   	<div class="container">
       <img style="margin-bottom: 35px;" src="<?php echo get_template_directory_uri(); ?>/images/logo-didi.png" alt="" />
   		<p class="text-center">Наши турпакеты точно подобраны с учетом особенных, интересных маршрутов. Мы целенаправленно создаем турпродукты высшего качества для того, чтобы не дкмали и не волновались ни о чем; для того, чтобы ваше путешествие было спокойным, приятным и незабываемым. Мы с удовольствием работаем для вас!<br>
