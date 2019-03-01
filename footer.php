@@ -11,17 +11,17 @@
                 <li><a href="/link/">Обратная связь</a></li>
              </ul>
              <div class="social">
-                <span>vk</span>
-                <span>fc</span>
-                <span>insta</span>
-             </div>
+              <a class="icon-instagram" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a class="icon-facebook" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a class="icon-vk" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+            </div>
           </div>
           <div class="georgia-support">
             <div class="head-support">
               <h5>Служба поддержки</h5>
             </div>
             <div class="info-support">
-              <a href="tel:88000000000">8 (800) 000-00-00</p>
+              <a href="tel:88000000000">8 (800) 000-00-00</a>
               <a href="mailto:info@diditravel.ru">info@diditravel.ru</a>
             </div>
           </div>

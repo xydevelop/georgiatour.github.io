@@ -132,33 +132,41 @@ footer{
 	background: $footer;
 	position: relative;
   overflow: hidden;
-  min-height: 400px;
+  padding-bottom: 50px;
+  	h3{ font: 700 40px $Roboto; text-transform: uppercase; color: #686868; margin-top: 30px; }
   	.footer-logo{ max-height: 65px; }
   	.footer-menu-wrapper{ 
+  		display: flex;
+  		align-items: center;
   		margin-top: 65px; 
+  		margin-bottom: 40px;
   		.footer-menu{ 
-  			display: inline-block; margin-right: 65px; padding: 0; 
+  			margin-right: 65px; padding: 0; margin-bottom: 0; 
   				li{ 
   					display: inline-block;
   					margin-right: 8px; 
   						a{ font: 400 18px $Roboto; color: #686868; }
   				}
   		}
-  		.social{ display: inline-block; }
   	}
   	.georgia-support{
   			.head-support,.info-support{ display: inline-block; }
-  			.head-support{ margin-right: 20px; }
+  			.head-support{ 
+  				margin-right: 20px;
+  					h5{ font: 700 20px $Roboto; color: #686868; margin-bottom: 0; } 
+  			}
   			.info-support{
-  					a{ display: inline-block; margin-right: 10px; }
+  					a{ font: 400 18px $Roboto; display: inline-block; margin-right: 10px; color: #686868; }
   			}
   	}
   	form{ 
   		font-size: 12px;
-  			input{ padding: 10px 20px; } 
-  			button{ padding: 20px; background: $red; border: none; width: 50px; cursor: pointer; }
+  		margin-top: 40px;
+  		margin-bottom: 70px;
+  			input{ padding: 20px 45px 15px 15px; max-width: 350px; width: 100%; } 
+  			button{ padding: 20px; background: $red; border: none; width: 100px; cursor: pointer; }
   	}
-		#footer_bg{ background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; 
+		#footer_bg{ background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 100%; 
     position: absolute; right: 0; } 
 		#footer_line{ background: $red; padding: 15px 0; text-align: center; color: #FFF; font-family: $Roboto; font-weight: 400; font-size: 12px; position: absolute; bottom: 0; width: 100%;
 			a{ color: #FFF; }
@@ -218,6 +226,8 @@ body section .tour-item{
 
 #single_tour .load-more-wrapper{ margin-top: 50px; }
 #mult_tour .load-more-wrapper{ margin-top: 60px; }
+
+.load-more{ font: 700 18px $Roboto; color: #686868; text-transform: uppercase; }
 
 .about-work{
 	padding-top: 35px;

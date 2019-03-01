@@ -74,33 +74,35 @@ header.page #slide .slide-text h1 { line-height: 1; margin: 0; padding-bottom: 7
 
 .city-page h2 { padding-top: 0; }
 
-footer { background: #DDDDDF; position: relative; overflow: hidden; min-height: 400px; }
+footer { background: #DDDDDF; position: relative; overflow: hidden; padding-bottom: 50px; }
+
+footer h3 { font: 700 40px "Roboto", sans-serif; text-transform: uppercase; color: #686868; margin-top: 30px; }
 
 footer .footer-logo { max-height: 65px; }
 
-footer .footer-menu-wrapper { margin-top: 65px; }
+footer .footer-menu-wrapper { display: flex; align-items: center; margin-top: 65px; margin-bottom: 40px; }
 
-footer .footer-menu-wrapper .footer-menu { display: inline-block; margin-right: 65px; padding: 0; }
+footer .footer-menu-wrapper .footer-menu { margin-right: 65px; padding: 0; margin-bottom: 0; }
 
 footer .footer-menu-wrapper .footer-menu li { display: inline-block; margin-right: 8px; }
 
 footer .footer-menu-wrapper .footer-menu li a { font: 400 18px "Roboto", sans-serif; color: #686868; }
 
-footer .footer-menu-wrapper .social { display: inline-block; }
-
 footer .georgia-support .head-support, footer .georgia-support .info-support { display: inline-block; }
 
 footer .georgia-support .head-support { margin-right: 20px; }
 
-footer .georgia-support .info-support a { display: inline-block; margin-right: 10px; }
+footer .georgia-support .head-support h5 { font: 700 20px "Roboto", sans-serif; color: #686868; margin-bottom: 0; }
 
-footer form { font-size: 12px; }
+footer .georgia-support .info-support a { font: 400 18px "Roboto", sans-serif; display: inline-block; margin-right: 10px; color: #686868; }
 
-footer form input { padding: 10px 20px; }
+footer form { font-size: 12px; margin-top: 40px; margin-bottom: 70px; }
 
-footer form button { padding: 20px; background: #8D2959; border: none; width: 50px; cursor: pointer; }
+footer form input { padding: 20px 45px 15px 15px; max-width: 350px; width: 100%; }
 
-footer #footer_bg { background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 400px; position: absolute; right: 0; }
+footer form button { padding: 20px; background: #8D2959; border: none; width: 100px; cursor: pointer; }
+
+footer #footer_bg { background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 100%; position: absolute; right: 0; }
 
 footer #footer_line { background: #8D2959; padding: 15px 0; text-align: center; color: #FFF; font-family: "Roboto", sans-serif; font-weight: 400; font-size: 12px; position: absolute; bottom: 0; width: 100%; }
 
@@ -155,6 +157,8 @@ body section .tour-item .tour-wrapper .btn_tour { font: 700 16px "PT Sans", sans
 #single_tour .load-more-wrapper { margin-top: 50px; }
 
 #mult_tour .load-more-wrapper { margin-top: 60px; }
+
+.load-more { font: 700 18px "Roboto", sans-serif; color: #686868; text-transform: uppercase; }
 
 .about-work { padding-top: 35px; padding-bottom: 110px; }
 
