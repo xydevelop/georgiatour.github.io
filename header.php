@@ -17,7 +17,7 @@
 		<div id="fixhead">
 			<a class="logo-wrapper" href="/"><div id="logo"></div></a>
 			<div class="menu-wrapper">
-				<div class="phone"><span class="ph-icon"></span><a href="tel:8800">8 (800) 000-00-00</a></div>
+				<div class="phone"><span class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><a href="tel:8800">8 (800) 000-00-00</a></div>
 				<ul class="menu">
 					<li><a href="/">Главная</a></li>
 					<li><a href="/about/">О проекте</a></li>

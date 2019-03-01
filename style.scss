@@ -18,7 +18,7 @@ h2{ font-size: 40px; text-align: center; color: $title; padding: 90px 0 60px 0; 
 	align-items: center;
 	justify-content: center;
 		a{ 
-			color: #fff; width: 30px; height: 30px; border-radius: 50%;
+			color: #fff; width: 30px; height: 30px; border-radius: 50%; text-decoration: none; margin-right: 7px;
 				.fa{ display: flex; align-items: center; justify-content: center; width:100%; height: 100%; }  
 		}
 		.icon-instagram{ background: #ff0079; }
@@ -44,6 +44,12 @@ header{
 					display: flex;
 					align-items: center;
 					margin-right: 50px;
+						.phone{
+								.phone-icon{ 
+									width: 25px; height: 25px; background: $red; 
+										.fa{ display: flex; align-items: center; justify-content: center; width:100%; height: 100%; }  
+								}
+						}
 						.menu{
 							margin-bottom: 0; 
 								li { display: inline-block; margin-right: 5px; }
