@@ -10,7 +10,9 @@ h2 { font-size: 40px; text-align: center; color: #2F2E2E; padding: 90px 0 60px 0
 
 .social a { color: #fff; width: 30px; height: 30px; border-radius: 50%; }
 
-.social .span-instagram { background: #ff0079; }
+.social .icon-instagram { background: #ff0079; }
+
+.social .icon-instagram .fa { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
 
 header { position: relative; }
 
