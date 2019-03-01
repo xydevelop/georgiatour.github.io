@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri() ?>/images/favicon/favicon-64x64.png" sizes="64x64">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<title><?php wp_title(); ?></title>
   <?php wp_head(); ?>
 </head>
@@ -24,9 +25,9 @@
 				</ul>
 			</div>
 			<div class="social">
-				<a href=""><span>vk</span></a>
-				<a href=""><span>face</span></a>
-				<a href=""><span>insta</span></a>
+				<a href=""><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+				<a href=""><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+				<a href=""><span><i class="fa fa-vk" aria-hidden="true"></i></span></a>
 			</div>
 		</div>
 		<div id="slide">

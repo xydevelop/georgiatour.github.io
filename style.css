@@ -6,6 +6,8 @@ h1 { font-size: 80px; }
 
 h2 { font-size: 40px; text-align: center; color: #2F2E2E; padding: 90px 0 60px 0; }
 
+.social .span-instagram { background: #ff0079; }
+
 header { position: relative; }
 
 header #fixhead { position: absolute; z-index: 1; top: 0; width: 100%; background: rgba(255, 255, 255, 0.8); display: flex; align-items: center; }
