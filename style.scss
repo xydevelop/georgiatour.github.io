@@ -278,13 +278,19 @@ body section .tour-item{
 		h4{ position: absolute; font: 700 250px $Roboto; color: #E5E5E5; z-index: 1; text-align: center; left: 0; line-height: 0.9;
  		right: 0; margin: auto; top: 0; }
 		.guide-wrap{
-			img{ max-width: 100%; }
-			.guide-info{
-				position: relative;
-    		z-index: 1;
-    		padding: 70px 0;
-			}
+			position: relative;
+    	z-index: 1;
+    	padding: 70px 0;
+				img{ max-width: 100%; }
+				.guide-info{
+					
+				}
 		}
+}
+
+.tour-guide-info{ 
+	background: url(images/obzor.png) no-repeat; background-size: cover; max-height: 400px; padding: 245px 0 72px 0; color: #FFF; 
+		h4{ font: 700 80px $Roboto; text-transform: uppercase; }
 }
 
 @media (min-width: 1200px){

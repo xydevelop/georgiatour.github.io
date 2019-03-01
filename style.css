@@ -198,8 +198,12 @@ body section .tour-item .tour-wrapper .btn_tour { font: 700 16px "PT Sans", sans
 
 .tour-guide h4 { position: absolute; font: 700 250px "Roboto", sans-serif; color: #E5E5E5; z-index: 1; text-align: center; left: 0; line-height: 0.9; right: 0; margin: auto; top: 0; }
 
+.tour-guide .guide-wrap { position: relative; z-index: 1; padding: 70px 0; }
+
 .tour-guide .guide-wrap img { max-width: 100%; }
 
-.tour-guide .guide-wrap .guide-info { position: relative; z-index: 1; padding: 70px 0; }
+.tour-guide-info { background: url(images/obzor.png) no-repeat; background-size: cover; max-height: 400px; padding: 245px 0 72px 0; color: #FFF; }
+
+.tour-guide-info h4 { font: 700 80px "Roboto", sans-serif; text-transform: uppercase; }
 
 @media (min-width: 1200px) { .container { max-width: 1170px; } }
