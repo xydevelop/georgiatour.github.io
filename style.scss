@@ -164,11 +164,10 @@ footer{
 #single_tour{ background: #F6F6F7;  padding-bottom: 50px; }
 #mult_tour{ padding-bottom: 170px; }
 
-body section .tour-item{ 
-	overflow: hidden; 
+body section .tour-item{  
 	margin-bottom: 30px;
 	position: relative;
-		.tour-action{ position: absolute; top: 20px; left: 0px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
+		.tour-action{ position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
 		> a{ color: $mainColor; text-decoration: none; }
 		.review-rating, .review{ display: inline-block; }
 		.review{ margin-left: 5px; }
@@ -207,14 +206,16 @@ body section .tour-item{
 		.city-text{ font: 400 18px $Roboto; }
 }
 
+.shadow-wrapper{
+			-webkit-box-shadow: 0px 0 20px 0px #BBB;
+     	box-shadow: 0px 0 20px 0px #BBB;
+     	overflow: hidden;
+		}
+
 .city{
 	margin-bottom: 15px;
 		a{ color: #333333; }
 		img{ min-width: 100%; height: 100%; max-width: none; max-height: 320px; position: absolute; -moz-transform: scale(1); -o-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
-		.shadow-wrapper{
-			-webkit-box-shadow: 0px 0 20px 0px #BBB;
-     	box-shadow: 0px 0 20px 0px #BBB;
-		}
 		.city-wrapper{ 
 			overflow: hidden;
 			position: relative;
