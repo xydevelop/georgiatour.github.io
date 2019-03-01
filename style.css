@@ -20,7 +20,7 @@ h2 { font-size: 40px; text-align: center; color: #2F2E2E; padding: 90px 0 60px 0
 
 header { position: relative; }
 
-header #fixhead { position: absolute; z-index: 1; top: 0; width: 100%; background: rgba(255, 255, 255, 0.8); display: flex; align-items: center; }
+header #fixhead { position: absolute; z-index: 1; top: 0; width: 100%; background: rgba(255, 255, 255, 0.8); display: flex; align-items: center; overflow: hidden; }
 
 header #fixhead .logo-wrapper { margin-right: 315px; }
 
@@ -28,17 +28,25 @@ header #fixhead .logo-wrapper #logo { background: url(images/logo.png) no-repeat
 
 header #fixhead .menu-wrapper { display: flex; align-items: center; margin-right: 50px; }
 
-header #fixhead .menu-wrapper .phone { display: flex; align-items: center; justify-content: center; }
+header #fixhead .menu-wrapper .phone { display: flex; align-items: center; justify-content: center; margin-right: 35px; }
 
 header #fixhead .menu-wrapper .phone .phone-icon { display: inline-block; margin-right: 10px; width: 25px; height: 25px; background: #8D2959; color: #FFF; border-radius: 50%; font-size: 13px; }
 
 header #fixhead .menu-wrapper .phone .phone-icon .fa { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
 
-header #fixhead .menu-wrapper .phone a { font: 400 Roboto 16px; color: #000000; }
+header #fixhead .menu-wrapper .phone a { font: 400 Roboto 16px; color: #000000; text-decoration: none; }
 
-header #fixhead .menu-wrapper .menu { margin-bottom: 0; }
+header #fixhead .menu-wrapper .menu { padding: 0; margin-bottom: 0; }
 
-header #fixhead .menu-wrapper .menu li { display: inline-block; margin-right: 5px; }
+header #fixhead .menu-wrapper .menu li { display: inline-block; padding: 15px 8px 11px 8px; position: relative; top: 2px; -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
+
+header #fixhead .menu-wrapper .menu li a { text-decoration: none; font: 400 Roboto 15px; text-transform: uppercase; color: #2F2E2E; -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
+
+header #fixhead .menu-wrapper .menu li a:hover { text-decoration: underline; color: #FFF; -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
+
+header #fixhead .menu-wrapper .menu li.current { background: #8D2959; color: #FFF; }
+
+header #fixhead .menu-wrapper .menu li:hover { -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; background: #8D2959; }
 
 header #slide { color: #FFF; position: relative; }
 

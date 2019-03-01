@@ -19,7 +19,7 @@
 			<div class="menu-wrapper">
 				<div class="phone"><span class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><a href="tel:8800">8 (800) 000-00-00</a></div>
 				<ul class="menu">
-					<li><a href="/">Главная</a></li>
+					<li><a class="current" href="/">Главная</a></li>
 					<li><a href="/about/">О проекте</a></li>
 					<li><a href="/condition/">Условия</a></li>
 				</ul>
