@@ -17,17 +17,17 @@
 		<div id="fixhead">
 			<a class="logo-wrapper" href="/"><div id="logo"></div></a>
 			<div class="menu-wrapper">
-				<div class="phone"><span class="ph-icon"></span><a href="tel:8800">8 (800) 000-00-00</a></div>
+				<div class="phone"><span class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><a href="tel:8800">8 (800) 000-00-00</a></div>
 				<ul class="menu">
-					<li><a href="/">Главная</a></li>
+					<li><a class="current" href="/">Главная</a></li>
 					<li><a href="/about/">О проекте</a></li>
 					<li><a href="/condition/">Условия</a></li>
 				</ul>
 			</div>
 			<div class="social">
-				<a href=""><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
-				<a href=""><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
-				<a href=""><span><i class="fa fa-vk" aria-hidden="true"></i></span></a>
+				<a class="icon-instagram" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a class="icon-facebook" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a class="icon-vk" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
 			</div>
 		</div>
 		<div id="slide">

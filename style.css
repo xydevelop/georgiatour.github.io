@@ -2,7 +2,7 @@ body { max-width: 1920px; overflow-x: hidden; margin: 0 auto; font-family: "Robo
 
 h1, h2 { font-family: "Roboto", sans-serif; text-transform: uppercase; }
 
-h1 { font-size: 80px; }
+h1 { font-size: 80px; font-weight: 700; }
 
 h2 { font-size: 40px; text-align: center; color: #2F2E2E; padding: 90px 0 60px 0; }
 
@@ -22,11 +22,11 @@ header { position: relative; }
 
 header #fixhead { position: absolute; z-index: 1; top: 0; width: 100%; background: rgba(255, 255, 255, 0.8); display: flex; align-items: center; overflow: hidden; }
 
-header #fixhead .logo-wrapper { margin-right: 315px; }
+header #fixhead .logo-wrapper { margin-right: 280px; }
 
 header #fixhead .logo-wrapper #logo { background: url(images/logo.png) no-repeat; background-size: contain; width: 582px; height: 48px; }
 
-header #fixhead .menu-wrapper { display: flex; align-items: center; margin-right: 50px; }
+header #fixhead .menu-wrapper { display: flex; align-items: center; margin-right: 90px; }
 
 header #fixhead .menu-wrapper .phone { display: flex; align-items: center; justify-content: center; margin-right: 35px; }
 
@@ -34,25 +34,27 @@ header #fixhead .menu-wrapper .phone .phone-icon { display: inline-block; margin
 
 header #fixhead .menu-wrapper .phone .phone-icon .fa { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
 
-header #fixhead .menu-wrapper .phone a { font: 400 Roboto 16px; color: #000000; text-decoration: none; }
+header #fixhead .menu-wrapper .phone a { font: 400 16px "Roboto", sans-serif; color: #000000; text-decoration: none; }
 
 header #fixhead .menu-wrapper .menu { padding: 0; margin-bottom: 0; }
 
-header #fixhead .menu-wrapper .menu li { display: inline-block; padding: 15px 8px 11px 8px; position: relative; top: 2px; -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
+header #fixhead .menu-wrapper .menu li { display: inline-block; padding: 15px 8px 11px 8px; line-height: 0; -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
 
-header #fixhead .menu-wrapper .menu li a { text-decoration: none; font: 400 Roboto 15px; text-transform: uppercase; color: #2F2E2E; -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
-
-header #fixhead .menu-wrapper .menu li a:hover { text-decoration: underline; color: #FFF; -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
+header #fixhead .menu-wrapper .menu li a { text-decoration: none; font: 400 15px "Roboto", sans-serif; text-transform: uppercase; color: #2F2E2E; }
 
 header #fixhead .menu-wrapper .menu li.current { background: #8D2959; color: #FFF; }
 
-header #fixhead .menu-wrapper .menu li:hover { -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; background: #8D2959; }
+header #fixhead .menu-wrapper .menu li:hover { -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; background: #8D2959; }
+
+header #fixhead .menu-wrapper .menu li:hover a { text-decoration: underline; color: #FFF; }
 
 header #slide { color: #FFF; position: relative; }
 
 header #slide h1 { color: #FFF; }
 
 header #slide .slide-text { display: flex; justify-content: center; flex-direction: column; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+
+header #slide .slide-text h3 { font: 700 40px "PT Sans", sans-serif; text-transform: uppercase; margin-bottom: 22px; }
 
 header.page #slide .slide-text { justify-content: flex-end; }
 

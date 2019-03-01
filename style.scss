@@ -10,7 +10,7 @@ $PTSans : 'PT Sans', sans-serif;
 
 body{ max-width: 1920px; overflow-x: hidden; margin: 0 auto; font-family: $Roboto; font-weight: 400; font-size: 18px; color: $mainColor; line-height: normal; }
 h1, h2{ font-family: $Roboto; text-transform: uppercase; }
-h1{ font-size: 80px; }
+h1{ font-size: 80px; font-weight: 700; }
 h2{ font-size: 40px; text-align: center; color: $title; padding: 90px 0 60px 0; }
 
 .social{
@@ -38,13 +38,13 @@ header{
 			align-items: center;
 			overflow: hidden;
 				.logo-wrapper{ 
-					margin-right: 315px; 
+					margin-right: 280px; 
 						#logo{ background: url(images/logo.png) no-repeat; background-size: contain; width: 582px; height: 48px; }
 				}
 				.menu-wrapper{ 
 					display: flex;
 					align-items: center;
-					margin-right: 50px;
+					margin-right: 90px;
 						.phone{
 							display: flex;
 							align-items: center;
@@ -54,22 +54,25 @@ header{
 									display: inline-block; margin-right: 10px; width: 25px; height: 25px; background: $red; color: #FFF; border-radius: 50%; font-size: 13px;
 										.fa{ display: flex; align-items: center; justify-content: center; width:100%; height: 100%; }  
 								}
-								a{ font: 400 Roboto 16px; color: #000000; text-decoration: none; }
+								a{ font: 400 16px $Roboto; color: #000000; text-decoration: none; }
 						}
 						.menu{
 							padding: 0;
 							margin-bottom: 0; 
 								li { 
 									display: inline-block;
-									padding: 15px 8px 11px 8px; position: relative; top: 2px;
-									-webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; 
-										a{ text-decoration: none; font: 400 Roboto 15px; text-transform: uppercase; color: #2F2E2E; -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; } 
-										a:hover{ text-decoration: underline; color: #FFF; -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
+									padding: 15px 8px 11px 8px;
+									line-height: 0;
+									-webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; 
+										a{ text-decoration: none; font: 400 15px $Roboto; text-transform: uppercase; color: #2F2E2E; } 
 								}
 								li.current{ background: $red; color: #FFF; }
 								li:hover{
-									-webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s;
+									-webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s;
 									background: $red; 
+								}
+								li:hover a{
+									text-decoration: underline; color: #FFF;
 								}
 						}
 				}
@@ -88,6 +91,7 @@ header{
 					left: 0;
 					right: 0;
 					margin: auto;
+						h3{ font: 700 40px $PTSans; text-transform: uppercase; margin-bottom: 22px; }
 				}
 		}
 }
