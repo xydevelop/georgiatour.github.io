@@ -2,7 +2,7 @@
 
 <!-- Map -->
   <section class="section" id="map">
-    <div class="container">
+    <div class="">
       <img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/map.png" alt="" />
     </div>
   </section>
@@ -63,6 +63,83 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/kutaisi.png" alt="" />
             <div class="city-overlay">
               <h5>Кутаиси</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 city pr-0">
+        <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/kobuleti.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 city pr-0">
+        <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/vardzia.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 city pr-0">
+        <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/kazbegi.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 city pr-0">
+        <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/gelati.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-6 city pr-0">
+        <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/canion.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3 city pr-0">
+        <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/ulpiscihe.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3 city pr-0">
+        <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/rabaty.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
               <p>Lorem ipsum dolor sit amet, 
   maiores ornare ac quo ut lectus, etiam vestibulum </p>
               <div class="btn_city"></div>
