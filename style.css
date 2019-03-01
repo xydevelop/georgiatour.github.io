@@ -78,11 +78,13 @@ footer { background: #DDDDDF; position: relative; overflow: hidden; min-height: 
 
 footer .footer-logo { max-height: 65px; }
 
-footer .footer-menu-wrapper { margin-top: 50px; }
+footer .footer-menu-wrapper { margin-top: 65px; }
 
-footer .footer-menu-wrapper .footer-menu { display: inline-block; margin-right: 20px; padding: 0; }
+footer .footer-menu-wrapper .footer-menu { display: inline-block; margin-right: 65px; padding: 0; }
 
-footer .footer-menu-wrapper .footer-menu li { display: inline-block; }
+footer .footer-menu-wrapper .footer-menu li { display: inline-block; margin-right: 8px; }
+
+footer .footer-menu-wrapper .footer-menu li a { font: 400 18px "Roboto", sans-serif; color: #686868; }
 
 footer .footer-menu-wrapper .social { display: inline-block; }
 

@@ -135,10 +135,14 @@ footer{
   min-height: 400px;
   	.footer-logo{ max-height: 65px; }
   	.footer-menu-wrapper{ 
-  		margin-top: 50px; 
+  		margin-top: 65px; 
   		.footer-menu{ 
-  			display: inline-block; margin-right: 20px; padding: 0; 
-  				li{ display: inline-block; }
+  			display: inline-block; margin-right: 65px; padding: 0; 
+  				li{ 
+  					display: inline-block;
+  					margin-right: 8px; 
+  						a{ font: 400 18px $Roboto; color: #686868; }
+  				}
   		}
   		.social{ display: inline-block; }
   	}
