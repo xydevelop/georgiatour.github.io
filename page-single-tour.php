@@ -4,11 +4,33 @@
   <section class="page tour-page" style="font: 400 15px Roboto; color: #686868;">
   	<div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7 places">
+          <div class="tour-description">
+              <h4>Описание тура</h4>
+              <p>Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in in lorem vel. In molestie elit dui dictum, praesent nascetur pulvinar sed, in dolor pede in aliquam, risus nec error quis pharetra. Eros metus quam augue suspendisse, metus rutrum risus erat in.  In ultrices quo ut lectus, etiam vestibulum urna a est, pretium luctus euismod nisl, pellentesque turpis hac .</p>
+          </div>
+          <h4>Места посещения</h4>
+          <p>Крепость Ананури, Церковь Гергетской троицы, Дарьяльское ущелье</p>
+          <div class="gallery-tour-wrapper row align-items-center justify-content-center text-center">
+            <div class="col-md-6 place-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
+            </div>
+            <div class="col-md-6 place-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
+            </div>
+            <div class="col-md-6 place-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
+            </div>
+            <div class="col-md-6 place-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
+            </div>
+          </div>
+        </div>
+               <div class="col-md-5">
           <div class="tour-info row item">
             <h3>Пещерный город</h3>
             <div class="single-rating-wrap col-md-8 p-0">
-              <h4>Многодневный тур</h4>
+              <h4>Однодневный тур</h4>
               <div class="rating-single row rev-wrap">
                 <div class="col-md-7 pr-0">
                   <div class="rev-rating">
@@ -39,37 +61,13 @@
                   <li>- Услуги гида</li>
                   <li>- Размещение в гостинице (двух и трехместных номерах)</li>
               </ul>
-              <ul>
-                <h6>В стоимость включено</h6>
-                  <li>- Транспортные услуги</li>
-                  <li>- Услуги гида</li>
-                  <li>- Размещение в гостинице (двух и трехместных номерах)</li>
-              </ul>
               <div class="col-md-6 price-wrapper">
                   <div class="cost">
-                    <div class="price">5000 р</div>
+                    <div class="price">35-65 $</div>
                     <span>* за человека</span>
                   </div>
                 </div>
               <div class="btn-single-buy-tour"><a class="btn_tour" href="/tour"><i>Забронировать</i><span><div class="arrow-btn"></div></span></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 places">
-          <h4>Места посещения</h4>
-          <p>Тбилиси, Мцхета, Казбеги, Сигнаги, Сванетия</p>
-          <div class="gallery-tour-wrapper row align-items-center justify-content-center text-center">
-            <div class="col-md-6 place-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
-            </div>
-            <div class="col-md-6 place-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
-            </div>
-            <div class="col-md-6 place-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
-            </div>
-            <div class="col-md-6 place-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
             </div>
           </div>
         </div>
@@ -94,26 +92,6 @@
           </div>
         </div>
       </div>
-  </section>
-
-  <section class="tour-guide-image">
-    <div class="container"><h4>Краткий обзор тура</h4></div>
-  </section>
-
-   <section class="tour-guide-info">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2"><span>1</span>день</div>
-        <div class="col-md-10">Прибытие в аэропорт Тбилиси. Трансфер и размещение в гостинице. Прогулка по 
-ночному городу. Ночь в гостинице.</div>
-        <div class="col-md-2"><span>1</span>день</div>
-        <div class="col-md-10">Прибытие в аэропорт Тбилиси. Трансфер и размещение в гостинице. Прогулка по 
-ночному городу. Ночь в гостинице.</div>
-        <div class="col-md-2"><span>1</span>день</div>
-        <div class="col-md-10">Прибытие в аэропорт Тбилиси. Трансфер и размещение в гостинице. Прогулка по 
-ночному городу. Ночь в гостинице.</div>
-      </div>
-    </div>
   </section>
 
   <section class="places-should-visit">
