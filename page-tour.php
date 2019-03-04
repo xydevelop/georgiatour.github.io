@@ -5,10 +5,11 @@
   	<div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="tour-info row">
-            <div class="single-rating-wrap col-md-8">
+          <div class="tour-info row item">
+            <h3>Пещерный город</h3>
+            <div class="single-rating-wrap col-md-8 p-0">
               <h4>Многодневный тур</h4>
-              <div class="rating-single row">
+              <div class="rating-single row rev-wrap">
                 <div class="col-md-7 pr-0">
                   <div class="rev-rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -21,12 +22,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 p-0 date-time">
               <div class="city-icon"><i class="fa fa-map-marker" aria-hidden="true"></i>Тбилиси</div>
               <div class="time-icon"><i class="fa fa-clock-o" aria-hidden="true"></i>12 часов (2 дня)</div>
             </div>
-            <h3>Пещерный город Уплисцихе, гори и Боржоми</h3>
-            <div class="w-100">
+            <h4>Маршрут : Пещерный город Уплисцихе, гори и Боржоми</h4>
+            <div class="w-100 tour-properties">
               <div class="d-flex justify-content-between"><h6>Продолжительность</h6><span>5 дней</span></div>
               <div class="d-flex justify-content-between"><h6>Тип тура</h6><span></span>Панорама</div>
               <div class="d-flex justify-content-between"><h6>Транспорт</h6><span>На автобусе</span></div>
@@ -50,12 +51,12 @@
                     <span>* за человека</span>
                   </div>
                 </div>
-              <div class="btn-single-buy-tour"><a class="btn_tour" href="/tour">Забронировать<span><div class="arrow-btn"></div></span></a></div>
+              <div class="btn-single-buy-tour"><a class="btn_tour" href="/tour"><i>Забронировать</i><span><div class="arrow-btn"></div></span></a></div>
             </div>
           </div>
         </div>
         <div class="col-md-6 places">
-          <h5>Места посещения</h5>
+          <h4>Места посещения</h4>
           <p>Тбилиси, Мцхета, Казбеги, Сигнаги, Сванетия</p>
           <div class="gallery-tour-wrapper row">
             <div class="col-md-6">

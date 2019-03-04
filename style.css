@@ -112,6 +112,32 @@ footer #footer_line a { color: #FFF; }
 
 #mult_tour { padding-bottom: 170px; }
 
+.item .city-icon, .item .time-icon { font: 400 16px "PT Sans", sans-serif; margin-bottom: 5px; }
+
+.item .city-icon .fa, .item .time-icon .fa { margin-right: 10px; }
+
+.item .time-icon { font-size: 14px; }
+
+.item .time-icon .fa { margin-right: 7px; }
+
+.item .price-wrapper { text-align: right; }
+
+.item .price-wrapper .cost { display: inline-block; }
+
+.item .price-wrapper .cost .price { font: 700 40px "PT Sans", sans-serif; text-align: right; color: #8D2959; letter-spacing: 0; line-height: 0.7; }
+
+.item .price-wrapper .cost span { font: 400 14px "Roboto", sans-serif; color: #C4C4C4; display: block; text-align: left; }
+
+.item .rev-wrap { margin-top: 25px; }
+
+.item .rev-wrap .rev-rating, .item .rev-wrap .review { display: inline-block; }
+
+.item .rev-wrap .rev-rating { color: #F3C329; font-size: 16px; }
+
+.item .rev-wrap .review { font: 400 16px "PT Sans", sans-serif; color: #C4C4C4; margin-left: 5px; }
+
+.item .btn_tour { font: 700 16px "PT Sans", sans-serif; text-align: left; text-decoration-line: underline; color: #8D2959; }
+
 body section .tour-item { margin-bottom: 30px; position: relative; }
 
 body section .tour-item .tour-action { position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
@@ -124,47 +150,43 @@ body section .tour-item .tour-wrapper h4 { font: 700 20px "PT Sans", sans-serif;
 
 body section .tour-item .tour-wrapper p { font: 400 14px "PT Sans", sans-serif; color: rgba(104, 104, 104, 0.52); text-transform: lowercase; margin-bottom: 25px; }
 
-body section .tour-item .tour-wrapper .city-icon, body section .tour-item .tour-wrapper .time-icon { font: 400 16px "PT Sans", sans-serif; margin-bottom: 5px; }
-
-body section .tour-item .tour-wrapper .city-icon .fa, body section .tour-item .tour-wrapper .time-icon .fa { margin-right: 10px; }
-
-body section .tour-item .tour-wrapper .time-icon { font-size: 14px; }
-
-body section .tour-item .tour-wrapper .time-icon .fa { margin-right: 7px; }
-
-body section .tour-item .tour-wrapper .price-wrapper { text-align: right; }
-
-body section .tour-item .tour-wrapper .price-wrapper .cost { display: inline-block; }
-
-body section .tour-item .tour-wrapper .price-wrapper .cost .price { font: 700 40px "PT Sans", sans-serif; text-align: right; color: #8D2959; letter-spacing: 0; line-height: 0.7; }
-
-body section .tour-item .tour-wrapper .price-wrapper .cost span { font: 400 14px "Roboto", sans-serif; color: #C4C4C4; display: block; text-align: left; }
-
-body section .tour-item .tour-wrapper .rev-wrap { margin-top: 25px; }
-
-body section .tour-item .tour-wrapper .rev-wrap .rev-rating, body section .tour-item .tour-wrapper .rev-wrap .review { display: inline-block; }
-
-body section .tour-item .tour-wrapper .rev-wrap .rev-rating { color: #F3C329; font-size: 16px; }
-
-body section .tour-item .tour-wrapper .rev-wrap .review { font: 400 16px "PT Sans", sans-serif; color: #C4C4C4; margin-left: 5px; }
-
-body section .tour-item .tour-wrapper .btn_tour { font: 700 16px "PT Sans", sans-serif; text-align: left; text-decoration-line: underline; color: #8D2959; }
-
 .tour-page { padding-bottom: 70px; }
 
-.tour-info { padding: 20px 35px; -webkit-box-shadow: -10px 0 50px -10px #BBB; box-shadow: -10px 0 50px -10px #BBB; position: relative; }
+.tour-info { padding: 10px 35px 40px 35px; -webkit-box-shadow: -10px 0 50px -10px #BBB; box-shadow: -10px 0 50px -10px #BBB; position: relative; color: #686868; }
 
-.tour-info .single-rating-wrap h4 { font: 900 25px Roboto; color: #686868; text-transform: uppercase; }
+.tour-info .single-rating-wrap h4 { font: 900 25px Roboto; text-transform: uppercase; }
+
+.tour-info .date-time .fa { color: rgba(243, 195, 41, 0.62); }
+
+.tour-info h3 { font: 900 32px "Roboto", sans-serif; color: #8D2959; text-transform: uppercase; }
+
+.tour-info h4 { font: 900 25px "PT Sans", sans-serif; text-transform: uppercase; }
+
+.tour-info .tour-properties { color: #686868; }
+
+.tour-info .tour-properties h6 { font: 900 18px "Roboto", sans-serif; text-transform: uppercase; }
+
+.tour-info .tour-properties span { font: 400 18px "Roboto", sans-serif; }
+
+.tour-info .single-bottom ul { padding: 0; list-style: none; font: 400 15px "Roboto", sans-serif; }
+
+.tour-info .single-bottom ul h6 { font: 900 16px "Roboto", sans-serif; }
+
+.tour-info .single-bottom .btn-single-buy-tour { position: absolute; bottom: 0; right: 0; line-height: 0; }
+
+.tour-info .single-bottom .btn-single-buy-tour a { font: 900 16px "Roboto", sans-serif; color: #8D2959; padding-bottom: 13px; line-height: 0; }
+
+.tour-info .single-bottom .btn-single-buy-tour a i { font-style: normal; padding-right: 20px; position: relative; bottom: 13px; }
+
+.tour-info .single-bottom .btn-single-buy-tour a span { background: #8D2959; width: 120px; height: 93px; position: relative; display: inline-block; }
+
+.tour-info .price-wrapper { text-align: left; }
+
+.places { font: 400 18px "Roboto", sans-serif; color: #686868; }
+
+.places h4 { font: 900 32px "Roboto", sans-serif; }
 
 .arrow-btn { background: url(images/arrow.png) no-repeat; width: 32px; height: 32px; background-size: contain; position: absolute; right: 20px; bottom: 20px; }
-
-.single-bottom { position: reltive; }
-
-.single-bottom .btn-single-buy-tour { position: absolute; bottom: 0; right: 0; line-height: 0; padding-bottom: 13px; }
-
-.single-bottom .btn-single-buy-tour span { background: #8D2959; width: 120px; height: 93px; position: relative; display: inline-block; }
-
-.single-bottom .btn-single-buy-tour a { font: 900 16px "Roboto", sans-serif; color: #8D2959; }
 
 #single_tour .load-more-wrapper { margin-top: 50px; }
 
@@ -216,6 +238,4 @@ body section .tour-item .tour-wrapper .btn_tour { font: 700 16px "PT Sans", sans
 
 .tour-guide-info { background: url(images/obzor.png) no-repeat; background-size: cover; max-height: 400px; padding: 245px 0 72px 0; color: #FFF; }
 
-.tour-guide-info h4 { font: 700 80px "Roboto", sans-serif; text-transform: uppercase; }
-
-@media (min-width: 1200px) { .container { max-width: 1170px; } }
+.tour-guide-info h4 { font: 700 80p
