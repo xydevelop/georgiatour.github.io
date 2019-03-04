@@ -22,9 +22,9 @@ header { position: relative; }
 
 header #fixhead { position: absolute; z-index: 1; top: 0; width: 100%; background: rgba(255, 255, 255, 0.8); display: flex; align-items: center; overflow: hidden; }
 
-header #fixhead .logo-wrapper { margin-right: 280px; }
+header #fixhead .logo-wrapper { margin-right: 3vw; }
 
-header #fixhead .logo-wrapper #logo { background: url(images/logo.png) no-repeat; background-size: contain; width: 582px; height: 48px; }
+header #fixhead .logo-wrapper #logo { background: url(images/logo.png) no-repeat; background-size: contain; width: 42vw; height: 48px; }
 
 header #fixhead .menu-wrapper { display: flex; align-items: center; margin-right: 90px; }
 

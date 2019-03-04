@@ -1,0 +1,209 @@
+body { max-width: 1920px; overflow-x: hidden; margin: 0 auto; font-family: "Roboto", sans-serif; font-weight: 400; font-size: 18px; color: #2F2E2E; line-height: normal; }
+
+h1, h2 { font-family: "Roboto", sans-serif; text-transform: uppercase; }
+
+h1 { font-size: 80px; font-weight: 700; }
+
+h2 { font-size: 40px; text-align: center; color: #2F2E2E; padding: 55px 0 80px 0; font-weight: 900; }
+
+.social { display: flex; align-items: center; justify-content: center; }
+
+.social a { color: #fff; width: 30px; height: 30px; border-radius: 50%; text-decoration: none; margin-right: 7px; }
+
+.social a .fa { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+.social .icon-instagram { background: #ff0079; }
+
+.social .icon-facebook { background: #4D76A1; }
+
+.social .icon-vk { background: #7CB8DD; }
+
+header { position: relative; }
+
+header #fixhead { position: absolute; z-index: 1; top: 0; width: 100%; background: rgba(255, 255, 255, 0.8); display: flex; align-items: center; overflow: hidden; }
+
+header #fixhead .logo-wrapper { margin-right: 280px; }
+
+header #fixhead .logo-wrapper #logo { background: url(images/logo.png) no-repeat; background-size: contain; width: 582px; height: 48px; }
+
+header #fixhead .menu-wrapper { display: flex; align-items: center; margin-right: 90px; }
+
+header #fixhead .menu-wrapper .phone { display: flex; align-items: center; justify-content: center; margin-right: 35px; }
+
+header #fixhead .menu-wrapper .phone .phone-icon { display: inline-block; margin-right: 10px; width: 25px; height: 25px; background: #8D2959; color: #FFF; border-radius: 50%; font-size: 13px; }
+
+header #fixhead .menu-wrapper .phone .phone-icon .fa { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+header #fixhead .menu-wrapper .phone a { font: 400 16px "Roboto", sans-serif; color: #000000; text-decoration: none; }
+
+header #fixhead .menu-wrapper .menu { padding: 0; margin-bottom: 0; }
+
+header #fixhead .menu-wrapper .menu li { display: inline-block; padding: 18px 8px 12px 8px; line-height: 0; -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
+
+header #fixhead .menu-wrapper .menu li a { text-decoration: none; font: 400 15px "Roboto", sans-serif; text-transform: uppercase; color: #2F2E2E; }
+
+header #fixhead .menu-wrapper .menu li.current { background: #8D2959; color: #FFF; }
+
+header #fixhead .menu-wrapper .menu li:hover { -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; background: #8D2959; }
+
+header #fixhead .menu-wrapper .menu li:hover a { text-decoration: underline; color: #FFF; }
+
+header #slide { color: #FFF; position: relative; }
+
+header #slide h1 { color: #FFF; }
+
+header #slide .slide-text { display: flex; justify-content: center; flex-direction: column; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+
+header #slide .slide-text h3 { font: 700 40px "PT Sans", sans-serif; text-transform: uppercase; margin-bottom: 22px; }
+
+header #slide .slide-text .text { font: 400 25px "PT Sans", sans-serif; }
+
+header.page #slide .slide-text { justify-content: flex-end; }
+
+header.page #slide .slide-text h1 { line-height: 1; margin: 0; padding-bottom: 70px; }
+
+.breadcrumbs { padding: 35px 0 70px 0; }
+
+.dark_bg { background: rgba(0, 0, 0, 0.2); position: absolute; width: 100%; height: 100%; top: 0; }
+
+.filter-wrapper { display: block; width: 100%; margin-bottom: 10px; }
+
+.filter-wrapper .filter-item { cursor: pointer; display: inline-block; border: 1px solid #8D2959; padding: 10px; text-align: center; margin-right: 20px; }
+
+.city-page { padding-bottom: 60px; }
+
+.city-page h2 { padding-top: 0; }
+
+footer { background: #F6F6F7; position: relative; overflow: hidden; padding-bottom: 50px; }
+
+footer h3 { font: 700 40px "Roboto", sans-serif; text-transform: uppercase; color: #686868; margin-top: 30px; }
+
+footer .footer-logo { max-height: 65px; }
+
+footer .footer-menu-wrapper { display: flex; align-items: center; margin-top: 65px; margin-bottom: 40px; }
+
+footer .footer-menu-wrapper .footer-menu { margin-right: 65px; padding: 0; margin-bottom: 0; }
+
+footer .footer-menu-wrapper .footer-menu li { display: inline-block; margin-right: 8px; }
+
+footer .footer-menu-wrapper .footer-menu li a { font: 400 18px "Roboto", sans-serif; color: #686868; }
+
+footer .georgia-support .head-support, footer .georgia-support .info-support { display: inline-block; }
+
+footer .georgia-support .head-support { margin-right: 20px; }
+
+footer .georgia-support .head-support h5 { font: 700 20px "Roboto", sans-serif; color: #686868; margin-bottom: 0; }
+
+footer .georgia-support .info-support a { font: 400 18px "Roboto", sans-serif; display: inline-block; margin-right: 10px; color: #686868; }
+
+footer form { font-size: 12px; margin-top: 40px; margin-bottom: 70px; }
+
+footer form input { padding: 20px 45px 15px 15px; max-width: 350px; width: 100%; }
+
+footer form button { padding: 20px; background: #8D2959; border: none; width: 100px; cursor: pointer; }
+
+footer #footer_bg { background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 100%; position: absolute; right: 0; }
+
+footer #footer_line { background: #8D2959; padding: 15px 0; text-align: center; color: #FFF; font-family: "Roboto", sans-serif; font-weight: 400; font-size: 12px; position: absolute; bottom: 0; width: 100%; }
+
+footer #footer_line a { color: #FFF; }
+
+#single_tour { background: #F6F6F7; padding-bottom: 50px; }
+
+#mult_tour { padding-bottom: 170px; }
+
+body section .tour-item { margin-bottom: 30px; position: relative; }
+
+body section .tour-item .tour-action { position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
+
+body section .tour-item > a { color: #2F2E2E; text-decoration: none; }
+
+body section .tour-item .tour-wrapper { padding: 20px; color: #2F2E2E; }
+
+body section .tour-item .tour-wrapper h4 { font: 700 20px "PT Sans", sans-serif; text-transform: uppercase; }
+
+body section .tour-item .tour-wrapper p { font: 400 14px "PT Sans", sans-serif; color: rgba(104, 104, 104, 0.52); text-transform: lowercase; margin-bottom: 25px; }
+
+body section .tour-item .tour-wrapper .city-icon, body section .tour-item .tour-wrapper .time-icon { font: 400 16px "PT Sans", sans-serif; margin-bottom: 5px; }
+
+body section .tour-item .tour-wrapper .city-icon .fa, body section .tour-item .tour-wrapper .time-icon .fa { margin-right: 10px; }
+
+body section .tour-item .tour-wrapper .time-icon { font-size: 14px; }
+
+body section .tour-item .tour-wrapper .time-icon .fa { margin-right: 7px; }
+
+body section .tour-item .tour-wrapper .price-wrapper { text-align: right; }
+
+body section .tour-item .tour-wrapper .price-wrapper .cost { display: inline-block; }
+
+body section .tour-item .tour-wrapper .price-wrapper .cost .price { font: 700 40px "PT Sans", sans-serif; text-align: right; color: #8D2959; letter-spacing: 0; line-height: 0.7; }
+
+body section .tour-item .tour-wrapper .price-wrapper .cost span { font: 400 14px "Roboto", sans-serif; color: #C4C4C4; display: block; text-align: left; }
+
+body section .tour-item .tour-wrapper .rev-wrap { margin-top: 25px; }
+
+body section .tour-item .tour-wrapper .rev-wrap .rev-rating, body section .tour-item .tour-wrapper .rev-wrap .review { display: inline-block; }
+
+body section .tour-item .tour-wrapper .rev-wrap .rev-rating { color: #F3C329; font-size: 16px; }
+
+body section .tour-item .tour-wrapper .rev-wrap .review { font: 400 16px "PT Sans", sans-serif; color: #C4C4C4; margin-left: 5px; }
+
+body section .tour-item .tour-wrapper .btn_tour { font: 700 16px "PT Sans", sans-serif; text-align: left; text-decoration-line: underline; color: #8D2959; }
+
+.tour-page { padding-bottom: 70px; }
+
+.tour-info { padding: 15px 20px; -webkit-box-shadow: -10px 0 50px -10px #BBB; box-shadow: -10px 0 50px -10px #BBB; }
+
+#single_tour .load-more-wrapper { margin-top: 50px; }
+
+#mult_tour .load-more-wrapper { margin-top: 60px; }
+
+.load-more { font: 700 18px "Roboto", sans-serif; color: #686868; text-transform: uppercase; text-decoration: underline; }
+
+.about-work { padding-top: 35px; padding-bottom: 110px; }
+
+.work-item span { font: 900 200px Roboto; color: #C694AC; }
+
+.work-item h5 { font: 400 28px Roboto; }
+
+.work-item p { font: 400 16px Roboto; line-height: 17px; }
+
+#city { padding-bottom: 105px; }
+
+#city p { margin-bottom: 40px; }
+
+#city h2 { padding: 20px 0 40px 0; }
+
+#city .city-text { font: 400 18px "Roboto", sans-serif; }
+
+.shadow-wrapper { -webkit-box-shadow: 0px 0 20px 0px #BBB; box-shadow: 0px 0 20px 0px #BBB; overflow: hidden; }
+
+.city { margin-bottom: 15px; }
+
+.city a { color: #333333; }
+
+.city img { min-width: 100%; height: 100%; max-width: none; max-height: 320px; position: absolute; -moz-transform: scale(1); -o-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
+
+.city .city-wrapper { overflow: hidden; position: relative; min-height: 320px; }
+
+.city .city-wrapper .city-overlay { position: absolute; bottom: 0px; padding-left: 23px; padding-top: 13px; max-width: 235px; background: white; color: #2F2E2E; }
+
+.city .city-wrapper .city-overlay h5 { font: 700 20px "PT Sans", sans-serif; text-transform: uppercase; margin-bottom: 10px; }
+
+.city .city-wrapper .city-overlay p { font: 400 12px "Roboto", sans-serif; }
+
+.city .city-wrapper:hover img { -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; -moz-transform: scale(1.1); -o-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+.tour-guide { position: relative; }
+
+.tour-guide h4 { position: absolute; font: 700 250px "Roboto", sans-serif; color: #E5E5E5; z-index: 1; text-align: center; left: 0; line-height: 0.9; right: 0; margin: auto; top: 0; }
+
+.tour-guide .guide-wrap { position: relative; z-index: 1; padding: 70px 0; }
+
+.tour-guide .guide-wrap img { max-width: 100%; }
+
+.tour-guide-info { background: url(images/obzor.png) no-repeat; background-size: cover; max-height: 400px; padding: 245px 0 72px 0; color: #FFF; }
+
+.tour-guide-info h4 { font: 700 80px "Roboto", sans-serif; text-transform: uppercase; }
+
+@media (min-width: 1200px) { .container { max-width: 1170px; } }
