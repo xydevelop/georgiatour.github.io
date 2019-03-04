@@ -219,12 +219,25 @@ body section .tour-item{
 
 
 .tour-info{
-	padding: 15px 20px;
+	padding: 20px 35px;
 	-webkit-box-shadow: -10px 0 50px -10px #BBB;
   box-shadow: -10px 0 50px -10px #BBB;
+  position: relative;
   	.single-rating-wrap{
   			h4{ font: 900 25px Roboto; color: #686868; text-transform: uppercase; }
   	}
+}
+
+.arrow-btn{ background: url(images/arrow.png) no-repeat; width: 32px; height: 32px; background-size: contain; position: absolute; 
+	right: 20px; bottom: 20px; }
+
+.single-bottom{ 
+	position: reltive; 
+		.btn-single-buy-tour{ 
+			position: absolute; bottom: 0; right: 0; line-height: 0; padding-bottom: 13px;
+				span{ background: $red; width: 120px; height: 93px; position: relative; display: inline-block; }
+				a{ font: 900 16px $Roboto; color: $red; }
+		}
 }
 
 #single_tour .load-more-wrapper{ margin-top: 50px; }
