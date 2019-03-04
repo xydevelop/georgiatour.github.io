@@ -30,7 +30,7 @@
 				<a class="icon-vk" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
 			</div>
 		</div>
-		<div id="slide"><img style="max-height: 650px; min-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/travel_georgia.png" alt="" />
+		<div id="slide"><img style="max-height: 80vh; min-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/travel_georgia.png" alt="" />
 			<div class="slide-text container">
 				<h1>Незабываемые</h1>
 				<h3>туры и экскурсии по грузии</h3>

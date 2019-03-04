@@ -222,6 +222,9 @@ body section .tour-item{
 	padding: 15px 20px;
 	-webkit-box-shadow: -10px 0 50px -10px #BBB;
   box-shadow: -10px 0 50px -10px #BBB;
+  	.single-rating-wrap{
+  			h4{ font: 900 25px Roboto; color: #686868; text-transform: uppercase; }
+  	}
 }
 
 #single_tour .load-more-wrapper{ margin-top: 50px; }

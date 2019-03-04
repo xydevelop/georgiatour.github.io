@@ -6,9 +6,9 @@
       <div class="row">
         <div class="col-md-6">
           <div class="tour-info">
-            <div>
+            <div class="single-rating-wrap">
               <h4>Многодневный тур</h4>
-              <div class="rating-wrapper">
+              <div class="rating-single">
                 <div>*****</div>
                 <div>(25 отзывов)</div>
               </div>
