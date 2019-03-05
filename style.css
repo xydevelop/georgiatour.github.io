@@ -268,6 +268,14 @@ body section .tour-item .tour-wrapper p { font: 400 14px "PT Sans", sans-serif; 
 
 .places-list .place-item .place-image-wrapper .place-content span.close { display: none; }
 
+.tour-guide-info { padding-top: 70px; padding-bottom: 160px; color: #686868; }
+
+.tour-guide-info .day { font: 900 150px "Roboto", sans-serif; color: rgba(141, 41, 89, 0.5); line-height: 1; display: flex; align-items: center; }
+
+.tour-guide-info .day span { font: 900 40px "Roboto", sans-serif; color: #686868; position: absolute; bottom: 35px; right: 40px; }
+
+.tour-guide-info .day-info { font: 400 20px "Roboto", sans-serif; padding-left: 50px; }
+
 .single-rev { margin-top: 110px; color: #686868; }
 
 .single-rev h4 { margin-bottom: 50px; line-height: 1; font: 900 48px "Roboto", sans-serif; text-transform: uppercase; }
@@ -275,5 +283,7 @@ body section .tour-item .tour-wrapper p { font: 400 14px "PT Sans", sans-serif; 
 .single-rev .rev-item { margin-bottom: 20px; background: #F6F6F7; padding: 30px 100px; }
 
 .single-rev .rev-item .name-rating h5 { color: #8D2959; }
+
+.single-rev .rev-item .name-rating .rating { padding-right: 50px; }
 
 @media (min-width: 1200px) { .container { max-width: 1170px; } }

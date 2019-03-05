@@ -380,6 +380,18 @@ body section .tour-item{
 		}
 }
 
+.tour-guide-info{
+	padding-top: 70px;
+	padding-bottom: 160px;
+	color: #686868;
+		.day{ 
+			  font: 900 150px $Roboto; color: rgba(141, 41, 89, 0.5); line-height: 1;
+			  display: flex; align-items: center;
+				span{ font: 900 40px $Roboto; color: #686868; position: absolute; bottom: 35px; right: 40px;}
+		}
+		.day-info{ font: 400 20px $Roboto; padding-left: 50px; }
+}
+
 .single-rev{
 	margin-top: 110px;
 	color: #686868;
@@ -390,6 +402,7 @@ body section .tour-item{
 			padding: 30px 100px;
 				.name-rating{
 						h5{ color: $red; }
+						.rating{ padding-right: 50px; }
 				}
 		}
 }

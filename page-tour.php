@@ -103,14 +103,14 @@
    <section class="tour-guide-info">
     <div class="container">
       <div class="row">
-        <div class="col-md-2"><span>1</span>день</div>
-        <div class="col-md-10">Прибытие в аэропорт Тбилиси. Трансфер и размещение в гостинице. Прогулка по 
+        <div class="col-md-2 day">1<span>день</span></div>
+        <div class="col-md-10 day-info d-flex align-items-center">Прибытие в аэропорт Тбилиси. Трансфер и размещение в гостинице. Прогулка по 
 ночному городу. Ночь в гостинице.</div>
-        <div class="col-md-2"><span>1</span>день</div>
-        <div class="col-md-10">Прибытие в аэропорт Тбилиси. Трансфер и размещение в гостинице. Прогулка по 
+        <div class="col-md-2 day">2<span>день</span></div>
+        <div class="col-md-10 day-info d-flex align-items-center">Прибытие в аэропорт Тбилиси. Трансфер и размещение в гостинице. Прогулка по 
 ночному городу. Ночь в гостинице.</div>
-        <div class="col-md-2"><span>1</span>день</div>
-        <div class="col-md-10">Прибытие в аэропорт Тбилиси. Трансфер и размещение в гостинице. Прогулка по 
+        <div class="col-md-2 day">3<span>день</span></div>
+        <div class="col-md-10 day-info d-flex align-items-center">Прибытие в аэропорт Тбилиси. Трансфер и размещение в гостинице. Прогулка по 
 ночному городу. Ночь в гостинице.</div>
       </div>
     </div>
