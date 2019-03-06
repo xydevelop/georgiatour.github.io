@@ -1,6 +1,6 @@
 a, button { outline: none !important; -moz-outline: none !important; }
 
-body { max-width: 1920px; overflow-x: hidden; margin: 0 auto; font-family: "Roboto", sans-serif; font-weight: 400; font-size: 18px; color: #2F2E2E; line-height: normal; }
+body { max-width: 1920px; min-width: 1199px; overflow-x: hidden; margin: 0 auto; font-family: "Roboto", sans-serif; font-weight: 400; font-size: 18px; color: #2F2E2E; line-height: normal; }
 
 h1, h2 { font-family: "Roboto", sans-serif; text-transform: uppercase; }
 
@@ -70,13 +70,13 @@ header.page #slide .slide-text h1 { line-height: 1; margin: 0; padding-bottom: 7
 
 .dark_bg { background: rgba(0, 0, 0, 0.2); position: absolute; width: 100%; height: 100%; top: 0; }
 
-.filter-wrapper { display: block; width: 100%; margin-bottom: 10px; }
+.filter-wrapper { display: block; width: 100%; margin-bottom: 10px; color: #2F2E2E; }
 
-.filter-wrapper .filter-item { cursor: pointer; display: inline-block; border: 1px solid #8D2959; padding: 10px; text-align: center; margin-right: 20px; }
+.filter-wrapper .filter-item { cursor: pointer; display: inline-block; border: 2px solid #8D2959; padding: 10px; text-align: center; margin-right: 20px; font: 400 18px "PT Sans", sans-serif; }
 
 .city-page { padding-bottom: 60px; }
 
-.city-page h2 { padding-top: 0; }
+.city-page h2 { padding-top: 0; padding-bottom: 40px; }
 
 footer { background: #F6F6F7; position: relative; overflow: hidden; padding-bottom: 50px; }
 
@@ -126,9 +126,11 @@ footer #footer_line a { color: #FFF; }
 
 .item .price-wrapper { text-align: right; }
 
-.item .price-wrapper .cost { display: inline-block; }
+.item .price-wrapper .cost { display: inline-block; text-align: left; }
 
-.item .price-wrapper .cost .price { font: 700 40px "PT Sans", sans-serif; text-align: right; color: #8D2959; letter-spacing: 0; line-height: 0.7; }
+.item .price-wrapper .cost .price { font: 700 18px "PT Sans", sans-serif; color: #686868; text-decoration: line-through; }
+
+.item .price-wrapper .cost .sale-price { font: 700 40px "PT Sans", sans-serif; text-align: right; color: #8D2959; letter-spacing: 0; line-height: 0.7; }
 
 .item .price-wrapper .cost span { font: 400 14px "Roboto", sans-serif; color: #C4C4C4; display: block; text-align: left; }
 
@@ -142,7 +144,7 @@ footer #footer_line a { color: #FFF; }
 
 .item .btn_tour { font: 700 16px "PT Sans", sans-serif; text-align: left; text-decoration-line: underline; color: #8D2959; }
 
-body section .tour-item { margin-bottom: 30px; position: relative; }
+body section .tour-item { display: flex; margin-bottom: 30px; position: relative; }
 
 body section .tour-item .shadow-wrapper { position: relative; }
 
@@ -222,7 +224,9 @@ body section .tour-item .tour-image-wrapper img:hover { -moz-transform: scale(1.
 
 #mult_tour .load-more-wrapper { margin-top: 60px; }
 
-.load-more { font: 700 18px "Roboto", sans-serif; color: #686868; text-transform: uppercase; text-decoration: underline; }
+.load-more { font: 700 18px "Roboto", sans-serif; color: #686868; text-transform: uppercase; text-decoration: none; }
+
+.load-more:hover { color: #8D2959; text-decoration: underline; }
 
 .about-work { padding-top: 35px; padding-bottom: 110px; }
 
@@ -234,11 +238,9 @@ body section .tour-item .tour-image-wrapper img:hover { -moz-transform: scale(1.
 
 #city { padding-bottom: 105px; }
 
-#city p { margin-bottom: 40px; }
-
 #city h2 { padding: 20px 0 40px 0; }
 
-#city .city-text { font: 400 18px "Roboto", sans-serif; }
+#city .city-text { font: 400 18px "Roboto", sans-serif; margin-bottom: 40px; }
 
 .shadow-wrapper { -webkit-box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.05), -4px 4px 14px rgba(0, 0, 0, 0.05), 3px 0px 6px rgba(0, 0, 0, 0.05); box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.05), -4px 4px 14px rgba(0, 0, 0, 0.05), 3px 0px 6px rgba(0, 0, 0, 0.05); overflow: hidden; }
 
@@ -254,7 +256,17 @@ body section .tour-item .tour-image-wrapper img:hover { -moz-transform: scale(1.
 
 .city .city-wrapper .city-overlay h5 { font: 700 20px "PT Sans", sans-serif; text-transform: uppercase; margin-bottom: 10px; }
 
-.city .city-wrapper .city-overlay p { font: 400 12px "Roboto", sans-serif; }
+.city .city-wrapper .city-overlay p { font: 400 12px "Roboto", sans-serif; margin: 0; margin-bottom: 15px; }
+
+.city .city-wrapper .city-overlay .btn_city { text-align: right; }
+
+.city .city-wrapper .city-overlay .btn_city .add_booking { font: 900 16px "Roboto", sans-serif; color: #8D2959; height: 55px; }
+
+.city .city-wrapper .city-overlay .btn_city .add_booking i { font-style: normal; padding-right: 20px; position: relative; bottom: 13px; }
+
+.city .city-wrapper .city-overlay .btn_city .add_booking span { background: #8D2959; width: 57px; height: 55px; position: relative; display: inline-block; }
+
+.city .city-wrapper .city-overlay .btn_city .add_booking span .arrow-btn { bottom: 10px; right: 10px; width: 20px; height: 20px; }
 
 .city .city-wrapper:hover img { -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; -moz-transform: scale(1.1); -o-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1); }
 
@@ -312,7 +324,7 @@ body section .tour-item .tour-image-wrapper img:hover { -moz-transform: scale(1.
 
 .breadcrumbs a { color: #686868; font: 400 16px "PT Sans", sans-serif; }
 
-.breadcrumbs span { text-decoration: underline; }
+.breadcrumbs span { border-bottom: 1px solid #686868; line-height: 19px; }
 
 .breadcrumbs span:hover { text-decoration: none; }
 

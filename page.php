@@ -21,7 +21,9 @@
                   <h5>Тбилиси</h5>
                   <p>Lorem ipsum dolor sit amet, 
       maiores ornare ac quo ut lectus, etiam vestibulum </p>
-                  <div class="btn_city"></div>
+                   <div class="btn_city">
+                    <div class="add_booking"><i>выбрать тур</i><span><div class="arrow-btn"></div></span></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -35,7 +37,9 @@
                 <h5>Батуми</h5>
                 <p>Lorem ipsum dolor sit amet, 
     maiores ornare ac quo ut lectus, etiam vestibulum </p>
-                <div class="btn_city"></div>
+                <div class="btn_city">
+                    <div href="" class="add_booking"><i>выбрать тур</i><span><div class="arrow-btn"></div></span></div>
+                </div>
               </div>
             </div>
           </div>
@@ -194,6 +198,7 @@
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
                     <div class="price">5000 р</div>
+                    <div class="sale-price">4000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
@@ -230,6 +235,7 @@
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
                     <div class="price">5000 р</div>
+                    <div class="sale-price">4000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
@@ -266,7 +272,7 @@
                 </div>
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
-                    <div class="price">5000 р</div>
+                    <div class="sale-price">5000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
@@ -292,7 +298,6 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
@@ -303,7 +308,8 @@
                 </div>
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
-                    <div class="price">5000 р</div>
+                   <div class="price">5000 р</div>
+                    <div class="sale-price">4000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
@@ -329,7 +335,7 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
+             <div class="tour-action"><span>10%</span></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
@@ -340,7 +346,7 @@
                 </div>
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
-                    <div class="price">5000 р</div>
+                    <div class="sale-price">5000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
@@ -366,7 +372,6 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
@@ -377,7 +382,7 @@
                 </div>
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
-                    <div class="price">5000 р</div>
+                    <div class="sale-price">5000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
@@ -414,7 +419,7 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
+            <div class="tour-action"><span>10%</span></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
@@ -425,7 +430,7 @@
                 </div>
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
-                    <div class="price">5000 р</div>
+                    <div class="sale-price">5000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
@@ -451,7 +456,6 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
@@ -462,7 +466,7 @@
                 </div>
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
-                    <div class="price">5000 р</div>
+                    <div class="sale-price">5000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
@@ -488,7 +492,6 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
@@ -500,6 +503,7 @@
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
                     <div class="price">5000 р</div>
+                    <div class="sale-price">4000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
@@ -525,7 +529,7 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
+             <div class="tour-action"><span>10%</span></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
@@ -536,7 +540,8 @@
                 </div>
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
-                    <div class="price">5000 р</div>
+                     <div class="price">5000 р</div>
+                    <div class="sale-price">4000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
@@ -562,7 +567,6 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
@@ -573,7 +577,7 @@
                 </div>
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
-                    <div class="price">5000 р</div>
+                    <div class="sale-price">5000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
@@ -599,7 +603,6 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
@@ -610,7 +613,8 @@
                 </div>
                 <div class="col-md-6 price-wrapper">
                   <div class="cost">
-                    <div class="price">5000 р</div>
+                     <div class="price">5000 р</div>
+                    <div class="sale-price">4000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>
