@@ -37,6 +37,8 @@
 				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/about.png" alt="" />
 			<?php }else if( is_page('tour') || is_page('single-tour') ){ ?>
 				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/tour.png" alt="" />
+			<?php }else if( is_page('checkout') ){ ?>
+				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/checkout.png" alt="" />
 			<?php }else{ ?>
 				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/condition.png" alt="" />
 			<?php } ?>
@@ -51,5 +53,9 @@
 		</div>
 	</header>
 	<section class="breadcrumbs">
-		<div class="container"><a href="/">Главная</a> > <span><?php echo get_the_title(); ?></span></div>
+		<?php if( is_page('checkout') ){ ?>
+			<div class="container"><a href="/">Главная</a> > <a href="/">Однодневные туры</a> > <span>Название тура</span>
+		<?php }else{ ?>
+			<div class="container"><a href="/">Главная</a> > <span><?php echo get_the_title(); ?></span></div>
+		<?php } ?>
 	</section>

@@ -166,7 +166,7 @@ footer{
   		margin-top: 40px;
   		margin-bottom: 70px;
   			input{ padding: 20px 45px 15px 15px; max-width: 350px; width: 100%; } 
-  			button{ padding: 20px; background: $red; border: none; width: 100px; cursor: pointer; }
+  			button{ padding: 20px; background: $red; border: none; width: 80px; cursor: pointer; background-image: url(images/arrow.png); background-repeat: no-repeat; background-size: 20px; background-position: 80% 80%; }
   	}
 		#footer_bg{ background: url(images/footer.png) no-repeat center center; background-size: cover; min-height: 100%; 
     position: absolute; right: 0; } 
@@ -215,6 +215,10 @@ body section .tour-item{
 			color: $title;
 				h4{ font: 700 20px $PTSans; text-transform: uppercase; }
 				p{ font: 400 14px $PTSans; color: rgba(104, 104, 104, 0.52); text-transform: lowercase; margin-bottom: 25px; }
+		}
+		.tour-image-wrapper{ 
+			height: 255px; overflow: hidden; 
+				img{ max-width: none; min-width: 100%; height: 100%; }
 		}
 }
 
@@ -415,6 +419,16 @@ body section .tour-item{
 	color: #686868;
 	font: 400 16px $PTSans;
 		a{ color: #686868; font: 400 16px $PTSans; }
+		span{ text-decoration: underline; }
+		span:hover{ text-decoration: none; }
+}
+
+.form-checkout-wrapper{
+	
+}
+.form-checkout{
+	background: #F6F6F7;
+	padding: 40px 50px 0 50px;
 }
 
 .single-rev{
