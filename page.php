@@ -182,7 +182,7 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
+            <div class="tour-action"><span>10%</span></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
@@ -219,7 +219,6 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>
@@ -256,7 +255,7 @@
             <div class="tour-image-wrapper">
               <img src="<?php echo get_template_directory_uri(); ?>/images/item.png" alt="" />
             </div>
-            <div class="tour-action"></div>
+            <div class="tour-action"><span>10%</span></div>
             <div class="tour-wrapper">
               <h4>Пещерный город Плисцихе, горы и Боржоми</h4>
               <p>Многодневный тур, на автомобиле, с помешением пешер. винный тур, панорамы, отель</p>

@@ -8,6 +8,7 @@ $mainColor : #2F2E2E;
 $Roboto : 'Roboto', sans-serif;
 $PTSans : 'PT Sans', sans-serif;
 
+a,button{ outline: none!important; -moz-outline: none!important; }
 body{ max-width: 1920px; overflow-x: hidden; margin: 0 auto; font-family: $Roboto; font-weight: 400; font-size: 18px; color: $mainColor; line-height: normal; }
 h1, h2{ font-family: $Roboto; text-transform: uppercase; }
 h1{ font-size: 80px; font-weight: 700; }
@@ -208,7 +209,10 @@ footer{
 body section .tour-item{  
 	margin-bottom: 30px;
 	position: relative;
-		.tour-action{ position: absolute; top: 20px; left: 15 px; background: url(images/action.png) no-repeat; width: 105px; height: 62px; }
+		.shadow-wrapper{ position: relative; }
+		.tour-action{ position: absolute; top: 20px; left: 0px; display: flex; align-items: center; justify-content: center; background: url(images/action.png) no-repeat; width: 88px; height: 39px;
+				span{ font: 700 18px $Roboto; color: #FFF; } 
+		}
 		> a{ color: $mainColor; text-decoration: none; }
 		.tour-wrapper{
 			padding: 20px;
@@ -218,7 +222,10 @@ body section .tour-item{
 		}
 		.tour-image-wrapper{ 
 			height: 255px; overflow: hidden; 
-				img{ max-width: none; min-width: 100%; height: 100%; }
+				img{ max-width: none; min-width: 100%; height: 100%; -moz-transform: scale(1); -o-transform: scale(1);
+    			-webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
+    		img:hover{ -moz-transform: scale(1.1); -o-transform: scale(1.1);
+    			-webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
 		}
 }
 
@@ -229,8 +236,8 @@ body section .tour-item{
 
 .tour-info{
 	padding: 15px 35px 40px 35px;
-	-webkit-box-shadow: -10px 0 50px -10px #BBB;
-  box-shadow: -10px 0 50px -10px #BBB;
+	-webkit-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.05), 1px 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.05), 1px 4px 10px rgba(0, 0, 0, 0.05);
   position: relative;
   color: #686868;
   	.single-rating-wrap{
@@ -321,8 +328,8 @@ body section .tour-item{
 }
 
 .shadow-wrapper{
-			-webkit-box-shadow: 0px 0 20px 0px #BBB;
-     	box-shadow: 0px 0 20px 0px #BBB;
+			-webkit-box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.05), -4px 4px 14px rgba(0, 0, 0, 0.05), 3px 0px 6px rgba(0, 0, 0, 0.05);
+     	box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.05), -4px 4px 14px rgba(0, 0, 0, 0.05), 3px 0px 6px rgba(0, 0, 0, 0.05);
      	overflow: hidden;
 		}
 
@@ -423,13 +430,24 @@ body section .tour-item{
 		span:hover{ text-decoration: none; }
 }
 
-.form-checkout-wrapper{
-	
-}
+
 .form-checkout{
 	background: #F6F6F7;
 	color: #686868;
+	position: relative;
 	padding: 40px 15px 0 15px;
+		form{
+			padding-bottom: 100px;
+				p{ margin-top: 30px; }
+				.book-wrapper{
+					position: absolute; bottom: 0; right: 0; line-height: 0;
+						button{ 
+							font: 900 16px $Roboto; color: #8D2959; padding: 0; background: none; line-height: 0; border: none; cursor: pointer;
+								i{ font-style: normal; padding-right: 20px; position: relative; bottom: 13px; }
+								span{ background: $red; width: 120px; height: 93px; position: relative; display: inline-block; }
+						}
+				}	
+		} 
 		h3{ font: 700 20px $Roboto; text-transform: uppercase; margin: 65px 0;  }
 		label{ margin: 0; }
 		input{ padding: 7px 10px; width: 100%;  max-width: 100%; margin-bottom: 35px; display: block; border: 1px solid #C4C4C4; box-sizing: border-box; }

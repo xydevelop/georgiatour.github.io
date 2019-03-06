@@ -18,7 +18,7 @@
                     <label>Стоимость</label>
                     <input type="text" name="cost" value="200 руб" />
                   </div>
-                  <div class="col-md-4 pr-0">
+                  <div class="col-md-4">
                     <label>Время</label>
                     <input type="text" name="time" value="в 12:00" />
                   </div>
@@ -43,6 +43,9 @@
  email придет сообщение с поодтверждением  указанаимем суммы для предоплаты</p>
               <div class="privacy-policy">
                 <input class="check-policy" type="checkbox" required checked> Я принимаю условия <a href="">пользовательского соглашения</a>
+              </div>
+              <div class="book-wrapper">
+                <button class="add_booking"><i>Забронировать</i><span><div class="arrow-btn"></div></span></button>
               </div>
               </form>
           </div>
