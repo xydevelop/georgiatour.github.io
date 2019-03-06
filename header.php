@@ -21,7 +21,7 @@
 				<ul class="menu">
 					<li><a class="current" href="/">Главная</a></li>
 					<li><a href="/about/">О проекте</a></li>
-					<li><a href="/checkout/">Условия</a></li>
+					<li><a href="/checkout/">Бронь</a></li>
 				</ul>
 			</div>
 			<div class="social">
