@@ -222,17 +222,22 @@ body section .tour-item{
 
 
 .tour-info{
-	padding: 10px 35px 40px 35px;
+	padding: 15px 35px 40px 35px;
 	-webkit-box-shadow: -10px 0 50px -10px #BBB;
   box-shadow: -10px 0 50px -10px #BBB;
   position: relative;
   color: #686868;
   	.single-rating-wrap{
-  			h4{ font: 900 25px Roboto; text-transform: uppercase; }
+  			h4{ font: 900 25px Roboto; text-transform: uppercase; margin: 0; }
   	}
-  	.date-time{ .fa{ color: rgba(243, 195, 41, 0.62); } }
+  	.rev-wrap{ margin: 0; }
+  	.date-time{ 
+  		display: flex; justify-content: center; flex-direction: column;
+  			.fa{ color: rgba(243, 195, 41, 0.62); } 
+  			.time-icon{ margin: 0; } 
+  	}
   	h3{ font: 900 32px $Roboto; color: $red; text-transform: uppercase; }
-  	h4{ font: 900 25px $PTSans; text-transform: uppercase; }
+  	h4{ font: 900 25px $PTSans; text-transform: uppercase; margin: 22px 0; }
   	.tour-properties{
   		color: #686868;
   			h6{ font: 900 18px $Roboto; text-transform: uppercase; }
@@ -247,6 +252,7 @@ body section .tour-item{
   						font: 900 16px $Roboto;
   					}
   			}
+  			ul.not-in-cost{ margin: 0; }
 				.btn-single-buy-tour{ 
 					position: absolute; bottom: 0; right: 0; line-height: 0;
 						a{ 
@@ -258,8 +264,14 @@ body section .tour-item{
 		}
 		.price-wrapper{
 			text-align: left;
+				.cost{
+						.price{ line-height: 1; padding-top: 35px; }
+				}
+					 
 		}
 }
+
+.include-tour{ margin-top: 40px; }
 
 .places{
 	font: 400 18px $Roboto; 
@@ -394,7 +406,8 @@ body section .tour-item{
 
 .breadcrumbs{
 	color: #686868;
-		a{ color: #686868; }
+	font: 400 16px $PTSans;
+		a{ color: #686868; font: 400 16px $PTSans; }
 }
 
 .single-rev{

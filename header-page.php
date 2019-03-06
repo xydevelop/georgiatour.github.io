@@ -51,5 +51,5 @@
 		</div>
 	</header>
 	<section class="breadcrumbs">
-		<div class="container"><a href="/">Главная</a>-><span><?php echo get_the_title(); ?></span></div>
+		<div class="container"><a href="/">Главная</a> > <span><?php echo get_the_title(); ?></span></div>
 	</section>

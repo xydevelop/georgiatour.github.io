@@ -9,8 +9,8 @@
             <h3>Пещерный город</h3>
             <div class="single-rating-wrap col-md-8 p-0">
               <h4>Многодневный тур</h4>
-              <div class="rating-single row rev-wrap">
-                <div class="col-md-7 pr-0">
+              <div class="rating-single rev-wrap">
+                <div class="">
                   <div class="rev-rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -29,23 +29,27 @@
             <h4>Маршрут : Пещерный город Уплисцихе, гори и Боржоми</h4>
             <div class="w-100 tour-properties">
               <div class="d-flex justify-content-between"><h6>Продолжительность</h6><span>5 дней</span></div>
-              <div class="d-flex justify-content-between"><h6>Тип тура</h6><span></span>Панорама</div>
+              <div class="d-flex justify-content-between"><h6>Тип тура</h6><span>Панорама</span></div>
               <div class="d-flex justify-content-between"><h6>Транспорт</h6><span>На автобусе</span></div>
             </div>
             <div class="single-bottom">
-              <ul>
+              <ul class="in-cost">
                 <h6>В стоимость включено</h6>
                   <li>- Транспортные услуги</li>
                   <li>- Услуги гида</li>
                   <li>- Размещение в гостинице (двух и трехместных номерах)</li>
-              </ul>
-              <ul>
-                <h6>В стоимость включено</h6>
+                  <li>- Завтрак в гостинице</li>
                   <li>- Транспортные услуги</li>
                   <li>- Услуги гида</li>
                   <li>- Размещение в гостинице (двух и трехместных номерах)</li>
               </ul>
-              <div class="col-md-6 price-wrapper">
+              <ul class="not-in-cost">
+                <h6>В стоимость не включено</h6>
+                  <li>- Транспортные услуги</li>
+                  <li>- Услуги гида</li>
+                  <li>- Размещение в гостинице (двух и трехместных номерах)</li>
+              </ul>
+              <div class="col-md-6 price-wrapper p-0">
                   <div class="cost">
                     <div class="price">5000 р</div>
                     <span>* за человека</span>
@@ -73,7 +77,7 @@
             </div>
           </div>
         </div>
-        <p>*Экскурсию можно планировать  как из Тбилиси, так же из Кутаиси. Так  же можно планировать по вашему желанию , можно добавить или заменить объекты  посещения.</p>
+        <p class="include-tour">*Экскурсию можно планировать  как из Тбилиси, так же из Кутаиси. Так  же можно планировать по вашему желанию , можно добавить или заменить объекты  посещения.</p>
       </div>
     </div>
   </section>

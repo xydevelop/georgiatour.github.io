@@ -152,15 +152,21 @@ body section .tour-item .tour-wrapper p { font: 400 14px "PT Sans", sans-serif; 
 
 .tour-page { padding-bottom: 70px; }
 
-.tour-info { padding: 10px 35px 40px 35px; -webkit-box-shadow: -10px 0 50px -10px #BBB; box-shadow: -10px 0 50px -10px #BBB; position: relative; color: #686868; }
+.tour-info { padding: 15px 35px 40px 35px; -webkit-box-shadow: -10px 0 50px -10px #BBB; box-shadow: -10px 0 50px -10px #BBB; position: relative; color: #686868; }
 
-.tour-info .single-rating-wrap h4 { font: 900 25px Roboto; text-transform: uppercase; }
+.tour-info .single-rating-wrap h4 { font: 900 25px Roboto; text-transform: uppercase; margin: 0; }
+
+.tour-info .rev-wrap { margin: 0; }
+
+.tour-info .date-time { display: flex; justify-content: center; flex-direction: column; }
 
 .tour-info .date-time .fa { color: rgba(243, 195, 41, 0.62); }
 
+.tour-info .date-time .time-icon { margin: 0; }
+
 .tour-info h3 { font: 900 32px "Roboto", sans-serif; color: #8D2959; text-transform: uppercase; }
 
-.tour-info h4 { font: 900 25px "PT Sans", sans-serif; text-transform: uppercase; }
+.tour-info h4 { font: 900 25px "PT Sans", sans-serif; text-transform: uppercase; margin: 22px 0; }
 
 .tour-info .tour-properties { color: #686868; }
 
@@ -172,6 +178,8 @@ body section .tour-item .tour-wrapper p { font: 400 14px "PT Sans", sans-serif; 
 
 .tour-info .single-bottom ul h6 { font: 900 16px "Roboto", sans-serif; }
 
+.tour-info .single-bottom ul.not-in-cost { margin: 0; }
+
 .tour-info .single-bottom .btn-single-buy-tour { position: absolute; bottom: 0; right: 0; line-height: 0; }
 
 .tour-info .single-bottom .btn-single-buy-tour a { font: 900 16px "Roboto", sans-serif; color: #8D2959; padding-bottom: 13px; line-height: 0; }
@@ -181,6 +189,10 @@ body section .tour-item .tour-wrapper p { font: 400 14px "PT Sans", sans-serif; 
 .tour-info .single-bottom .btn-single-buy-tour a span { background: #8D2959; width: 120px; height: 93px; position: relative; display: inline-block; }
 
 .tour-info .price-wrapper { text-align: left; }
+
+.tour-info .price-wrapper .cost .price { line-height: 1; padding-top: 35px; }
+
+.include-tour { margin-top: 40px; }
 
 .places { font: 400 18px "Roboto", sans-serif; color: #686868; }
 
@@ -275,6 +287,10 @@ body section .tour-item .tour-wrapper p { font: 400 14px "PT Sans", sans-serif; 
 .tour-guide-info .day span { font: 900 40px "Roboto", sans-serif; color: #686868; position: absolute; bottom: 35px; right: 40px; }
 
 .tour-guide-info .day-info { font: 400 20px "Roboto", sans-serif; padding-left: 50px; }
+
+.breadcrumbs { color: #686868; font: 400 16px "PT Sans", sans-serif; }
+
+.breadcrumbs a { color: #686868; font: 400 16px "PT Sans", sans-serif; }
 
 .single-rev { margin-top: 110px; color: #686868; }
 
