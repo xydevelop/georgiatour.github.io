@@ -30,15 +30,15 @@
 				<a class="icon-vk" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
 			</div>
 		</div>
-		<div id="slide">
+		<div id="slide" style="height: 500px;">
 			<?php if( is_page('gorod') ){ ?>
-				<img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/ct-tbilisi.png" alt="" />
+				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/ct-tbilisi.png" alt="" />
 			<?php }else if( is_page('about') ){ ?>
-				<img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/about.png" alt="" />
+				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/about.png" alt="" />
 			<?php }else if( is_page('tour') || is_page('single-tour') ){ ?>
-				<img style="max-width: 100%; height: 500px;" src="<?php echo get_template_directory_uri() ?>/images/tour.png" alt="" />
+				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/tour.png" alt="" />
 			<?php }else{ ?>
-				<img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/condition.png" alt="" />
+				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/condition.png" alt="" />
 			<?php } ?>
 			
 			<div class="dark_bg"></div>

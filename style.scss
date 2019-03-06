@@ -61,7 +61,7 @@ header{
 							margin-bottom: 0; 
 								li { 
 									display: inline-block;
-									padding: 18px 8px 12px 8px;
+									padding: 15px 8px 15px 8px;
 									line-height: 0;
 									-webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; 
 										a{ text-decoration: none; font: 400 15px $Roboto; text-transform: uppercase; color: #2F2E2E; } 
@@ -112,7 +112,9 @@ header.page{
 	}
 }
 
-.breadcrumbs{ padding: 35px 0 70px 0; }
+.close{ font-size: 20px; }
+
+.breadcrumbs{ padding: 35px 0 65px 0; }
 .dark_bg{ background: rgba(0,0,0,0.2); position: absolute; width: 100%; height: 100%; top: 0; }
 
 .filter-wrapper{
@@ -134,7 +136,7 @@ footer{
   overflow: hidden;
   padding-bottom: 50px;
   	h3{ font: 700 40px $Roboto; text-transform: uppercase; color: #686868; margin-top: 30px; }
-  	.footer-logo{ max-height: 65px; }
+  	.footer-logo{ max-height: 90px; }
   	.footer-menu-wrapper{ 
   		display: flex;
   		align-items: center;
@@ -271,7 +273,7 @@ body section .tour-item{
 		}
 }
 
-.include-tour{ margin-top: 40px; }
+.include-tour{ margin-top: 40px; font: 400 15px $Roboto; color: #686868; margin-bottom: 0; }
 
 .places{
 	font: 400 18px $Roboto; 
@@ -342,27 +344,32 @@ body section .tour-item{
 
 .tour-guide{
 	position: relative;
+	color: #686868;
 		h4{ position: absolute; font: 700 250px $Roboto; color: #E5E5E5; z-index: 1; text-align: center; left: 0; line-height: 0.9;
- 		right: 0; margin: auto; top: 0; }
+ 		right: 0; margin: auto; top: 25px; padding-left: 80px; }
 		.guide-wrap{
 			position: relative;
     	z-index: 1;
-    	padding: 70px 0;
+    	padding: 100px 0 70px 0;
 				img{ max-width: 100%; }
 				.guide-info{
-					
+						h3{ font: 700 40px $Roboto; margin-bottom: 0; }
+						p{ font: 300 18px $Roboto; color: #2F2E2E; margin: 25px 0 15px 0; }
+						span{ font: 700 18px $Roboto; color: $red; }
 				}
 		}
 }
 
 .tour-guide-image{ 
-	background: url(images/obzor.png) no-repeat; background-size: cover; padding: 22vh 0 7vh 0; color: #FFF; 
-		h4{ font: 700 80px $Roboto; text-transform: uppercase; }
+	background: url(images/obzor.png) no-repeat; background-size: cover; color: #FFF;
+	height: 320px; overflow: hidden; position: relative;
+		h4{ font: 700 80px $Roboto; text-transform: uppercase; position: absolute; bottom: 10%; }
 }
 
 .places-should-visit{
-	background: url(images/places_bg.png) no-repeat; background-size: cover; padding: 22vh 0 7vh 0; color: #FFF; 
-		h4{ font: 700 80px $Roboto; text-transform: uppercase; }
+	background: url(images/places_bg.png) no-repeat; background-size: cover;  color: #FFF; 
+	height: 320px; overflow: hidden; position: relative;
+		h4{ font: 700 80px $Roboto; text-transform: uppercase; position: absolute; bottom: 10%; }
 }
 
 .places-list{ 
@@ -419,9 +426,28 @@ body section .tour-item{
 			background: #F6F6F7;
 			padding: 30px 100px;
 				.name-rating{
-						h5{ color: $red; }
-						.rating{ padding-right: 50px; }
+						h5{ color: $red; font: 700 24px $Roboto; }
+						.rating{ 
+							padding-right: 50px;
+								.rev-rating{ 
+										.fa{ color: #F3C329; }
+								}
+						}
 				}
+				.rev-text{
+					color: #2F2E2E;
+					font: 400 18px $Roboto;
+				}
+		}
+		.load-more-wrapper{ margin-bottom: 20px; }
+}
+
+.single-tour{
+		color: #686868;
+		.tour-description{
+			margin-bottom: 50px;
+				h4{ font: 900 32px $Roboto; text-transform: uppercase; }
+				p{ font: 400 18px $PTSans; }
 		}
 }
 

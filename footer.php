@@ -8,7 +8,7 @@
              <ul class="footer-menu">
                 <li><a href="/">Главная</a></li>
                 <li><a href="/about/">О проекте</a></li>
-                <li><a href="/link/">Обратная связь</a></li>
+                <li><a href="/condition/">Условия</a></li>
              </ul>
              <div class="social">
               <a class="icon-instagram" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>

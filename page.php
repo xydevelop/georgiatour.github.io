@@ -389,7 +389,7 @@
         </div>
         </div>
         <div class="load-more-wrapper text-center">
-          <a class="load-more" href="">Загрузить еще</a>
+          <a class="load-more" href="">Смотреть еще</a>
         </div>
     </div>
   </section>
@@ -610,7 +610,7 @@
         </div>
       </div>
        <div class="load-more-wrapper text-center">
-          <a class="load-more" href="">Загрузить еще</a>
+          <a class="load-more" href="">Смотреть еще</a>
         </div>
     </div>
   </section>

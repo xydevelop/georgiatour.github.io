@@ -4,7 +4,7 @@
   <section class="page tour-page" style="font: 400 15px Roboto; color: #686868;">
   	<div class="container">
       <div class="row">
-        <div class="col-md-7 places">
+        <div class="col-md-7 single-tour places">
           <div class="tour-description">
               <h4>Описание тура</h4>
               <p>Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in in lorem vel. In molestie elit dui dictum, praesent nascetur pulvinar sed, in dolor pede in aliquam, risus nec error quis pharetra. Eros metus quam augue suspendisse, metus rutrum risus erat in.  In ultrices quo ut lectus, etiam vestibulum urna a est, pretium luctus euismod nisl, pellentesque turpis hac .</p>
@@ -18,10 +18,10 @@
             <div class="col-md-6 place-img">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
             </div>
-            <div class="col-md-6 place-img">
+            <div class="col-md-6 place-img m-0">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
             </div>
-            <div class="col-md-6 place-img">
+            <div class="col-md-6 place-img m-0">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/svaneti-item.png" alt="Грузия" />
             </div>
           </div>
@@ -32,7 +32,7 @@
             <div class="single-rating-wrap col-md-8 p-0">
               <h4>Однодневный тур</h4>
               <div class="rating-single row rev-wrap">
-                <div class="col-md-7 pr-0">
+               
                   <div class="rev-rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -41,7 +41,7 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                   </div>
                   <div class="review">( 25 отзывов )</div>
-                </div>
+                
               </div>
             </div>
             <div class="col-md-4 p-0 date-time">
@@ -51,7 +51,7 @@
             <h4>Маршрут : Пещерный город Уплисцихе, гори и Боржоми</h4>
             <div class="w-100 tour-properties">
               <div class="d-flex justify-content-between"><h6>Продолжительность</h6><span>5 дней</span></div>
-              <div class="d-flex justify-content-between"><h6>Тип тура</h6><span></span>Панорама</div>
+              <div class="d-flex justify-content-between"><h6>Тип тура</h6><span>Панорама</span></div>
               <div class="d-flex justify-content-between"><h6>Транспорт</h6><span>На автобусе</span></div>
             </div>
             <div class="single-bottom">
@@ -60,8 +60,12 @@
                   <li>- Транспортные услуги</li>
                   <li>- Услуги гида</li>
                   <li>- Размещение в гостинице (двух и трехместных номерах)</li>
+                  <li>- Завтрак в гостинице</li>
+                  <li>- Транспортные услуги</li>
+                  <li>- Услуги гида</li>
+                  <li>- Размещение в гостинице (двух и трехместных номерах)</li>
               </ul>
-              <div class="col-md-6 price-wrapper">
+              <div class="col-md-6 price-wrapper p-0">
                   <div class="cost">
                     <div class="price">35-65 $</div>
                     <span>* за человека</span>
@@ -71,7 +75,7 @@
             </div>
           </div>
         </div>
-        <p>*Экскурсию можно планировать  как из Тбилиси, так же из Кутаиси. Так  же можно планировать по вашему желанию , можно добавить или заменить объекты  посещения.</p>
+        <!--<p class="include-tour col-12">*Экскурсию можно планировать  как из Тбилиси, так же из Кутаиси. Так  же можно планировать по вашему желанию , можно добавить или заменить объекты  посещения.</p>-->
       </div>
     </div>
   </section>
@@ -233,6 +237,9 @@
           </div>
         </div>
       </div>
+       <div class="load-more-wrapper text-center">
+          <a class="load-more" href="">Cмотреть еще</a>
+        </div>
     </div>
   </section>
 
