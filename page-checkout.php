@@ -7,20 +7,20 @@
         <div class="col-md-6 form-checkout-wrapper">
           <div class="form-checkout">
               <img style="max-width: 80%; margin: 0 auto; display: block;" src="<?php echo get_template_directory_uri(); ?>/images/calendar.png" alt="" />
-              <h3>Детали брони</h3>
+              <h3 class="text-center">Детали брони</h3>
               <form method="post" style="max-width: 100%;">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 pr-0">
                     <label>Количество</label>
-                    <input type="number" name="quantity" />
+                    <input type="number" name="quantity" placeholder="1" />
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 pr-0">
                     <label>Стоимость</label>
-                    <input type="text" name="cost" />
+                    <input type="text" name="cost" value="200 руб" />
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 pr-0">
                     <label>Время</label>
-                    <input type="number" name="time" />
+                    <input type="text" name="time" value="в 12:00" />
                   </div>
                 </div>
                 <div class="row">
@@ -32,13 +32,18 @@
                 <div class="row">
                   <div class="col-md-6">
                     <label>Email</label>
-                    <input type="email" name="mail" required/>
+                    <input class="m-0" type="email" name="mail" required/>
                   </div>
                   <div class="col-md-6">
                     <label>Телефон</label>
-                    <input type="tel" name="phone" required/>
+                    <input class="m-0" type="tel" name="phone" required/>
                   </div>
                 </div>
+                  <p>*После бронирования и подтверждения гидом возможности проведения экскурсии на указанный
+ email придет сообщение с поодтверждением  указанаимем суммы для предоплаты</p>
+              <div class="privacy-policy">
+                <input class="check-policy" type="checkbox" required checked> Я принимаю условия <a href="">пользовательского соглашения</a>
+              </div>
               </form>
           </div>
         </div>

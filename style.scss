@@ -428,7 +428,14 @@ body section .tour-item{
 }
 .form-checkout{
 	background: #F6F6F7;
-	padding: 40px 50px 0 50px;
+	color: #686868;
+	padding: 40px 15px 0 15px;
+		h3{ font: 700 20px $Roboto; text-transform: uppercase; margin: 65px 0;  }
+		label{ margin: 0; }
+		input{ padding: 7px 10px; width: 100%;  max-width: 100%; margin-bottom: 35px; display: block; border: 1px solid #C4C4C4; box-sizing: border-box; }
+		input[name="quantity"]{ color: $red; }
+		label, input{ font: 400 14px $Roboto; }
+		.check-policy{ display: inline-block; margin-right: 10px; margin-bottom: 0; width: auto; }
 }
 
 .single-rev{
