@@ -212,6 +212,12 @@ footer{
    .btn_tour{ font: 700 16px $PTSans; text-align: left; text-decoration-line: underline; color: $red; }
 }
 
+.item:hover .shadow-wrapper{
+	-webkit-box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.15), 2px 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.15), 2px 2px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s;
+}
+
 body section .tour-item{ 
 	display: flex; 
 	margin-bottom: 30px;
@@ -334,11 +340,50 @@ body section .tour-item{
 		.city-text{ font: 400 18px $Roboto; margin-bottom: 40px; }
 }
 
-.shadow-wrapper{
-			-webkit-box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.05), -4px 4px 14px rgba(0, 0, 0, 0.05), 3px 0px 6px rgba(0, 0, 0, 0.05);
-     	box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.05), -4px 4px 14px rgba(0, 0, 0, 0.05), 3px 0px 6px rgba(0, 0, 0, 0.05);
-     	overflow: hidden;
+.shadow-wrapper{		
+	-webkit-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.05), 1px 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.05), 1px 4px 10px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s;
+  overflow: hidden;
+}
+
+#map{
+	position: relative;
+	background: url(images/georgia_mountains.png) no-repeat;
+	height: 830px;
+	overflow: hidden;
+	background-position: center center;
+		h2{ font: 900 313px Roboto; color: rgba(255,255,255,0.6); padding: 0; }
+		.map-container{ 
+			position: absolute; bottom: 15%; left: 0; right: 0; margin: auto; 
+				.map-wrapper{
+					img{ max-width: 100%; }
+				}
+				.map-info{
+					.map-image-wrapper{ 
+						display: flex; align-items: center; justify-content: center;
+						overflow: hidden; text-align: center; max-height: 220px; max-width: 100%;
+							img{ max-width: none; min-width: 100%; height: 100%; }
+					}
+					.map-info-wrapper{
+						position: relative; color: #FFF; padding: 20px; background: $red;
+							h3{ font: 700 18px $Roboto; text-transform: uppercase; margin-bottom: 25px; }
+							p{ font: 400 12px $Roboto; max-width: 75%; }
+							.select-tour{ 
+								position: absolute; right: -1px; bottom: 0; line-height: 0;
+									i{ font: 700 16px $Roboto; color: #FFF; font-style: normal; padding-right: 20px; 
+									position: relative; bottom: 13px; line-height: 0; }
+									> span{ 
+    								display: inline-block; position: relative;
+										background: #FFF; height: 70px; width: 70px;
+											.arrow-btn{ position: absolute; bottom: 7px; right: 10px; background: url(images/dark-arrow.png) no-repeat; 
+											width: 20px; height: 20px; background-size: contain; }
+									} 
+							}
+					}
+				}
 		}
+}
 
 .city{
 	margin-bottom: 15px;

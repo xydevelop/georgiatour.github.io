@@ -2,8 +2,25 @@
 
 <!-- Map -->
   <section class="section" id="map">
-    <div class="">
-      <img style="max-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/map.png" alt="" />
+    <h2 id="georgia-travel-parallax">Грузия</h2>
+    <div class="container map-container">
+      <div class="row">
+        <div class="col-md-8 map-wrapper">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/georgia_travel_map.png" />
+        </div>
+        <div class="col-md-4 map-info">
+          <div class="map-image-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/batumi.png" alt="" />
+          </div>
+          <div class="map-info-wrapper">
+            <h3>Батуми</h3>
+            <p>Lorem ipsum dolor sit amet, maiores ornare ac quo ut lectus, etiam vestibulum etiam vestibulum  etiam vestibulum</p>
+            <div class="select-tour">
+              <i>выбрать тур</i><span><span class="arrow-btn"></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
     <!-- Cities -->
@@ -38,7 +55,7 @@
                 <p>Lorem ipsum dolor sit amet, 
     maiores ornare ac quo ut lectus, etiam vestibulum </p>
                 <div class="btn_city">
-                    <div href="" class="add_booking"><i>выбрать тур</i><span><div class="arrow-btn"></div></span></div>
+                    <div  class="add_booking"><i>выбрать тур</i><span><div class="arrow-btn"></div></span></div>
                 </div>
               </div>
             </div>
