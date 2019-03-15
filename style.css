@@ -338,7 +338,7 @@ body section .tour-item .tour-image-wrapper img:hover { -moz-transform: scale(1.
 
 .tour-guide .guide-wrap .guide-info span { font: 700 18px "Roboto", sans-serif; color: #8D2959; }
 
-.tour-guide-image { background: url(images/obzor.png) no-repeat; background-size: cover; color: #FFF; height: 320px; overflow: hidden; position: relative; }
+.tour-guide-image { background: url(images/obzor.jpg) no-repeat; background-size: cover; background-position: 100%; background-attachment: fixed; color: #FFF; height: 320px; overflow: hidden; position: relative; }
 
 .tour-guide-image h4 { font: 700 80px "Roboto", sans-serif; text-transform: uppercase; position: absolute; bottom: 10%; }
 
@@ -447,5 +447,13 @@ body section .tour-item .tour-image-wrapper img:hover { -moz-transform: scale(1.
 .single-tour .tour-description h4 { font: 900 32px "Roboto", sans-serif; text-transform: uppercase; }
 
 .single-tour .tour-description p { font: 400 18px "PT Sans", sans-serif; }
+
+#popup-image { display: none; width: 100%; position: fixed; top: 0; bottom: 0; left: 0; right: 0; margin: auto; max-width: 800px; max-height: 800px; align-items: center; justify-content: center; overflow: hidden; }
+
+#popup-image .content { position: relative; }
+
+#popup-image .content .popup__close { position: absolute; top: 20px; right: 20px; }
+
+#popup-image .content img { max-width: 100%; }
 
 @media (min-width: 1200px) { .container { max-width: 1170px; } }

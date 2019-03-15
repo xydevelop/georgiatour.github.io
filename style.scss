@@ -455,7 +455,7 @@ body section .tour-item{
 }
 
 .tour-guide-image{ 
-	background: url(images/obzor.png) no-repeat; background-size: cover; color: #FFF;
+	background: url(images/obzor.jpg) no-repeat; background-size: cover; background-position: 100%; background-attachment: fixed; color: #FFF;
 	height: 320px; overflow: hidden; position: relative;
 		h4{ font: 700 80px $Roboto; text-transform: uppercase; position: absolute; bottom: 10%; }
 }
@@ -596,6 +596,28 @@ transform: rotate(45deg); }
 			margin-bottom: 50px;
 				h4{ font: 900 32px $Roboto; text-transform: uppercase; }
 				p{ font: 400 18px $PTSans; }
+		}
+}
+
+
+#popup-image{ 
+	display: none;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 800px;
+	max-height: 800px;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+		.content{ 
+			position: relative; 
+				.popup__close{ position: absolute; top: 20px; right: 20px; }
+				img{ max-width: 100%; }
 		}
 }
 
