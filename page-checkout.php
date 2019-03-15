@@ -12,15 +12,15 @@
                 <div class="row">
                   <div class="col-md-4 pr-0">
                     <label>Количество</label>
-                    <input type="number" name="quantity" placeholder="1" />
+                    <input type="number" name="quantity" placeholder="1" min="1"/>
                   </div>
                   <div class="col-md-4 pr-0">
                     <label>Стоимость</label>
-                    <input type="text" name="cost" value="200 руб" />
+                    <input type="text" name="cost" value="200 руб" disabled />
                   </div>
                   <div class="col-md-4">
                     <label>Время</label>
-                    <input type="text" name="time" value="в 12:00" />
+                    <input type="text" name="time" value="в 12:00" disabled />
                   </div>
                 </div>
                 <div class="row">
@@ -39,10 +39,10 @@
                     <input class="m-0" type="tel" name="phone" required/>
                   </div>
                 </div>
-                  <p>*После бронирования и подтверждения гидом возможности проведения экскурсии на указанный
+                  <p class="book-infotext">*После бронирования и подтверждения гидом возможности проведения экскурсии на указанный
  email придет сообщение с поодтверждением  указанаимем суммы для предоплаты</p>
               <div class="privacy-policy">
-                <input class="check-policy" type="checkbox" required checked> Я принимаю условия <a href="">пользовательского соглашения</a>
+                <input class="check-policy" type="checkbox" required checked> Я принимаю <a href="">Условия пользовательского соглашения</a>
               </div>
               <div class="book-wrapper">
                 <button class="add_booking"><i>Забронировать</i><span><div class="arrow-btn"></div></span></button>
@@ -97,7 +97,7 @@
               </ul>
               <div class="col-md-6 price-wrapper p-0">
                   <div class="cost">
-                    <div class="price">5000 р</div>
+                    <div class="sale-price">5000 р</div>
                     <span>* за человека</span>
                   </div>
                 </div>

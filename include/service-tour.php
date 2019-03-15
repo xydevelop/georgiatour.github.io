@@ -3,7 +3,7 @@
 	add_action('add_meta_boxes', 'register_tour_settings');
 
 	function register_tour_settings() {
-		add_meta_box('tour_plan_settings', 'Обзор тура', 'cb_tour_plan_settings','tg_tour');
+		//add_meta_box('tour_plan_settings', 'Обзор тура', 'cb_tour_plan_settings','tg_tour');
 		add_meta_box('tour_calendar_settings', 'Даты с запретом', 'cb_tour_date_settings','tg_tour');
 	}
 
@@ -32,7 +32,7 @@ $icon3 = get_post_meta( $post->ID, 'ek_element_icon3')[0];*/
 
 	<?php }
 
-	function cb_tour_plan_settings ($post) { //$post->ID ?>
+	/*function cb_tour_plan_settings ($post) { //$post->ID ?>
 
 <form method="POST">
 			<input type="hidden" name="eks_nonce" value="<?php echo wp_create_nonce(basename(__FILE__)); ?>" />

@@ -21,6 +21,7 @@
     	'show_ui' => true, 
     	'query_var' => true,
     	'rewrite' => true,
+    	'rewrite' => array('slug' => 'place'),
     	'capability_type' => 'post',
     	'hierarchical' => false,
     	'menu_position' => null,

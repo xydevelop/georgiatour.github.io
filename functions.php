@@ -30,12 +30,12 @@ add_action( 'wp_enqueue_scripts', 'tourgeorg_theme_head_script' );
 
 
 function tourgeorg_theme_script() {
-	/*wp_enqueue_script( 'tm_theme_jquery', 'https://code.jquery.com/jquery-3.3.1.min.js' );
+	wp_enqueue_script( 'tm_theme_jquery', 'https://code.jquery.com/jquery-3.3.1.min.js' );
 	wp_enqueue_script( 'tm_theme_poper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js', array('tm_theme_jquery') );
 	wp_enqueue_script( 'tm_theme_bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', array('tm_theme_jquery') );
 
-	wp_enqueue_script( 'tm_theme_slick', get_template_directory_uri() . '/js/slick.min.js', array('tm_theme_jquery') );
-	wp_enqueue_script( 'tm_theme_main', get_template_directory_uri() . '/js/main.js', array('tm_theme_jquery') );*/
+	/*wp_enqueue_script( 'tm_theme_slick', get_template_directory_uri() . '/js/slick.min.js', array('tm_theme_jquery') );*/
+	wp_enqueue_script( 'tm_theme_main', get_template_directory_uri() . '/js/main.js', array('tm_theme_jquery') );
 }
 
 add_action( 'wp_footer', 'tourgeorg_theme_script' );
@@ -55,6 +55,11 @@ function tourgeorg_theme_setup() {
 		// Add Actions Custom Post Type
 	require get_template_directory() . '/include/guide.php';
 
+	
+
 
 }
 
+
+
+flush_rewrite_rules();

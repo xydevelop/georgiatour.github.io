@@ -15,19 +15,23 @@
 <body>
 	<header>
 		<div id="fixhead">
-			<a class="logo-wrapper" href="/"><div id="logo"></div></a>
-			<div class="menu-wrapper">
-				<div class="phone"><span class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><a href="tel:8800">8 (800) 000-00-00</a></div>
-				<ul class="menu">
-					<li><a class="current" href="/">Главная</a></li>
-					<li><a href="/about/">О проекте</a></li>
-					<li><a href="/checkout/">Бронь</a></li>
-				</ul>
-			</div>
-			<div class="social">
-				<a class="icon-instagram" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				<a class="icon-facebook" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-				<a class="icon-vk" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+			<div class="container">
+				<div class="row">
+					<div class="logo-wrapper col-md-5"><a href="/"><div id="logo"></div></a></div>
+					<div class="menu-wrapper col-md-5">
+						<div class="phone"><span class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><a href="tel:8800">8 (800) 000-00-00</a></div>
+						<ul class="menu">
+							<li><a class="current" href="/">Главная</a></li>
+							<li><a href="/about/">О проекте</a></li>
+							<li><a href="/checkout/">Бронь</a></li>
+						</ul>
+					</div>
+					<div class="social col-md-2">
+						<a class="icon-instagram" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a class="icon-facebook" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a class="icon-vk" href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="slide"><img style="max-height: 80vh; min-width: 100%;" src="<?php echo get_template_directory_uri() ?>/images/travel_georgia.png" alt="" />

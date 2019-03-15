@@ -13,6 +13,12 @@ body{ max-width: 1920px; min-width: 1199px; overflow-x: hidden; margin: 0 auto; 
 h1, h2{ font-family: $Roboto; text-transform: uppercase; }
 h1{ font-size: 80px; font-weight: 700; }
 h2{ font-size: 40px; text-align: center; color: $title; padding: 55px 0 80px 0; font-weight: 900; }
+.fa-picture-o{ font-size: 4em; color: $red; }
+
+a:hover{ text-decoration: none; }
+
+a.tl{ border-bottom: 1px solid transparent; }
+a.tl:hover{ display: inline-block; border-bottom: 1px solid #686868; line-height: 1; }
 
 .social{
 	display: flex;
@@ -38,14 +44,12 @@ header{
 			display: flex;
 			align-items: center;
 			overflow: hidden;
-				.logo-wrapper{ 
-					margin-right: 3vw; 
-						#logo{ background: url(images/logo.png) no-repeat; background-size: contain; width: 42vw; height: 48px; }
+				.logo-wrapper{  
+						#logo{ background: url(images/logo.png) no-repeat; background-size: contain; width: 170px; height: 48px; }
 				}
 				.menu-wrapper{ 
 					display: flex;
 					align-items: center;
-					margin-right: 90px;
 						.phone{
 							display: flex;
 							align-items: center;
@@ -186,7 +190,7 @@ footer{
 
 .item{
 	.city-icon, .time-icon{ 
-		font: 400 16px $PTSans; 
+		font: 400 16px $Roboto; 
 		margin-bottom: 5px;
 			.fa{ margin-right: 10px; }
 	}
@@ -199,7 +203,7 @@ footer{
     	.cost{
     		display: inline-block; text-align: left;
     			.price{ font: 700 18px $PTSans; color: #686868; text-decoration: line-through; }
-    			.sale-price{ font: 700 40px $PTSans; text-align: right; color: $red; letter-spacing: 0; line-height: 0.7; }
+    			.sale-price{ font: 700 35px $PTSans; text-align: right; color: $red; letter-spacing: 0; line-height: 0.7; }
     			span{ font: 400 14px $Roboto; color: #C4C4C4; display: block; text-align: left; }
     	}
   }
@@ -207,9 +211,9 @@ footer{
     margin-top: 25px;
     	.rev-rating, .review{ display: inline-block; }
     	.rev-rating{ color: #F3C329; font-size: 16px; }
-    	.review{ font: 400 16px $PTSans ; color: #C4C4C4; margin-left: 5px; }
+    	.review{ font: 400 16px $PTSans; color: #C4C4C4; margin-left: 5px; }
    }
-   .btn_tour{ font: 700 16px $PTSans; text-align: left; text-decoration-line: underline; color: $red; }
+   .btn_tour{ font: 700 16px $PTSans; text-align: left; text-decoration-line: none; color: #CFB8DE; }
 }
 
 .item:hover .shadow-wrapper{
@@ -218,15 +222,17 @@ footer{
   -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s;
 }
 
+.btn_tour:hover{ color: $red; text-decoration-line: underline; }
+
 body section .tour-item{ 
 	display: flex; 
 	margin-bottom: 30px;
 	position: relative;
-		.shadow-wrapper{ position: relative; }
+		.shadow-wrapper{ position: relative; width: 100%; }
 		.tour-action{ position: absolute; top: 20px; left: 0px; display: flex; align-items: center; justify-content: center; background: url(images/action.png) no-repeat; width: 88px; height: 39px;
 				span{ font: 700 18px $Roboto; color: #FFF; } 
 		}
-		> a{ color: $mainColor; text-decoration: none; }
+		> a{ text-decoration: none; max-width: 100%; display: flex; width: 100%; }
 		.tour-wrapper{
 			padding: 20px;
 			color: $title;
@@ -234,11 +240,12 @@ body section .tour-item{
 				p{ font: 400 14px $PTSans; color: rgba(104, 104, 104, 0.52); text-transform: lowercase; margin-bottom: 25px; }
 		}
 		.tour-image-wrapper{ 
+			display: flex; align-items: center; justify-content: center; flex-direction: column;
 			height: 255px; overflow: hidden; 
 				img{ max-width: none; min-width: 100%; height: 100%; -moz-transform: scale(1); -o-transform: scale(1);
-    			-webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
+    			-webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
     		img:hover{ -moz-transform: scale(1.1); -o-transform: scale(1.1);
-    			-webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
+    			-webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
 		}
 }
 
@@ -254,44 +261,46 @@ body section .tour-item{
   position: relative;
   color: #686868;
   	.single-rating-wrap{
-  			h4{ font: 900 25px Roboto; text-transform: uppercase; margin: 0; }
+  			h4{ font: 900 18px Roboto; text-transform: uppercase; margin: 0; }
   	}
   	.rev-wrap{ margin: 0; }
   	.date-time{ 
   		display: flex; justify-content: center; flex-direction: column;
   			.fa{ color: rgba(243, 195, 41, 0.62); } 
   			.time-icon{ margin: 0; } 
+  			.city-icon, .time-icon{ font: 700 16px $PTSans; color: #c4c4c4; }
   	}
   	h3{ font: 900 32px $Roboto; color: $red; text-transform: uppercase; }
-  	h4{ font: 900 25px $PTSans; text-transform: uppercase; margin: 22px 0; }
+  	h4{ font: 900 18px $PTSans; text-transform: uppercase; margin: 22px 0; }
   	.tour-properties{
   		color: #686868;
-  			h6{ font: 900 18px $Roboto; text-transform: uppercase; }
-  			span{ font: 400 18px $Roboto; }
+  			h6{ font: 900 18px $PTSans; text-transform: uppercase; }
+  			span{ font: 400 18px $PTSans; }
   	}
+  	.single-bottom.single-t{ margin-top: 40px; }
   	.single-bottom{ 
+  			h6{ font: 900 16px $Roboto; }
   			ul{
   				padding: 0;
   				list-style: none;
   				font: 400 15px $Roboto; 
-  					h6{
-  						font: 900 16px $Roboto;
-  					}
   			}
   			ul.not-in-cost{ margin: 0; }
 				.btn-single-buy-tour{ 
 					position: absolute; bottom: 0; right: 0; line-height: 0;
 						a{ 
-							font: 900 16px $Roboto; color: $red; padding-bottom: 13px; line-height: 0;
-								i{ font-style: normal; padding-right: 20px; position: relative; bottom: 13px; }
+							font: 900 16px $Roboto; display: inline-block; color: #CFB8DE; line-height: 0; text-decoration: none;
+								i{ font-style: normal; padding-right: 20px; position: relative; bottom: 22px; }
 								span{ background: $red; width: 120px; height: 93px; position: relative; display: inline-block; }
 						}
+						a:hover{ color: $red; text-decoration: underline; }
 				}
 		}
 		.price-wrapper{
 			text-align: left;
 				.cost{
-						.price{ line-height: 1; padding-top: 35px; }
+						margin-top: 30px;
+						.sale-price{ line-height: 1; padding-top: 0px; }
 				}
 					 
 		}
@@ -315,7 +324,7 @@ body section .tour-item{
 }
 
 .arrow-btn{ background: url(images/arrow.png) no-repeat; width: 32px; height: 32px; background-size: contain; position: absolute; 
-	right: 20px; bottom: 20px; }
+	right: 20px; bottom: 12px; }
 
 #single_tour .load-more-wrapper{ margin-top: 50px; }
 #mult_tour .load-more-wrapper{ margin-top: 60px; }
@@ -324,8 +333,9 @@ body section .tour-item{
 .load-more:hover{ color: $red; text-decoration: underline; }
 
 .about-work{
-	padding-top: 35px;
+	padding-top: 0px;
 	padding-bottom: 110px;
+		h2{ color: #686868; padding: 55px 0 45px 0; }
 }
 
 .work-item{
@@ -353,7 +363,8 @@ body section .tour-item{
 	height: 830px;
 	overflow: hidden;
 	background-position: center center;
-		h2{ font: 900 313px Roboto; color: rgba(255,255,255,0.6); padding: 0; }
+		h2{ font: 900 313px Roboto; color: rgba(255,255,255,0.6); padding: 0; transform: translate(0px, -100%); line-height: 0.8; 
+			-webkit-transition: all 0.1s; -moz-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; }
 		.map-container{ 
 			position: absolute; bottom: 15%; left: 0; right: 0; margin: auto; 
 				.map-wrapper{
@@ -388,7 +399,7 @@ body section .tour-item{
 .city{
 	margin-bottom: 15px;
 		a{ color: #333333; }
-		img{ min-width: 100%; height: 100%; max-width: none; max-height: 320px; position: absolute; -moz-transform: scale(1); -o-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
+		img{ min-width: 100%; height: 100%; max-width: none; max-height: 320px; position: absolute; }
 		.city-wrapper{ 
 			overflow: hidden;
 			position: relative;
@@ -397,22 +408,26 @@ body section .tour-item{
 					position: absolute; bottom: 0px; padding-left: 23px; padding-top: 13px; max-width: 235px; background: rgba(255,255,255,1); color: $title;
 						h5{ font: 700 20px $PTSans; text-transform: uppercase; margin-bottom: 10px; }
 						p{ font: 400 12px $Roboto; margin: 0; margin-bottom: 15px; }
+						p:first-letter{ text-transform: uppercase; }
 						.btn_city{ 
-							text-align: right; 
+							text-align: right; height: 0;
 								.add_booking{
 									font: 900 16px $Roboto; color: $red; height: 55px;
 										i{ font-style: normal; padding-right: 20px; position: relative; bottom: 13px; }
+										a{ display: inline-block; }
 										span{ 
 											background: $red; width: 57px; height: 55px; position: relative; display: inline-block;
 												.arrow-btn{ bottom: 10px; right: 10px; width: 20px; height: 20px; }
 										}
 								}
 						}
+						.btn_city.active{ 
+							height: 100%; 
+						}
 				}
 		}
 		.city-wrapper:hover img{ 
-			-webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s;
-			-moz-transform: scale(1.1); -o-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1);
+			
 		}
 }
 
@@ -425,7 +440,12 @@ body section .tour-item{
 			position: relative;
     	z-index: 1;
     	padding: 100px 0 70px 0;
-				img{ max-width: 100%; }
+    		.guide-image-wrapper{
+    			display: flex; height: 250px; width: 250px;
+    			align-items: center; justify-content: center; border-radius: 50%; overflow: hidden;
+    				img{ max-width: 150%; }
+    		}
+				
 				.guide-info{
 						h3{ font: 700 40px $Roboto; margin-bottom: 0; }
 						p{ font: 300 18px $Roboto; color: #2F2E2E; margin: 25px 0 15px 0; }
@@ -441,9 +461,9 @@ body section .tour-item{
 }
 
 .places-should-visit{
-	background: url(images/places_bg.png) no-repeat; background-size: cover;  color: #FFF; 
-	height: 320px; overflow: hidden; position: relative;
-		h4{ font: 700 80px $Roboto; text-transform: uppercase; position: absolute; bottom: 10%; }
+	background: url(images/places_bg.jpg) no-repeat; background-size: cover;  color: #FFF; background-position: 50% 100%; 
+	background-attachment: fixed; height: 320px; overflow: hidden; position: relative;
+		h4{ font: 700 72px $Roboto; text-transform: uppercase; position: absolute; bottom: 10%; }
 }
 
 .places-list{ 
@@ -456,7 +476,8 @@ body section .tour-item{
 		   		width: 100%;
 		    	height: 420px;
 		    		.dark_bg{ background: rgba(0, 0, 0, 0.4); }
-						img{ min-width: 100%; }
+						img{ min-width: 100%; height: 100%; -moz-transform: scale(1); -o-transform: scale(1);
+    			-webkit-transform: scale(1); transform: scale(1); -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s; }
 						.place-content{
 							position: absolute;
 							color: #FFF;
@@ -464,12 +485,32 @@ body section .tour-item{
 	    				text-align: center;
 	    				flex-direction: column;
 	    				height: 100%;
-								h4{ font: 900 40px $Roboto; line-height: 1; }
-								p{ margin: 0; font: 400 13px $Roboto; padding: 0 20px; }
-								span.place-plus{ cursor: pointer; font-size: 30px; }
-								span.close{ display: none; }
+	    				width: 100%;
+								h4{ font: 900 36px $Roboto; line-height: 1; }
+								p{ margin: 0; font: 400 13px $Roboto; padding: 0 20px; height: 0; opacity: 0;
+								-webkit-transition: all .5s; -moz-transition: all .5s; -o-transition: all .5s; transition: all .5s; }
+								span.place-plus{ cursor: pointer; font: 400 60px $PTSans; position: relative; z-index: 1; opacity: .8; line-height: 1; }
+								span.place-plus:hover{ opacity: 1; }
+								span.close{ font: 400 60px $PTSans; display: none; color: #FFF; opacity: .8; line-height: 1; -moz-transform: rotate(0deg);
+-webkit-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+transform: rotate(0deg); }
+						}
+						.place-content.active{
+							p{ height: auto; opacity: 1; }
+							span.place-plus{ display: none; }
+							span.close{ display: block; -moz-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg); }
 						}
 				}
+		}
+		.place-item:hover img{
+			-moz-transform: scale(1.1); -o-transform: scale(1.1);
+    			-webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -o-transition: all 0.25s; transition: all 0.25s;
 		}
 }
 
@@ -480,7 +521,7 @@ body section .tour-item{
 		.day{ 
 			  font: 900 150px $Roboto; color: rgba(141, 41, 89, 0.5); line-height: 1;
 			  display: flex; align-items: center;
-				span{ font: 900 40px $Roboto; color: #686868; position: absolute; bottom: 35px; right: 40px;}
+				b{ font: 900 40px $Roboto; color: #686868; position: absolute; bottom: 35px; right: 40px;}
 		}
 		.day-info{ font: 400 20px $Roboto; padding-left: 50px; }
 }
@@ -489,7 +530,7 @@ body section .tour-item{
 	color: #686868;
 	font: 400 16px $PTSans;
 		a{ color: #686868; font: 400 16px $PTSans; }
-		span{ border-bottom: 1px solid #686868; line-height: 19px; }
+		span{ display: inline-block; border-bottom: 1px solid #686868; line-height: 1; }
 		span:hover{ text-decoration: none; }
 }
 
@@ -506,17 +547,22 @@ body section .tour-item{
 					position: absolute; bottom: 0; right: 0; line-height: 0;
 						button{ 
 							font: 900 16px $Roboto; color: #8D2959; padding: 0; background: none; line-height: 0; border: none; cursor: pointer;
-								i{ font-style: normal; padding-right: 20px; position: relative; bottom: 13px; }
+								i{ font-style: normal; padding-right: 20px; position: relative; bottom: 13px; text-transform: uppercase; }
 								span{ background: $red; width: 120px; height: 93px; position: relative; display: inline-block; }
 						}
 				}	
 		} 
 		h3{ font: 700 20px $Roboto; text-transform: uppercase; margin: 65px 0;  }
 		label{ margin: 0; }
-		input{ padding: 7px 10px; width: 100%;  max-width: 100%; margin-bottom: 35px; display: block; border: 1px solid #C4C4C4; box-sizing: border-box; }
+		input{ padding: 7px 10px; width: 100%;  max-width: 100%; margin-bottom: 10px; display: block; border: 1px solid #C4C4C4; box-sizing: border-box; }
 		input[name="quantity"]{ color: $red; }
 		label, input{ font: 400 14px $Roboto; }
-		.check-policy{ display: inline-block; margin-right: 10px; margin-bottom: 0; width: auto; }
+		.privacy-policy{
+				font: 400 13px $Roboto; color: #686868;
+				.check-policy{ display: inline-block; margin-right: 10px; margin-bottom: 0; width: auto; }
+				a{ text-decoration: underline; }
+		}
+		.book-infotext{ font: 400 13px $Roboto; color: #686868; }
 }
 
 .single-rev{

@@ -1,142 +1,41 @@
-<?php get_header(); ?>
+<?php get_header('category'); ?>
 
-<!-- Map -->
-  <section class="section" id="map">
-    <h2 id="georgia-travel-parallax">Грузия</h2>
-    <div class="container map-container">
-      <div class="row">
-        <div class="col-md-8 map-wrapper">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/georgia_travel_map.png" />
+<?php 
+$obj = get_queried_object();
+
+
+?>
+
+<section class="page city-page">
+    <div class="container">
+      <h2>Вид тура</h2>
+      <div class="row text-center">
+        <div class="filter-wrapper">
+          <div class="filter-item">Панорама</div>
+          <div class="filter-item">Винный тур</div>
+          <div class="filter-item">На автомобиле</div>
+          <div class="filter-item">Водопады</div>
         </div>
-        <div class="col-md-4 map-info">
-          <div class="map-image-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/batumi.png" alt="" />
-          </div>
-          <div class="map-info-wrapper">
-            <h3>Батуми</h3>
-            <p>Lorem ipsum dolor sit amet, maiores ornare ac quo ut lectus, etiam vestibulum etiam vestibulum  etiam vestibulum</p>
-            <div class="select-tour">
-              <i>выбрать тур</i><span><span class="arrow-btn"></span></span>
-            </div>
-          </div>
+        <div class="filter-wrapper">
+          <div class="filter-item">Пеший</div>
+          <div class="filter-item">С проживанием</div>
+          <div class="filter-item">Четыре сезона</div>
+          <div class="filter-item">Крепости</div>
+          <div class="filter-item">Акции</div>
+        </div>
+        <div class="filter-wrapper">
+          <div class="filter-item">Панорама</div>
+          <div class="filter-item">На автомобиле</div>
+          <div class="filter-item">Водопады</div>
+          <div class="filter-item">Панорама</div>
         </div>
       </div>
     </div>
   </section>
-    <!-- Cities -->
-  <section class="section container" id="city">
-    <h2>Выберите город</h2>
-    <p class="text-center city-text">По Грузии туристы столкнутся с одной из самых влиятельных и живых</br> 
-национальных культурных традиций</p>
-    <div class="row">
 
-
-
-           <?php $city = new WP_Query( 
-    array( "post_type" => "tg_city",
-     'post_per_page' => 12
-  
-    ) ); 
-$i = 1;
-$cityHTML = '';
-$cityCLASS = '';
-?>
-
-
-<?php if ($city->have_posts()) : while ($city->have_posts()) : $city->the_post(); ?>
-
-      <?php 
-
-        $id_city = get_the_ID(); 
-
-        $city_photo_src = get_the_post_thumbnail_url( $post, 'large' );
-
-switch($i){
-
- case 1 : $cityCLASS = 'col-md-8 city pr-0';
-break;
-
-
-case 2 : $cityCLASS = 'col-md-4 city pr-0';
-break;
-
-
-case 3 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 4 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-    
-case 5 : $cityCLASS = 'col-md-6 city pr-0';
-break;
-
-case 6 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 7 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 8 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 9 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 10 : $cityCLASS = 'col-md-6 city pr-0';
-break;
-
-case 11 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 12 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-
-}
-
-
-
-$cityHTML = '<div class="'.$cityCLASS.'">
-            <div class="shadow-wrapper">
-              <div class="city-wrapper">
-                <img src="'.$city_photo_src.'" alt="" />
-                <div class="city-overlay">
-                  <h5>'.get_the_title().'</h5>
-                  <p>'.get_the_excerpt().'</p>
-                   <a href="'.get_the_permalink().'"><div class="btn_city">
-                    <div class="add_booking"><i>выбрать тур</i><span><div class="arrow-btn"></div></span></div>
-                  </div></a>
-                </div>
-              </div>
-            </div>
-        </div>';
-
-echo $cityHTML;
-
-$cityHTML = '';
-$cityCLASS = '';
-
-?>
-
-
-
-
-
-  <?php  
-$i++;
-
-endwhile;
-  else :
+  <?php   if( $obj->term_id == 2 ){ ?>
         
-            get_template_part('content-none'); 
-        endif; wp_reset_postdata();  ?>
-    </div>
-
-     
-  
-
-  </section>
-    <!-- Single Tour -->
+<!-- Single Tour -->
   <section class="section" id="single_tour">
     <div class="container">
       <h2>Однодневные туры</h2>
@@ -170,7 +69,7 @@ endwhile;
 
          $length_type_tour = count($type_tour);
 
-         $tour_photo_src = get_the_post_thumbnail_url( $post, 'large' );
+         $tour_photo_src = get_the_post_thumbnail_url( $post, 'medium' );
 $tour_sale = get_field('gt_tour_sale',$id_tour);
 $tour_city = get_field('gt_tour_city_list',$id_tour);
 
@@ -210,7 +109,7 @@ if( $tour_photo_src ){
               } ?></p>
               <div class="row">
                 <div class="col-md-6">
-                  <div class="city-icon"><?php if( $tour_city ){ ?><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tour_city[0]->post_title; }  ?></div>
+                  <div class="city-icon"><?php if( $tour_city ){ ?><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tour_city->post_title; }  ?></div>
                   <div class="time-icon"><?php if( $tour_time){ ?><i class="fa fa-clock-o" aria-hidden="true"></i><?php echo $tour_time; } ?></div>
                 </div>
                 <div class="col-md-6 price-wrapper">
@@ -258,6 +157,10 @@ if( $tour_photo_src ){
         </div>
     </div>
   </section>
+
+
+   <?php   }else{ ?>
+        
     <!-- Multiple Tour -->
   <section class="section" id="mult_tour">
     <div class="container">
@@ -293,7 +196,7 @@ if( $tour_photo_src ){
 
          $length_type_tour = count($type_tour);
 
-         $tour_photo_src = get_the_post_thumbnail_url( $post, 'large' );
+         $tour_photo_src = get_the_post_thumbnail_url( $post, 'medium' );
 $tour_sale = get_field('gt_tour_sale',$id_tour);
 $tour_city = get_field('gt_tour_city_list',$id_tour);
 
@@ -310,8 +213,6 @@ if( $tour_photo_src ){
 }else{ 
   $tour_photo = '<i class="fa fa-picture-o" aria-hidden="true"></i>'; 
 } ?>
-
-
 
         <div class="col-md-4 tour-item pr-0 item">
           <a href="<?php the_permalink(); ?>">
@@ -335,7 +236,7 @@ if( $tour_photo_src ){
               } ?></p>
               <div class="row">
                 <div class="col-md-6">
-                  <div class="city-icon"><?php if( $tour_city ){ ?><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tour_city[0]->post_title; }  ?></div>
+                  <div class="city-icon"><?php if( $tour_city ){ ?><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tour_city->post_title; }  ?></div>
                   <div class="time-icon"><?php if( $tour_time){ ?><i class="fa fa-clock-o" aria-hidden="true"></i><?php echo $tour_time; } ?></div>
                 </div>
                 <div class="col-md-6 price-wrapper">
@@ -384,5 +285,8 @@ if( $tour_photo_src ){
         </div>
     </div>
   </section>
+   <?php   }  ?>
+
+
 
 <?php get_footer(); ?>

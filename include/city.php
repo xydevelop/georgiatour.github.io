@@ -20,6 +20,7 @@ $labels = array(
     	'show_ui' => true, 
     	'query_var' => true,
     	'rewrite' => true,
+    	'rewrite' => array('slug' => 'city'),
     	'capability_type' => 'post',
     	'hierarchical' => false,
     	'menu_position' => null,

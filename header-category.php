@@ -17,7 +17,7 @@
 		<div id="fixhead">
 			<div class="container">
 				<div class="row">
-					<div class="logo-wrapper col-md-5" ><a href="/"><div id="logo"></div></a></div>
+					<div class="logo-wrapper col-md-5"><a href="/"><div id="logo"></div></a></div>
 					<div class="menu-wrapper col-md-5">
 						<div class="phone"><span class="phone-icon"><i class="fa fa-phone" aria-hidden="true"></i></span><a href="tel:8800">8 (800) 000-00-00</a></div>
 						<ul class="menu">
@@ -35,29 +35,36 @@
 			</div>
 		</div>
 		<div id="slide" style="height: 500px;">
-			<?php if( is_page('gorod') ){ ?>
-				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/ct-tbilisi.png" alt="" />
-			<?php }else if( is_page('about') ){ ?>
-				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/about.png" alt="" />
-			<?php }else if( is_page('checkout') ){ ?>
-				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/checkout.png" alt="" />
-			<?php }else{ ?>
-				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/condition.png" alt="" />
-			<?php } ?>
+			
+			 <?php 
+
+			 $obj = get_queried_object();
+
+			 		
+
+			 	
+
+
+			 $tour_photo_src = get_field( 'gt_tour_cat_image', $obj ); 
+
+	
+
+			 ?>
+				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo $tour_photo_src['url']; ?>" alt="" />
+		
 			
 			<div class="dark_bg"></div>
 			<div class="slide-text container">
-				<h1><?php the_title(); ?></h1>
-				<?php if( is_page('gorod')  ){ ?>
-					<p>По Грузии туристы столкнутся с одной из самых влиятельных и<br/> живых национальных культурных традиций</p>
-				<?php } ?>
+				<h1><?php echo $obj->name; ?></h1>
+				
+				
 			</div>
 		</div>
 	</header>
+	
+
 	<section class="breadcrumbs">
-		<?php if( is_page('checkout') ){ ?>
-			<div class="container"><a href="/">Главная</a> > <a href="/">Однодневные туры</a> > <span>Название тура</span>
-		<?php }else{ ?>
-			<div class="container"><a href="/">Главная</a> > <span><?php echo get_the_title(); ?></span></div>
-		<?php } ?>
+	
+			<div class="container"><a class="tl" href="/">Главная</a> > <span><?php echo $obj->name; ?></span></div>
+	
 	</section>

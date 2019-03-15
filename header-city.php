@@ -35,29 +35,21 @@
 			</div>
 		</div>
 		<div id="slide" style="height: 500px;">
-			<?php if( is_page('gorod') ){ ?>
+		
 				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/ct-tbilisi.png" alt="" />
-			<?php }else if( is_page('about') ){ ?>
-				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/about.png" alt="" />
-			<?php }else if( is_page('checkout') ){ ?>
-				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/checkout.png" alt="" />
-			<?php }else{ ?>
-				<img style="height: 100%; min-width: 100%; max-width: none;" src="<?php echo get_template_directory_uri() ?>/images/condition.png" alt="" />
-			<?php } ?>
+			
 			
 			<div class="dark_bg"></div>
 			<div class="slide-text container">
 				<h1><?php the_title(); ?></h1>
-				<?php if( is_page('gorod')  ){ ?>
-					<p>По Грузии туристы столкнутся с одной из самых влиятельных и<br/> живых национальных культурных традиций</p>
-				<?php } ?>
+				
+				<p><?php the_content(); ?></p>
+				
 			</div>
 		</div>
 	</header>
 	<section class="breadcrumbs">
-		<?php if( is_page('checkout') ){ ?>
-			<div class="container"><a href="/">Главная</a> > <a href="/">Однодневные туры</a> > <span>Название тура</span>
-		<?php }else{ ?>
+	
 			<div class="container"><a href="/">Главная</a> > <span><?php echo get_the_title(); ?></span></div>
-		<?php } ?>
+	
 	</section>

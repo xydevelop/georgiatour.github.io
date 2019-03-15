@@ -29,112 +29,169 @@
     <p class="text-center city-text">По Грузии туристы столкнутся с одной из самых влиятельных и живых</br> 
 национальных культурных традиций</p>
     <div class="row">
-
-
-
-           <?php $city = new WP_Query( 
-    array( "post_type" => "tg_city",
-     'post_per_page' => 12
-  
-    ) ); 
-$i = 1;
-$cityHTML = '';
-$cityCLASS = '';
-?>
-
-
-<?php if ($city->have_posts()) : while ($city->have_posts()) : $city->the_post(); ?>
-
-      <?php 
-
-        $id_city = get_the_ID(); 
-
-        $city_photo_src = get_the_post_thumbnail_url( $post, 'large' );
-
-switch($i){
-
- case 1 : $cityCLASS = 'col-md-8 city pr-0';
-break;
-
-
-case 2 : $cityCLASS = 'col-md-4 city pr-0';
-break;
-
-
-case 3 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 4 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-    
-case 5 : $cityCLASS = 'col-md-6 city pr-0';
-break;
-
-case 6 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 7 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 8 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 9 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 10 : $cityCLASS = 'col-md-6 city pr-0';
-break;
-
-case 11 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-case 12 : $cityCLASS = 'col-md-3 city pr-0';
-break;
-
-
-}
-
-
-
-$cityHTML = '<div class="'.$cityCLASS.'">
+        <div class="col-md-8 city pr-0">
+          <a href="/gorod">
             <div class="shadow-wrapper">
               <div class="city-wrapper">
-                <img src="'.$city_photo_src.'" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/tbilisi.png" alt="" />
                 <div class="city-overlay">
-                  <h5>'.get_the_title().'</h5>
-                  <p>'.get_the_excerpt().'</p>
-                   <a href="'.get_the_permalink().'"><div class="btn_city">
+                  <h5>Тбилиси</h5>
+                  <p>Lorem ipsum dolor sit amet, 
+      maiores ornare ac quo ut lectus, etiam vestibulum </p>
+                   <div class="btn_city">
                     <div class="add_booking"><i>выбрать тур</i><span><div class="arrow-btn"></div></span></div>
-                  </div></a>
+                  </div>
                 </div>
               </div>
             </div>
-        </div>';
-
-echo $cityHTML;
-
-$cityHTML = '';
-$cityCLASS = '';
-
-?>
-
-
-
-
-
-  <?php  
-$i++;
-
-endwhile;
-  else :
-        
-            get_template_part('content-none'); 
-        endif; wp_reset_postdata();  ?>
+          </a>
+        </div>
+        <div class="col-md-4 city pr-0">
+          <div class="shadow-wrapper">
+            <div class="city-wrapper">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/batumi.png" alt="" />
+              <div class="city-overlay">
+                <h5>Батуми</h5>
+                <p>Lorem ipsum dolor sit amet, 
+    maiores ornare ac quo ut lectus, etiam vestibulum </p>
+                <div class="btn_city">
+                    <div  class="add_booking"><i>выбрать тур</i><span><div class="arrow-btn"></div></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-3 city pr-0">
+          <div class="shadow-wrapper">
+            <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/mestia.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+         <div class="col-md-3 city pr-0">
+        <div class="shadow-wrapper">
+            <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/mcheta.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+         <div class="col-md-6 city pr-0">
+        <div class="shadow-wrapper">
+            <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/kutaisi.png" alt="" />
+            <div class="city-overlay">
+              <h5>Кутаиси</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 city pr-0">
+        <div class="shadow-wrapper">
+            <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/kobuleti.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 city pr-0">
+        <div class="shadow-wrapper">
+            <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/vardzia.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3 city pr-0">
+        <div class="shadow-wrapper">
+            <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/kazbegi.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 city pr-0">
+        <div class="shadow-wrapper">
+            <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/gelati.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+         <div class="col-md-6 city pr-0">
+        <div class="shadow-wrapper">
+            <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/canion.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+         <div class="col-md-3 city pr-0">
+        <div class="shadow-wrapper">
+            <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/ulpiscihe.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+         <div class="col-md-3 city pr-0">
+       <div class="shadow-wrapper">
+            <div class="city-wrapper">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/rabaty.png" alt="" />
+            <div class="city-overlay">
+              <h5>Батуми</h5>
+              <p>Lorem ipsum dolor sit amet, 
+  maiores ornare ac quo ut lectus, etiam vestibulum </p>
+              <div class="btn_city"></div>
+            </div>
+          </div>
+          </div>
+        </div>
     </div>
-
-     
-  
-
   </section>
     <!-- Single Tour -->
   <section class="section" id="single_tour">
@@ -170,7 +227,7 @@ endwhile;
 
          $length_type_tour = count($type_tour);
 
-         $tour_photo_src = get_the_post_thumbnail_url( $post, 'large' );
+         $tour_photo_src = get_the_post_thumbnail_url( $post, 'medium' );
 $tour_sale = get_field('gt_tour_sale',$id_tour);
 $tour_city = get_field('gt_tour_city_list',$id_tour);
 
@@ -201,8 +258,7 @@ if( $tour_photo_src ){
                 $i = 1;
               foreach( $type_tour as $ttk => $ttv ){
                   if( $length_type_tour > 1 &&  $length_type_tour != $i ){
-                     if( $i == 20 ){ break ;}
-                    echo $ttv->name.', ';
+                    echo $ttv->name.',';
                   }else{
                     echo $ttv->name;
                   }
@@ -210,7 +266,7 @@ if( $tour_photo_src ){
               } ?></p>
               <div class="row">
                 <div class="col-md-6">
-                  <div class="city-icon"><?php if( $tour_city ){ ?><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tour_city[0]->post_title; }  ?></div>
+                  <div class="city-icon"><?php if( $tour_city ){ ?><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tour_city->post_title; }  ?></div>
                   <div class="time-icon"><?php if( $tour_time){ ?><i class="fa fa-clock-o" aria-hidden="true"></i><?php echo $tour_time; } ?></div>
                 </div>
                 <div class="col-md-6 price-wrapper">
@@ -293,7 +349,7 @@ if( $tour_photo_src ){
 
          $length_type_tour = count($type_tour);
 
-         $tour_photo_src = get_the_post_thumbnail_url( $post, 'large' );
+         $tour_photo_src = get_the_post_thumbnail_url( $post, 'medium' );
 $tour_sale = get_field('gt_tour_sale',$id_tour);
 $tour_city = get_field('gt_tour_city_list',$id_tour);
 
@@ -311,8 +367,6 @@ if( $tour_photo_src ){
   $tour_photo = '<i class="fa fa-picture-o" aria-hidden="true"></i>'; 
 } ?>
 
-
-
         <div class="col-md-4 tour-item pr-0 item">
           <a href="<?php the_permalink(); ?>">
           <div class="shadow-wrapper">
@@ -326,7 +380,6 @@ if( $tour_photo_src ){
                 $i = 1;
               foreach( $type_tour as $ttk => $ttv ){
                   if( $length_type_tour > 1 &&  $length_type_tour != $i ){
-                     if( $i == 20 ){ break ;}
                     echo $ttv->name.',';
                   }else{
                     echo $ttv->name;
@@ -335,7 +388,7 @@ if( $tour_photo_src ){
               } ?></p>
               <div class="row">
                 <div class="col-md-6">
-                  <div class="city-icon"><?php if( $tour_city ){ ?><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tour_city[0]->post_title; }  ?></div>
+                  <div class="city-icon"><?php if( $tour_city ){ ?><i class="fa fa-map-marker" aria-hidden="true"></i><?php echo $tour_city->post_title; }  ?></div>
                   <div class="time-icon"><?php if( $tour_time){ ?><i class="fa fa-clock-o" aria-hidden="true"></i><?php echo $tour_time; } ?></div>
                 </div>
                 <div class="col-md-6 price-wrapper">

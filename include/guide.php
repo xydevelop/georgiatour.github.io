@@ -21,10 +21,11 @@
     	'show_ui' => true, 
     	'query_var' => true,
     	'rewrite' => true,
+    	'rewrite' => array('slug' => 'guide'),
     	'capability_type' => 'post',
     	'hierarchical' => false,
     	'menu_position' => null,
-    	'supports' => array('thumbnail','editor','title'),
+    	'supports' => array('thumbnail','editor','title','excerpt'),
     	'menu_icon' => 'dashicons-format-image'
 	); 		
 
