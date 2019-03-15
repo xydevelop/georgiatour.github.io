@@ -1,5 +1,5 @@
 <?php
-
+$tour = get_queried_object();
 $id_tour = get_the_ID();
 
  $type_tour = get_terms( array(
@@ -198,78 +198,43 @@ else : ?>
   <section class="places-list">
     <div class="container">
       <div class="row p-15">
+     
+    
+        
+       <?php $places = new WP_Query( 
+    array( "post_type" => "tg_place",
+     'post_per_page' => 15
+  
+    ) ); ?>
+
+ <?php if ($places->have_posts()) : while ($places->have_posts()) : $places->the_post(); 
+
+ $place_photo_src = get_the_post_thumbnail_url( $post, 'large' );
+
+ ?>
+
         <div class="col-md-4 place-item p-0">
           <div class="place-image-wrapper">
             <div class="dark_bg"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/places/martvill.png" alt="" />
+            <img src="<?php echo $place_photo_src; ?>" alt="" />
             <div class="place-content d-flex justify-content-center align-items-center">
-              <h4>Мартвильские каньоны</h4>
-              <p>Мартвильские каньоны - Интерес к этой местности вызывает увлекательный километровый каньон с водопадом и недавние находки палеонтологов. По официальным данным, здесь нашли следы обитания первобытного человека и доисторических животных, которые жили на земле 73 миллиона лет назад, а также сохранившиеся следы динозавров и даже их окаменевшие скелеты. Каньоны расположены недалеко от города Зугдиди и пользуются популярностью.  Вы можете прогуляться на гондоле по живописному месту, это более похоже на захватывающее путешествие  или рафтинг.</p>
-              <span class="place-plus">+</span>
-              <span class="close">&#10006;</span>
+              <h4><?php the_title(); ?></h4>
+              <p><?php the_content(); ?></p>
+              <span class="place-plus">&#43;</span>
+              <span class="close">&#43;</span>
             </div>
           </div>
         </div>
-         <div class="col-md-4 place-item p-0">
-          <div class="place-image-wrapper">
-            <div class="dark_bg"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/places/tbilisi.png" />
-            <div class="place-content d-flex justify-content-center align-items-center">
-              <h4>Город<br/>Тбилиси</h4>
-              <p>столица Грузии и самый большой город.  Архитектура Тбилиси удивит Вас своим разнообразием, узкие улочки с характерными балкончиками, современные мосты , древнейшие церкви и храмы, большое количество кафе и многое другое . Все это создают микс незабываемой атмосферы.  Для осмотра всех его красот Вам понадобится не менее 3 дней.</p>
-              <span class="place-plus">+</span>
-              <span class="close">&#10006;</span>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4 place-item p-0">
-          <div class="place-image-wrapper">
-            <div class="dark_bg"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/places/borjomi.png" />
-            <div class="place-content d-flex justify-content-center align-items-center">
-              <h4>Город<br/>Боржоми</h4>
-              <p>Знаменитый город Боржоми- Боржоми — это точно одно из самых популярных названий связанных с Грузией и конечно все ассоциируют его со знаменитой лечебной водой. голубым куполом находится источник с настоящей боржомской водой. Она очень сильно отличается от бутылочной по вкусу, но это истинно натуральная и целебная вода, которую можно пить без ограничений и совершенно бесплатно. Говорят, что для быстрого омолаживания нужно окунуться во всех бассейнах по очередности, начиная с холодного, как в сказке “Конёк — Горбунок”. Кстати, расстояние от входа в парк до бассейнов где-то три километра в одну сторону, что тоже пойдёт во благо, особенно если ходить к ним часто.</p>
-              <span class="place-plus">+</span>
-              <span class="close">&#10006;</span>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4 place-item p-0">
-          <div class="place-image-wrapper">
-            <div class="dark_bg"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/places/martvill.png" alt="" />
-            <div class="place-content d-flex justify-content-center align-items-center">
-              <h4>Мартвильские каньоны</h4>
-              <p>Мартвильские каньоны - Интерес к этой местности вызывает увлекательный километровый каньон с водопадом и недавние находки палеонтологов. По официальным данным, здесь нашли следы обитания первобытного человека и доисторических животных, которые жили на земле 73 миллиона лет назад, а также сохранившиеся следы динозавров и даже их окаменевшие скелеты. Каньоны расположены недалеко от города Зугдиди и пользуются популярностью.  Вы можете прогуляться на гондоле по живописному месту, это более похоже на захватывающее путешествие  или рафтинг.</p>
-              <span class="place-plus">+</span>
-              <span class="close">&#10006;</span>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4 place-item p-0">
-          <div class="place-image-wrapper">
-            <div class="dark_bg"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/places/tbilisi.png" />
-            <div class="place-content d-flex justify-content-center align-items-center">
-              <h4>Город<br/>Тбилиси</h4>
-              <p>столица Грузии и самый большой город.  Архитектура Тбилиси удивит Вас своим разнообразием, узкие улочки с характерными балкончиками, современные мосты , древнейшие церкви и храмы, большое количество кафе и многое другое . Все это создают микс незабываемой атмосферы.  Для осмотра всех его красот Вам понадобится не менее 3 дней.</p>
-              <span class="place-plus">+</span>
-              <span class="close">&#10006;</span>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4 place-item p-0">
-          <div class="place-image-wrapper">
-            <div class="dark_bg"></div>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/places/borjomi.png" />
-            <div class="place-content d-flex justify-content-center align-items-center">
-              <h4>Город<br/>Боржоми</h4>
-              <p>Знаменитый город Боржоми- Боржоми — это точно одно из самых популярных названий связанных с Грузией и конечно все ассоциируют его со знаменитой лечебной водой. голубым куполом находится источник с настоящей боржомской водой. Она очень сильно отличается от бутылочной по вкусу, но это истинно натуральная и целебная вода, которую можно пить без ограничений и совершенно бесплатно. Говорят, что для быстрого омолаживания нужно окунуться во всех бассейнах по очередности, начиная с холодного, как в сказке “Конёк — Горбунок”. Кстати, расстояние от входа в парк до бассейнов где-то три километра в одну сторону, что тоже пойдёт во благо, особенно если ходить к ним часто.</p>
-              <span class="place-plus">+</span>
-              <span class="close">&#10006;</span>
-            </div>
-          </div>
-        </div>
+         
+        <?php  endwhile; 
+
+
+
+        else :
+        
+            get_template_part('content-none'); 
+        endif; wp_reset_postdata();  ?> 
+       
       </div>
     </div>
   </section>
@@ -278,57 +243,80 @@ else : ?>
     <div class="container">
       <h4 class="text-center">Отзывы</h4>
       <div class="row">
+
+
+      <?php $review = new WP_Query( 
+    array( "post_type" => "tg_rev",
+     'post_per_page' => 99
+  
+    ) ); ?>
+
+ <?php if ($review->have_posts()) : while ($review->have_posts()) : $review->the_post(); 
+
+ $rev_rating = get_field('gt_rev_rating', $post->ID);
+
+  $rev_tour = get_field('gt_rev_tour', $post->ID);
+
+  $rev_bool = true;
+
+$rev_count = count($rev_tour);
+
+
+if( $rev_tour > 1){
+
+
+if( !in_array($tour,$rev_tour) ) $rev_bool = false; 
+
+
+}else{
+
+  if( $post != $rev_tour[0] ) $rev_bool = false;
+}
+
+  
+
+
+if( $rev_bool == false ) continue; 
+
+
+
+ 
+  
+
+
+
+ ?>
+
         <div class="col-12 rev-item">
           <div class="name-rating d-flex justify-content-between">
-            <h5 class="name">Георгий Данелия, Тбилиси</h5>
+            <h5 class="name"><?php the_title(); ?></h5>
             <div class="rating">
                <div class="rev-rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                <?php 
+                      if( $rev_rating ){ 
+                        for( $i = 0; $i < $rev_rating; $i++){ ?>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                        <?php }
+                      }
+                    ?>
                   </div>
             </div>
           </div>
           <div class="rev-text">
-            И покажу Вам самые интересные места в нашем туреLorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque.  n eget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in i
+            <?php the_content(); ?>
           </div>
         </div>
-         <div class="col-12 rev-item">
-          <div class="name-rating d-flex justify-content-between">
-            <h5 class="name">Георгий Данелия, Тбилиси</h5>
-            <div class="rating">
-               <div class="rev-rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-            </div>
-          </div>
-          <div class="rev-text">
-            И покажу Вам самые интересные места в нашем туреLorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque.  n eget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in i
-          </div>
-        </div>
-         <div class="col-12 rev-item">
-          <div class="name-rating d-flex justify-content-between">
-            <h5 class="name">Георгий Данелия, Тбилиси</h5>
-            <div class="rating">
-               <div class="rev-rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-            </div>
-          </div>
-          <div class="rev-text">
-            И покажу Вам самые интересные места в нашем туреLorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque.  n eget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in i
-          </div>
-        </div>
+         
+        <?php  endwhile; 
+
+
+
+        else :
+        
+            get_template_part('content-none'); 
+        endif; wp_reset_postdata();  ?> 
+
       </div>
       <div class="load-more-wrapper text-center">
           <a class="load-more" href="">Cмотреть еще</a>

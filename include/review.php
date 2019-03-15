@@ -1,10 +1,10 @@
 <?php
 
 	$labels = array(
-		'name' => 'Тур',
-		'singular_name' => 'Тур',
-		'add_new' => 'Добавить тур',
-		'add_new_item' => 'Добавить тур',
+		'name' => 'Отзывы',
+		'singular_name' => 'Отзыв',
+		'add_new' => 'Добавить отзыв',
+		'add_new_item' => 'Добавить отзыв',
 		'edit_item' => 'Изменить',
 		'new_item' => 'Новый',
 		'view_item' => 'Просмотр',
@@ -21,35 +21,15 @@
     	'show_ui' => true, 
     	'query_var' => true,
     	'rewrite' => true,
-    	'rewrite' => array('slug' => 'tour'),
+    	'rewrite' => array('slug' => 'review'),
     	'capability_type' => 'post',
     	'hierarchical' => false,
     	'menu_position' => null,
-    	'supports' => array('thumbnail','editor','title','excerpt'),
+    	'supports' => array('editor','title'),
     	'menu_icon' => 'dashicons-format-gallery'
 	); 		
 
-	register_post_type( 'tg_tour', $args );
-
-	register_taxonomy( 'tourcat', 'tg_tour', array(
-		'hierarchical' => true,
-		'label' => 'Категория тура',
-		'rewrite' => array('slug' => 'cat'),
-		'public' => true,
-		'show_ui' => true,
-		'show_admin_column' => true,
-		'_builtin' => true
-	) );
-
-	register_taxonomy( 'tourtheme', 'tg_tour', array(
-		'hierarchical' => true,
-		'label' => 'Тип тура',
-		'rewrite' => array('slug' => 'theme'),
-		'public' => true,
-		'show_ui' => true,
-		'show_admin_column' => true,
-		'_builtin' => true
-	) );		
+	register_post_type( 'tg_rev', $args );	
 
 	
 ?>

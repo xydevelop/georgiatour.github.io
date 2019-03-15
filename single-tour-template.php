@@ -1,5 +1,7 @@
 <?php
 
+$tour = get_queried_object();
+
 $id_tour = get_the_ID();
 
  $type_tour = get_terms( array(
@@ -229,58 +231,82 @@ else : ?>
    <section class="single-rev">
     <div class="container">
       <h4 class="text-center">Отзывы</h4>
-      <div class="row">
+     <div class="row">
+
+
+       <?php $review = new WP_Query( 
+    array( "post_type" => "tg_rev",
+     'post_per_page' => 99
+  
+    ) ); ?>
+
+ <?php if ($review->have_posts()) : while ($review->have_posts()) : $review->the_post(); 
+
+ $rev_rating = get_field('gt_rev_rating', $post->ID);
+
+  $rev_tour = get_field('gt_rev_tour', $post->ID);
+
+  $rev_bool = true;
+
+$rev_count = count($rev_tour);
+
+
+
+if( $rev_tour > 1){
+
+
+if( !in_array($tour,$rev_tour) ) $rev_bool = false; 
+
+
+}else{
+
+  if( $post != $rev_tour[0] ) $rev_bool = false;
+}
+
+  
+
+
+if( $rev_bool == false ) continue; 
+
+
+
+ 
+  
+
+
+
+ ?>
+
         <div class="col-12 rev-item">
           <div class="name-rating d-flex justify-content-between">
-            <h5 class="name">Георгий Данелия, Тбилиси</h5>
+            <h5 class="name"><?php the_title(); ?></h5>
             <div class="rating">
                <div class="rev-rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                <?php 
+                      if( $rev_rating ){ 
+                        for( $i = 0; $i < $rev_rating; $i++){ ?>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                        <?php }
+                      }
+                    ?>
                   </div>
             </div>
           </div>
           <div class="rev-text">
-            И покажу Вам самые интересные места в нашем туреLorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque.  n eget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in i
+            <?php the_content(); ?>
           </div>
         </div>
-         <div class="col-12 rev-item">
-          <div class="name-rating d-flex justify-content-between">
-            <h5 class="name">Георгий Данелия, Тбилиси</h5>
-            <div class="rating">
-               <div class="rev-rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-            </div>
-          </div>
-          <div class="rev-text">
-            И покажу Вам самые интересные места в нашем туреLorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque.  n eget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in i
-          </div>
-        </div>
-         <div class="col-12 rev-item">
-          <div class="name-rating d-flex justify-content-between">
-            <h5 class="name">Георгий Данелия, Тбилиси</h5>
-            <div class="rating">
-               <div class="rev-rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-            </div>
-          </div>
-          <div class="rev-text">
-            И покажу Вам самые интересные места в нашем туреLorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque.  n eget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in i
-          </div>
-        </div>
+         
+        <?php  endwhile; 
+
+
+
+        else :
+        
+            get_template_part('content-none'); 
+        endif; wp_reset_postdata();  ?> 
+
       </div>
        <div class="load-more-wrapper text-center">
           <a class="load-more" href="">Cмотреть еще</a>

@@ -55,7 +55,8 @@ function tourgeorg_theme_setup() {
 		// Add Actions Custom Post Type
 	require get_template_directory() . '/include/guide.php';
 
-	
+		// Add Actions Custom Post Type
+	require get_template_directory() . '/include/review.php';
 
 
 }
