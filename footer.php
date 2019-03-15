@@ -45,8 +45,8 @@
   </footer>
 <div id="popup-image">
   <div class="content">
-    <button class="popup__close">x</button>
-    <img src="<?php echo get_template_directory_uri(); ?>/images/travel_georgia.png" alt="" />
+    <button class="popup__close">&#43;</button>
+    <div class="popup-image-wrapper"></div>
   </div>
 </div>
 <?php wp_footer(); ?>

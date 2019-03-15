@@ -152,7 +152,7 @@ footer #footer_line a { color: #FFF; }
 
 .item .btn_tour { font: 700 16px "PT Sans", sans-serif; text-align: left; text-decoration-line: none; color: #CFB8DE; }
 
-.item:hover .shadow-wrapper { -webkit-box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.15), 2px 2px 4px rgba(0, 0, 0, 0.15); box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.15), 2px 2px 4px rgba(0, 0, 0, 0.15); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
+.item:hover .shadow-wrapper { -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 6px 10px rgba(0, 0, 0, 0.14); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 6px 10px rgba(0, 0, 0, 0.14); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
 
 .btn_tour:hover { color: #8D2959; text-decoration-line: underline; }
 
@@ -180,7 +180,7 @@ body section .tour-item .tour-image-wrapper img:hover { -moz-transform: scale(1.
 
 .tour-page { padding-bottom: 70px; }
 
-.tour-info { padding: 15px 35px 40px 35px; -webkit-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.05), 1px 4px 10px rgba(0, 0, 0, 0.05); box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.05), 1px 4px 10px rgba(0, 0, 0, 0.05); position: relative; color: #686868; }
+.tour-info { padding: 15px 35px 40px 35px; -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 3px 3px rgba(0, 0, 0, 0.14); box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 3px 3px rgba(0, 0, 0, 0.14); position: relative; color: #686868; }
 
 .tour-info .single-rating-wrap h4 { font: 900 18px Roboto; text-transform: uppercase; margin: 0; }
 
@@ -234,9 +234,15 @@ body section .tour-item .tour-image-wrapper img:hover { -moz-transform: scale(1.
 
 .places h4 { font: 900 32px "Roboto", sans-serif; text-transform: uppercase; }
 
-.places .gallery-tour-wrapper .place-img { overflow: hidden; margin-bottom: 30px; }
+.places .gallery-tour-wrapper .place-img { cursor: pointer; overflow: hidden; margin-bottom: 30px; }
 
-.places .gallery-tour-wrapper .place-img img { max-width: 100%; }
+.places .gallery-tour-wrapper .place-img img { max-width: 100%; width: 100%; }
+
+.places .gallery-tour-wrapper .place-img .places-wrapper { position: relative; overflow: hidden; }
+
+.places .gallery-tour-wrapper .place-img .dark_bg { opacity: 0; bottom: 0; top: auto; -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
+
+.places .gallery-tour-wrapper .place-img:hover .dark_bg { opacity: 1; -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; }
 
 .arrow-btn { background: url(images/arrow.png) no-repeat; width: 32px; height: 32px; background-size: contain; position: absolute; right: 20px; bottom: 12px; }
 
@@ -264,7 +270,7 @@ body section .tour-item .tour-image-wrapper img:hover { -moz-transform: scale(1.
 
 #city .city-text { font: 400 18px "Roboto", sans-serif; margin-bottom: 40px; }
 
-.shadow-wrapper { -webkit-box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.05), 1px 4px 10px rgba(0, 0, 0, 0.05); box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.05), 1px 4px 10px rgba(0, 0, 0, 0.05); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; overflow: hidden; }
+.shadow-wrapper { -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14); box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14); -webkit-transition: all 0.15s; -moz-transition: all 0.15s; -o-transition: all 0.15s; transition: all 0.15s; overflow: hidden; }
 
 #map { position: relative; background: url(images/georgia_mountains.png) no-repeat; height: 830px; overflow: hidden; background-position: center center; }
 
@@ -452,7 +458,7 @@ body section .tour-item .tour-image-wrapper img:hover { -moz-transform: scale(1.
 
 #popup-image .content { position: relative; }
 
-#popup-image .content .popup__close { position: absolute; top: 20px; right: 20px; }
+#popup-image .content .popup__close { -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); color: #FFF; position: absolute; top: 10px; right: 20px; font-size: 35px; background: none; border: 0; cursor: pointer; }
 
 #popup-image .content img { max-width: 100%; }
 

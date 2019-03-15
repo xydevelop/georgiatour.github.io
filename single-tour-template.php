@@ -60,7 +60,10 @@ $tour_transp = get_field('gt_tour_transport',$id_tour);
               foreach($arr as $k => $v){ 
                 $thumb = wp_get_attachment_image_src($v, 'medium', true); ?>
             <div class="col-md-6 place-img">
+              <div class="places-wrapper">
+                <div class="dark_bg"></div>
                 <img src="<?php echo $thumb[0]; ?>" alt="Грузия" />
+              </div>
             </div>
             <?php }
 

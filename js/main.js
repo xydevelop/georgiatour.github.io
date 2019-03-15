@@ -37,6 +37,18 @@ $( document ).ready(function(){
 $('.close').on('click', function(){
   $(this).parent().removeClass('active');
 })
+
+$('.place-img').on('click', function(){
+ var url =  $(this).find('img').attr('src');
+ $('#popup-image').find('.popup-image-wrapper').html('<img src="'+url+'" alt="" />');
+ $('#popup-image').fadeIn().css('display','flex')
+})
+
+
+$('.popup__close').on('click', function(){
+  $(this).parents('#popup-image').fadeOut();
+})
+
   });
 
 
