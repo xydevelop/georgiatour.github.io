@@ -71,7 +71,7 @@ $tour_transp = get_field('gt_tour_transport',$id_tour);
           </div>
         </div>
                <div class="col-md-5">
-          <div class="tour-info row item">
+          <div class="tour-info row item single-tour-info">
             <h3><?php the_title(); ?></h3>
             <div class="single-rating-wrap col-md-8 p-0">
               <h4>Однодневный тур</h4>

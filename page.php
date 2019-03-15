@@ -9,7 +9,8 @@
           <img src="<?php echo get_template_directory_uri(); ?>/images/georgia_travel_map.png" />
         </div>
         <div class="col-md-4 map-info">
-          <div class="map-image-wrapper">
+          <div class="map-shadow-wrapper">
+             <div class="map-image-wrapper">
             <img src="<?php echo get_template_directory_uri(); ?>/images/batumi.png" alt="" />
           </div>
           <div class="map-info-wrapper">
@@ -18,6 +19,7 @@
             <div class="select-tour">
               <i>выбрать тур</i><span><span class="arrow-btn"></span></span>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -374,7 +376,7 @@ if( $tour_photo_src ){
 
         else :
         
-            get_template_part('content-none'); 
+            //get_template_part('content-none'); 
         endif; wp_reset_postdata();  ?>
      
         

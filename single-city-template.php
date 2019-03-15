@@ -4,25 +4,50 @@
   	<div class="container">
       <h2>Вид тура</h2>
       <div class="row text-center">
-        <div class="filter-wrapper">
-          <div class="filter-item">Панорама</div>
-          <div class="filter-item">Винный тур</div>
-          <div class="filter-item">На автомобиле</div>
-          <div class="filter-item">Водопады</div>
-        </div>
-        <div class="filter-wrapper">
-          <div class="filter-item">Пеший</div>
-          <div class="filter-item">С проживанием</div>
-          <div class="filter-item">Четыре сезона</div>
-          <div class="filter-item">Крепости</div>
-          <div class="filter-item">Акции</div>
-        </div>
-        <div class="filter-wrapper">
-          <div class="filter-item">Панорама</div>
-          <div class="filter-item">На автомобиле</div>
-          <div class="filter-item">Водопады</div>
-          <div class="filter-item">Панорама</div>
-        </div>
+
+      <?php $type_tour = get_terms( array(
+  'taxonomy' => 'tourtheme',
+  'hide_empty' => false,
+  'number' => 26
+) ); 
+
+$i = 1;
+$bool_filter = false;
+$type_tour_len = count($type_tour);
+
+foreach( $type_tour as $type ){
+//echo $i;
+
+  if( $i == 1 ) echo '<div class="filter-wrapper">';
+  
+  echo '<div class="filter-item">'.$type->name.'</div>';
+
+  if( $type_tour_len < 4 && $i == $type_tour_len && $bool_filter != true ){ echo '</div>'; $bool_filter = true; } 
+  
+  if( $i == 4 ){
+    echo '</div>';
+    echo '<div class="filter-wrapper">';
+  }
+
+  if( $type_tour_len < 9 && $i == $type_tour_len && $bool_filter != true ){ echo '</div>'; $bool_filter = true; } 
+
+  if( $i == 9 ){
+    echo '</div>';
+    echo '<div class="filter-wrapper">';
+  }
+
+
+  if( $type_tour_len < 13 && $i == $type_tour_len && $bool_filter != true ){ echo '</div>'; $bool_filter = true; } 
+
+   if( $i == 13 ){ echo '</div>'; $i = 1; }
+
+
+  $i++;
+}
+
+?>
+
+        
       </div>
     </div>
   </section>
